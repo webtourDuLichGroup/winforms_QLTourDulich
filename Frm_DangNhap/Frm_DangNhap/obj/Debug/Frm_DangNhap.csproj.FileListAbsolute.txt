@@ -1,0 +1,10 @@
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.exe.config
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.csprojResolveAssemblyReference.cache
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.Form1.resources
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.Properties.Resources.resources
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.csproj.GenerateResource.Cache
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.exe
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.pdb
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.exe
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.pdb
+D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.FrmFindServer.resources
