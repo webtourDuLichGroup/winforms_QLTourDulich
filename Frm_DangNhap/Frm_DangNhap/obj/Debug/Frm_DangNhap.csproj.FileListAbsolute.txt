@@ -8,3 +8,14 @@ D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_Dan
 D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.exe
 D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.pdb
 D:\windown\Winnangcao\moduleDangNhap\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.FrmFindServer.resources
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.exe.config
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.exe
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\bin\Debug\Frm_DangNhap.pdb
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.csprojAssemblyReference.cache
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.Form1.resources
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.FrmFindServer.resources
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.Properties.Resources.resources
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.csproj.GenerateResource.cache
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.csproj.CoreCompileInputs.cache
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.exe
+D:\School\Android\winforms_QLTourDulich\Frm_DangNhap\Frm_DangNhap\obj\Debug\Frm_DangNhap.pdb
