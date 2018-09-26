@@ -12,9 +12,7 @@ C:\Users\tranthibay\Desktop\windowsDrafft\QLTourDuLich\BUS\bin\Debug\DAO.dll.con
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\BUS.dll
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\BUS.pdb
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\DAO.dll
-C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\EntityFramework.dll
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\DAO.pdb
-C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\bin\Debug\EntityFramework.xml
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\obj\Debug\BUS.dll
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\BUS\obj\Debug\BUS.pdb
