@@ -66,3 +66,6 @@ C:\Users\tranthibay\Desktop\windowsDrafft\QLTourDuLich\GUI\bin\Debug\GUI.exe.con
 C:\Users\tranthibay\Desktop\windowsDrafft\QLTourDuLich\GUI\bin\Debug\DAO.dll
 C:\Users\tranthibay\Desktop\windowsDrafft\QLTourDuLich\GUI\bin\Debug\DAO.pdb
 C:\Users\tranthibay\Desktop\windowsDrafft\QLTourDuLich\GUI\bin\Debug\DAO.dll.config
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\GUI\bin\Debug\GUI.exe.config
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\GUI\obj\Debug\GUI.exe
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTourDuLich\GUI\obj\Debug\GUI.pdb
