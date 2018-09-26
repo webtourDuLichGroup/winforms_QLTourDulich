@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -52,13 +53,78 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="KHACHSAN.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTourDuLich.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTourDuLich.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLTourDuLich.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLTourDuLich.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTourDuLich.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDIADANH.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLDIADIEM.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHANHTRINH.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLHOPDONG.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLKHACHHANG.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLLOAIKHACH.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLLOAIKHACHSAN.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLLOAITOUR.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBLTOUR.cs">
+      <DependentUpon>QLTourDuLich.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="QLTourDuLich.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLTourDuLich.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLTourDuLich.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTourDuLich.edmx</DependentUpon>
+      <LastGenOutput>QLTourDuLich.Context.cs</LastGenOutput>
+    </None>
+    <None Include="QLTourDuLich.edmx.diagram">
+      <DependentUpon>QLTourDuLich.edmx</DependentUpon>
+    </None>
+    <None Include="QLTourDuLich.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTourDuLich.edmx</DependentUpon>
+      <LastGenOutput>QLTourDuLich.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
