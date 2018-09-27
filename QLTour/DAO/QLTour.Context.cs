@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLTour
+namespace DAO
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLiTourDuLichEntities : DbContext
+    public partial class QuanLiTourDuLichEntities1 : DbContext
     {
-        public QuanLiTourDuLichEntities()
-            : base("name=QuanLiTourDuLichEntities")
+        public QuanLiTourDuLichEntities1()
+            : base("name=QuanLiTourDuLichEntities1")
         {
         }
     

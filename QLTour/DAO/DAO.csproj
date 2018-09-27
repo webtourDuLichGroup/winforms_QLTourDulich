@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AFA3649A-60B9-42FD-9E08-CE78E89B5F7A}</ProjectGuid>
+    <ProjectGuid>{A1BBEB16-EE29-4E52-9805-0F6528940755}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DAO</RootNamespace>
@@ -37,6 +37,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -47,94 +48,104 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CHITIETHOPDONG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="DIADANH.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="DIADIEM.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="HANHTRINH.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="HOPDONG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="KHACHHANG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="KHACHSAN.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="LOAIKHACHHANG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="LOAIKHACHSAN.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="LOAITOUR.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="MANHINH.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="NGUOIDUNG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="NHOMNGUOIDUNG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="PHANQUYEN.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLTourModel.Context.cs">
-      <DependentUpon>QLTourModel.Context.tt</DependentUpon>
+    <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="QLTourModel.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+    <Compile Include="QLTour.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>QLTour.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="QLTourModel.Designer.cs">
-      <DependentUpon>QLTourModel.edmx</DependentUpon>
+    <Compile Include="QLTour.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>QLTour.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLTour.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTour.edmx</DependentUpon>
     </Compile>
     <Compile Include="QUANLINHOMNGUOIDUNG.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
     <Compile Include="TOUR.cs">
-      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <DependentUpon>QLTour.tt</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
-    <EntityDeploy Include="QLTourModel.edmx">
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <EntityDeploy Include="QLTour.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLTourModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>QLTour.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="QLTourModel.Context.tt">
+    <None Include="QLTour.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLTourModel.edmx</DependentUpon>
-      <LastGenOutput>QLTourModel.Context.cs</LastGenOutput>
+      <DependentUpon>QLTour.edmx</DependentUpon>
+      <LastGenOutput>QLTour.Context.cs</LastGenOutput>
     </None>
-    <None Include="QLTourModel.edmx.diagram">
-      <DependentUpon>QLTourModel.edmx</DependentUpon>
+    <None Include="QLTour.edmx.diagram">
+      <DependentUpon>QLTour.edmx</DependentUpon>
     </None>
-    <None Include="QLTourModel.tt">
+    <None Include="QLTour.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLTourModel.edmx</DependentUpon>
-      <LastGenOutput>QLTourModel.cs</LastGenOutput>
+      <DependentUpon>QLTour.edmx</DependentUpon>
+      <LastGenOutput>QLTour.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

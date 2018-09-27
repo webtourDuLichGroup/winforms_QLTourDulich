@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLTOUR.Properties {
+namespace DAO.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,17 @@ namespace QLTOUR.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0U8HQ4G\\SQLEXPRESS;Initial Catalog=QuanLiTourDuLich;Integrate" +
+            "d Security=True")]
+        public string QuanLiTourDuLichConnectionString {
+            get {
+                return ((string)(this["QuanLiTourDuLichConnectionString"]));
             }
         }
     }

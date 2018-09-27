@@ -427,7 +427,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="QuanLiTourDuLichModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-        <EntityContainer Name="QuanLiTourDuLichEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QuanLiTourDuLichEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CHITIETHOPDONGs" EntityType="QuanLiTourDuLichModel.CHITIETHOPDONG" />
           <EntitySet Name="DIADANHs" EntityType="QuanLiTourDuLichModel.DIADANH" />
           <EntitySet Name="DIADIEMs" EntityType="QuanLiTourDuLichModel.DIADIEM" />
@@ -881,7 +881,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QuanLiTourDuLichModelStoreContainer" CdmEntityContainer="QuanLiTourDuLichEntities">
+        <EntityContainerMapping StorageEntityContainer="QuanLiTourDuLichModelStoreContainer" CdmEntityContainer="QuanLiTourDuLichEntities1">
           <EntitySetMapping Name="CHITIETHOPDONGs">
             <EntityTypeMapping TypeName="QuanLiTourDuLichModel.CHITIETHOPDONG">
               <MappingFragment StoreEntitySet="CHITIETHOPDONG">

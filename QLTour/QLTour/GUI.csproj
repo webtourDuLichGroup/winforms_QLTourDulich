@@ -8,7 +8,7 @@
     <ProjectGuid>{CF7879A1-9659-4E4B-A80A-2A551B3A0E33}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QLTour</RootNamespace>
+    <RootNamespace>QLTOUR</RootNamespace>
     <AssemblyName>QLTour</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -79,6 +79,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
@@ -98,10 +99,6 @@
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{72e0a559-c5a0-4296-a0cc-db8870996ed0}</Project>
       <Name>BUS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAO\DAO.csproj">
-      <Project>{afa3649a-60b9-42fd-9e08-ce78e89b5f7a}</Project>
-      <Name>DAO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

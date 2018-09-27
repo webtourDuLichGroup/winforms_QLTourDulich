@@ -23,3 +23,14 @@ K:\QLTour\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 K:\QLTour\BUS\obj\Debug\BUS.csproj.CopyComplete
 K:\QLTour\BUS\obj\Debug\BUS.dll
 K:\QLTour\BUS\obj\Debug\BUS.pdb
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\BUS.dll
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\BUS.pdb
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DAO.dll
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DTO.dll
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\EntityFramework.dll
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DAO.pdb
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DTO.pdb
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\bin\Debug\EntityFramework.xml
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.dll
+C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.pdb
