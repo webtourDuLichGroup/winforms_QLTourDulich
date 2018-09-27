@@ -49,7 +49,6 @@
     <Compile Include="CHITIETHOPDONG.cs">
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="DIADANH.cs">
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>

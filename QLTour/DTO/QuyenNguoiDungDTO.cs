@@ -5,20 +5,27 @@ using System.Text;
 
 namespace DTO
 {
-    class QuyenNguoiDungDTO
+    public class QuyenNhomNguoiDungDTO
     {
-        public QuyenNguoiDungDTO(string maNhomNguoiDung, List<Quyen> nhomQuyen)
+        public QuyenNhomNguoiDungDTO(string maNhomNguoiDung, List<Quyen> quyens)
         {
             MaNhomNguoiDung = maNhomNguoiDung;
-            NhomQuyen = nhomQuyen;
+            Quyens = quyens;
         }
 
         public string MaNhomNguoiDung { get; set; }
-        public List<Quyen> NhomQuyen { get; set; }
+        public List<Quyen> Quyens { get; set; }
     }
 
     public class Quyen
     {
-        public string Ma;
+        //public Quyen(string maMH, bool coQuyen)
+        //{
+        //    MaMH = maMH;
+        //    CoQuyen = coQuyen;
+        //}
+
+        public string MaMH { get; set; }
+        public bool CoQuyen { get; set; }
     }
 }

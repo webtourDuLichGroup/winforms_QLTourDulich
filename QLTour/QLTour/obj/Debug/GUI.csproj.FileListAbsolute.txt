@@ -95,8 +95,6 @@ E:\QLTour\QLTour\obj\Debug\QLTour.exe.licenses
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.exe.config
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.exe
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.pdb
-D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\BUS.dll
-D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.BonusSkins.v17.1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Data.v17.1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Printing.v17.1.Core.dll
@@ -106,9 +104,6 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.XtraBars.v17.
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.XtraEditors.v17.1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\EntityFramework.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
-D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\BUS.pdb
-D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.pdb
-D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.dll.config
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Data.v17.1.xml
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Printing.v17.1.Core.xml
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.Utils.v17.1.xml
@@ -146,7 +141,6 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\es\DevExpress.Pdf.v17.1.
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csprojAssemblyReference.cache
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\DAO.Form1.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.Properties.Resources.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csproj.GenerateResource.cache
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe.licenses
@@ -154,3 +148,11 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csproj.CoreCompileIn
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csproj.CopyComplete
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.pdb
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTOUR.frm_Main.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\BUS.dll
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DTO.dll
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.dll
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\BUS.pdb
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DTO.pdb
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.dll.config
