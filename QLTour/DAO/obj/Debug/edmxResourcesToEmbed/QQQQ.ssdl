@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLiTourDuLichModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="QuanLiTourDuLichModelStoreContainer">
+    <EntitySet Name="CHITIETHOPDONG" EntityType="QuanLiTourDuLichModel.Store.CHITIETHOPDONG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DIADANH" EntityType="QuanLiTourDuLichModel.Store.DIADANH" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DIADIEM" EntityType="QuanLiTourDuLichModel.Store.DIADIEM" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HANHTRINH" EntityType="QuanLiTourDuLichModel.Store.HANHTRINH" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="HOPDONG" EntityType="QuanLiTourDuLichModel.Store.HOPDONG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KHACHHANG" EntityType="QuanLiTourDuLichModel.Store.KHACHHANG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KHACHSAN" EntityType="QuanLiTourDuLichModel.Store.KHACHSAN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LOAIKHACHHANG" EntityType="QuanLiTourDuLichModel.Store.LOAIKHACHHANG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LOAIKHACHSAN" EntityType="QuanLiTourDuLichModel.Store.LOAIKHACHSAN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LOAITOUR" EntityType="QuanLiTourDuLichModel.Store.LOAITOUR" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MANHINH" EntityType="QuanLiTourDuLichModel.Store.MANHINH" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NGUOIDUNG" EntityType="QuanLiTourDuLichModel.Store.NGUOIDUNG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NHOMNGUOIDUNG" EntityType="QuanLiTourDuLichModel.Store.NHOMNGUOIDUNG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PHANQUYEN" EntityType="QuanLiTourDuLichModel.Store.PHANQUYEN" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QUANLINHOMNGUOIDUNG" EntityType="QuanLiTourDuLichModel.Store.QUANLINHOMNGUOIDUNG" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TOUR" EntityType="QuanLiTourDuLichModel.Store.TOUR" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CHITIETH_CHITIETHO_HOPDONG" Association="QuanLiTourDuLichModel.Store.FK_CHITIETH_CHITIETHO_HOPDONG">
+      <End Role="HOPDONG" EntitySet="HOPDONG" />
+      <End Role="CHITIETHOPDONG" EntitySet="CHITIETHOPDONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CHITIETH_CHITIETHO_TOUR" Association="QuanLiTourDuLichModel.Store.FK_CHITIETH_CHITIETHO_TOUR">
+      <End Role="TOUR" EntitySet="TOUR" />
+      <End Role="CHITIETHOPDONG" EntitySet="CHITIETHOPDONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DIADIEM_RELATIONS_DIADANH" Association="QuanLiTourDuLichModel.Store.FK_DIADIEM_RELATIONS_DIADANH">
+      <End Role="DIADANH" EntitySet="DIADANH" />
+      <End Role="DIADIEM" EntitySet="DIADIEM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HANHTRIN_RELATIONS_DIADIEM" Association="QuanLiTourDuLichModel.Store.FK_HANHTRIN_RELATIONS_DIADIEM">
+      <End Role="DIADIEM" EntitySet="DIADIEM" />
+      <End Role="HANHTRINH" EntitySet="HANHTRINH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HANHTRINH_DIADIEM" Association="QuanLiTourDuLichModel.Store.FK_HANHTRINH_DIADIEM">
+      <End Role="DIADIEM" EntitySet="DIADIEM" />
+      <End Role="HANHTRINH" EntitySet="HANHTRINH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOPDONG_RELATIONS_KHACHHAN" Association="QuanLiTourDuLichModel.Store.FK_HOPDONG_RELATIONS_KHACHHAN">
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+      <End Role="HOPDONG" EntitySet="HOPDONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HOPDONG_RELATIONS_KHACHSAN" Association="QuanLiTourDuLichModel.Store.FK_HOPDONG_RELATIONS_KHACHSAN">
+      <End Role="KHACHSAN" EntitySet="KHACHSAN" />
+      <End Role="HOPDONG" EntitySet="HOPDONG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KHACHHAN_RELATIONS_LOAIKHAC" Association="QuanLiTourDuLichModel.Store.FK_KHACHHAN_RELATIONS_LOAIKHAC">
+      <End Role="LOAIKHACHHANG" EntitySet="LOAIKHACHHANG" />
+      <End Role="KHACHHANG" EntitySet="KHACHHANG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KHACHSAN_RELATIONS_DIADIEM" Association="QuanLiTourDuLichModel.Store.FK_KHACHSAN_RELATIONS_DIADIEM">
+      <End Role="DIADIEM" EntitySet="DIADIEM" />
+      <End Role="KHACHSAN" EntitySet="KHACHSAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KHACHSAN_RELATIONS_LOAIKHAC" Association="QuanLiTourDuLichModel.Store.FK_KHACHSAN_RELATIONS_LOAIKHAC">
+      <End Role="LOAIKHACHSAN" EntitySet="LOAIKHACHSAN" />
+      <End Role="KHACHSAN" EntitySet="KHACHSAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHANQUYE_PHANQUYEN_MANHINH" Association="QuanLiTourDuLichModel.Store.FK_PHANQUYE_PHANQUYEN_MANHINH">
+      <End Role="MANHINH" EntitySet="MANHINH" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PHANQUYE_PHANQUYEN_NHOMNGUO" Association="QuanLiTourDuLichModel.Store.FK_PHANQUYE_PHANQUYEN_NHOMNGUO">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNG" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUANLINH_QUANLINHO_NGUOIDUN" Association="QuanLiTourDuLichModel.Store.FK_QUANLINH_QUANLINHO_NGUOIDUN">
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNG" />
+      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUANLINH_QUANLINHO_NHOMNGUO" Association="QuanLiTourDuLichModel.Store.FK_QUANLINH_QUANLINHO_NHOMNGUO">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNG" />
+      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOUR_RELATIONS_HANHTRIN" Association="QuanLiTourDuLichModel.Store.FK_TOUR_RELATIONS_HANHTRIN">
+      <End Role="HANHTRINH" EntitySet="HANHTRINH" />
+      <End Role="TOUR" EntitySet="TOUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOUR_RELATIONS_LOAITOUR" Association="QuanLiTourDuLichModel.Store.FK_TOUR_RELATIONS_LOAITOUR">
+      <End Role="LOAITOUR" EntitySet="LOAITOUR" />
+      <End Role="TOUR" EntitySet="TOUR" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CHITIETHOPDONG">
+    <Key>
+      <PropertyRef Name="MACT_HOPDONG" />
+    </Key>
+    <Property Name="MATOUR" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MAHOPDONG" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TINHTRANG" Type="varchar" MaxLength="10" />
+    <Property Name="GHICHU" Type="varchar" MaxLength="50" />
+    <Property Name="MACT_HOPDONG" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DIADANH">
+    <Key>
+      <PropertyRef Name="MADIADANH" />
+    </Key>
+    <Property Name="MADIADANH" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TENDIADANH" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DIADIEM">
+    <Key>
+      <PropertyRef Name="MADIADIEM" />
+    </Key>
+    <Property Name="MADIADIEM" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MADIADANH" Type="varchar" MaxLength="50" />
+    <Property Name="TENDIADIEM" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="HANHTRINH">
+    <Key>
+      <PropertyRef Name="MAHANTRINH" />
+    </Key>
+    <Property Name="MAHANTRINH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="NOIDI" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NOIDEN" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="HOPDONG">
+    <Key>
+      <PropertyRef Name="MAHOPDONG" />
+    </Key>
+    <Property Name="MAHOPDONG" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MAKH" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MAKHACHSAN" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="THOIGIANDAT" Type="datetime" Nullable="false" />
+    <Property Name="TONGTIEN" Type="money" Nullable="false" />
+    <Property Name="SONGUOI" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KHACHHANG">
+    <Key>
+      <PropertyRef Name="MAKH" />
+    </Key>
+    <Property Name="MAKH" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MALOAIKH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TENKH" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="GIOITINH" Type="nvarchar" Nullable="false" MaxLength="3" />
+    <Property Name="SDT" Type="numeric" Nullable="false" Precision="11" />
+    <Property Name="EMAIL" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DIACHI" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="KHACHSAN">
+    <Key>
+      <PropertyRef Name="MAKHACHSAN" />
+    </Key>
+    <Property Name="MAKHACHSAN" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MADIADIEM" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MALOAIKS" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TENKHACHSAN" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="GIATIEN" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LOAIKHACHHANG">
+    <Key>
+      <PropertyRef Name="MALOAIKH" />
+    </Key>
+    <Property Name="MALOAIKH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TENLOAIKH" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LOAIKHACHSAN">
+    <Key>
+      <PropertyRef Name="MALOAIKS" />
+    </Key>
+    <Property Name="MALOAIKS" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TENLOAI" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="LOAITOUR">
+    <Key>
+      <PropertyRef Name="MALOAITOUR" />
+    </Key>
+    <Property Name="MALOAITOUR" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TENLOAITOUR" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="MANHINH">
+    <Key>
+      <PropertyRef Name="MAMANHINH" />
+    </Key>
+    <Property Name="MAMANHINH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TENMANHINH" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="NGUOIDUNG">
+    <Key>
+      <PropertyRef Name="TENDANGNHAP" />
+    </Key>
+    <Property Name="TENDANGNHAP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MATKHAU" Type="varchar" MaxLength="20" />
+    <Property Name="HOATDONG" Type="bit" />
+  </EntityType>
+  <EntityType Name="NHOMNGUOIDUNG">
+    <Key>
+      <PropertyRef Name="MANHOM" />
+    </Key>
+    <Property Name="MANHOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TENNHOM" Type="varchar" MaxLength="20" />
+    <Property Name="GHICHU" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PHANQUYEN">
+    <Key>
+      <PropertyRef Name="MAPHANQUYEN" />
+    </Key>
+    <Property Name="MAPHANQUYEN" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MANHOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="MAMANHINH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="COQUYEN" Type="bit" />
+  </EntityType>
+  <EntityType Name="QUANLINHOMNGUOIDUNG">
+    <Key>
+      <PropertyRef Name="MAQL_NGUOIDUNG" />
+    </Key>
+    <Property Name="MAQL_NGUOIDUNG" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TENDANGNHAP" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="MANHOM" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="GHICHU" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TOUR">
+    <Key>
+      <PropertyRef Name="MATOUR" />
+    </Key>
+    <Property Name="MATOUR" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MALOAITOUR" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MAHANTRINH" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="GIATOUR" Type="money" Nullable="false" />
+    <Property Name="NGAYKHOIHANH" Type="datetime" Nullable="false" />
+    <Property Name="NGAYKETTHUC" Type="datetime" Nullable="false" />
+    <Property Name="HINHANH" Type="image" Nullable="false" />
+    <Property Name="MOTA" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="TENTOUR" Type="varchar" MaxLength="100" />
+    <Property Name="GIA" Type="money" />
+  </EntityType>
+  <Association Name="FK_CHITIETH_CHITIETHO_HOPDONG">
+    <End Role="HOPDONG" Type="QuanLiTourDuLichModel.Store.HOPDONG" Multiplicity="1" />
+    <End Role="CHITIETHOPDONG" Type="QuanLiTourDuLichModel.Store.CHITIETHOPDONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HOPDONG">
+        <PropertyRef Name="MAHOPDONG" />
+      </Principal>
+      <Dependent Role="CHITIETHOPDONG">
+        <PropertyRef Name="MAHOPDONG" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CHITIETH_CHITIETHO_TOUR">
+    <End Role="TOUR" Type="QuanLiTourDuLichModel.Store.TOUR" Multiplicity="1" />
+    <End Role="CHITIETHOPDONG" Type="QuanLiTourDuLichModel.Store.CHITIETHOPDONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TOUR">
+        <PropertyRef Name="MATOUR" />
+      </Principal>
+      <Dependent Role="CHITIETHOPDONG">
+        <PropertyRef Name="MATOUR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DIADIEM_RELATIONS_DIADANH">
+    <End Role="DIADANH" Type="QuanLiTourDuLichModel.Store.DIADANH" Multiplicity="0..1" />
+    <End Role="DIADIEM" Type="QuanLiTourDuLichModel.Store.DIADIEM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIADANH">
+        <PropertyRef Name="MADIADANH" />
+      </Principal>
+      <Dependent Role="DIADIEM">
+        <PropertyRef Name="MADIADANH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HANHTRIN_RELATIONS_DIADIEM">
+    <End Role="DIADIEM" Type="QuanLiTourDuLichModel.Store.DIADIEM" Multiplicity="1" />
+    <End Role="HANHTRINH" Type="QuanLiTourDuLichModel.Store.HANHTRINH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIADIEM">
+        <PropertyRef Name="MADIADIEM" />
+      </Principal>
+      <Dependent Role="HANHTRINH">
+        <PropertyRef Name="NOIDI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HANHTRINH_DIADIEM">
+    <End Role="DIADIEM" Type="QuanLiTourDuLichModel.Store.DIADIEM" Multiplicity="0..1" />
+    <End Role="HANHTRINH" Type="QuanLiTourDuLichModel.Store.HANHTRINH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIADIEM">
+        <PropertyRef Name="MADIADIEM" />
+      </Principal>
+      <Dependent Role="HANHTRINH">
+        <PropertyRef Name="NOIDEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOPDONG_RELATIONS_KHACHHAN">
+    <End Role="KHACHHANG" Type="QuanLiTourDuLichModel.Store.KHACHHANG" Multiplicity="1" />
+    <End Role="HOPDONG" Type="QuanLiTourDuLichModel.Store.HOPDONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHHANG">
+        <PropertyRef Name="MAKH" />
+      </Principal>
+      <Dependent Role="HOPDONG">
+        <PropertyRef Name="MAKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HOPDONG_RELATIONS_KHACHSAN">
+    <End Role="KHACHSAN" Type="QuanLiTourDuLichModel.Store.KHACHSAN" Multiplicity="1" />
+    <End Role="HOPDONG" Type="QuanLiTourDuLichModel.Store.HOPDONG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KHACHSAN">
+        <PropertyRef Name="MAKHACHSAN" />
+      </Principal>
+      <Dependent Role="HOPDONG">
+        <PropertyRef Name="MAKHACHSAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KHACHHAN_RELATIONS_LOAIKHAC">
+    <End Role="LOAIKHACHHANG" Type="QuanLiTourDuLichModel.Store.LOAIKHACHHANG" Multiplicity="1" />
+    <End Role="KHACHHANG" Type="QuanLiTourDuLichModel.Store.KHACHHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIKHACHHANG">
+        <PropertyRef Name="MALOAIKH" />
+      </Principal>
+      <Dependent Role="KHACHHANG">
+        <PropertyRef Name="MALOAIKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KHACHSAN_RELATIONS_DIADIEM">
+    <End Role="DIADIEM" Type="QuanLiTourDuLichModel.Store.DIADIEM" Multiplicity="1" />
+    <End Role="KHACHSAN" Type="QuanLiTourDuLichModel.Store.KHACHSAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIADIEM">
+        <PropertyRef Name="MADIADIEM" />
+      </Principal>
+      <Dependent Role="KHACHSAN">
+        <PropertyRef Name="MADIADIEM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KHACHSAN_RELATIONS_LOAIKHAC">
+    <End Role="LOAIKHACHSAN" Type="QuanLiTourDuLichModel.Store.LOAIKHACHSAN" Multiplicity="1" />
+    <End Role="KHACHSAN" Type="QuanLiTourDuLichModel.Store.KHACHSAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIKHACHSAN">
+        <PropertyRef Name="MALOAIKS" />
+      </Principal>
+      <Dependent Role="KHACHSAN">
+        <PropertyRef Name="MALOAIKS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHANQUYE_PHANQUYEN_MANHINH">
+    <End Role="MANHINH" Type="QuanLiTourDuLichModel.Store.MANHINH" Multiplicity="1" />
+    <End Role="PHANQUYEN" Type="QuanLiTourDuLichModel.Store.PHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MANHINH">
+        <PropertyRef Name="MAMANHINH" />
+      </Principal>
+      <Dependent Role="PHANQUYEN">
+        <PropertyRef Name="MAMANHINH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PHANQUYE_PHANQUYEN_NHOMNGUO">
+    <End Role="NHOMNGUOIDUNG" Type="QuanLiTourDuLichModel.Store.NHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="PHANQUYEN" Type="QuanLiTourDuLichModel.Store.PHANQUYEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOM" />
+      </Principal>
+      <Dependent Role="PHANQUYEN">
+        <PropertyRef Name="MANHOM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUANLINH_QUANLINHO_NGUOIDUN">
+    <End Role="NGUOIDUNG" Type="QuanLiTourDuLichModel.Store.NGUOIDUNG" Multiplicity="1" />
+    <End Role="QUANLINHOMNGUOIDUNG" Type="QuanLiTourDuLichModel.Store.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOIDUNG">
+        <PropertyRef Name="TENDANGNHAP" />
+      </Principal>
+      <Dependent Role="QUANLINHOMNGUOIDUNG">
+        <PropertyRef Name="TENDANGNHAP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUANLINH_QUANLINHO_NHOMNGUO">
+    <End Role="NHOMNGUOIDUNG" Type="QuanLiTourDuLichModel.Store.NHOMNGUOIDUNG" Multiplicity="1" />
+    <End Role="QUANLINHOMNGUOIDUNG" Type="QuanLiTourDuLichModel.Store.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOM" />
+      </Principal>
+      <Dependent Role="QUANLINHOMNGUOIDUNG">
+        <PropertyRef Name="MANHOM" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOUR_RELATIONS_HANHTRIN">
+    <End Role="HANHTRINH" Type="QuanLiTourDuLichModel.Store.HANHTRINH" Multiplicity="1" />
+    <End Role="TOUR" Type="QuanLiTourDuLichModel.Store.TOUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HANHTRINH">
+        <PropertyRef Name="MAHANTRINH" />
+      </Principal>
+      <Dependent Role="TOUR">
+        <PropertyRef Name="MAHANTRINH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOUR_RELATIONS_LOAITOUR">
+    <End Role="LOAITOUR" Type="QuanLiTourDuLichModel.Store.LOAITOUR" Multiplicity="1" />
+    <End Role="TOUR" Type="QuanLiTourDuLichModel.Store.TOUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAITOUR">
+        <PropertyRef Name="MALOAITOUR" />
+      </Principal>
+      <Dependent Role="TOUR">
+        <PropertyRef Name="MALOAITOUR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

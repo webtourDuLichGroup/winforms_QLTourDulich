@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFA3649A-60B9-42FD-9E08-CE78E89B5F7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAO</RootNamespace>
+    <AssemblyName>DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CHITIETHOPDONG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="DIADANH.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DIADIEM.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HANHTRINH.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOPDONG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHHANG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHSAN.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAIKHACHHANG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAIKHACHSAN.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOAITOUR.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MANHINH.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NGUOIDUNG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHOMNGUOIDUNG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHANQUYEN.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTourModel.Context.cs">
+      <DependentUpon>QLTourModel.Context.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QLTourModel.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QLTourModel.Designer.cs">
+      <DependentUpon>QLTourModel.edmx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QUANLINHOMNGUOIDUNG.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOUR.cs">
+      <DependentUpon>QLTourModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <EntityDeploy Include="QLTourModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLTourModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLTourModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTourModel.edmx</DependentUpon>
+      <LastGenOutput>QLTourModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="QLTourModel.edmx.diagram">
+      <DependentUpon>QLTourModel.edmx</DependentUpon>
+    </None>
+    <None Include="QLTourModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLTourModel.edmx</DependentUpon>
+      <LastGenOutput>QLTourModel.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
