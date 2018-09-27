@@ -16,3 +16,13 @@ K:\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
 K:\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
 K:\QLTour\DAO\obj\Debug\DAO.dll
 K:\QLTour\DAO\obj\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll.config
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.xml
+D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb

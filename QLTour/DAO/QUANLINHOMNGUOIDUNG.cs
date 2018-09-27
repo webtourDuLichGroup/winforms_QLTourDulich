@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLTour
+namespace DAO
 {
     using System;
     using System.Collections.Generic;

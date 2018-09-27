@@ -6,8 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DAO;
-namespace QLTour
+using QLTOUR;
+namespace QLTOUR
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
@@ -18,8 +18,7 @@ namespace QLTour
            private void Form1_Load(object sender, EventArgs e)
         {
             
-            QuanLiTourDuLichEntities ql = new QuanLiTourDuLichEntities();
-            object x = ql.NGUOIDUNGs.Select(t => t.TENDANGNHAP).ToList();
+            
         }
     }
 }

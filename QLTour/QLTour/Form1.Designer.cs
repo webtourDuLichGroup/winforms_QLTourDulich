@@ -1,4 +1,4 @@
-﻿namespace QLTour
+﻿namespace QLTOUR
 {
     partial class Form1
     {

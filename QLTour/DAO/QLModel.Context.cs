@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLTour
+namespace DAO
 {
     using System;
     using System.Data.Entity;
@@ -40,6 +40,7 @@ namespace QLTour
         public DbSet<NHOMNGUOIDUNG> NHOMNGUOIDUNGs { get; set; }
         public DbSet<PHANQUYEN> PHANQUYENs { get; set; }
         public DbSet<QUANLINHOMNGUOIDUNG> QUANLINHOMNGUOIDUNGs { get; set; }
+        public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<TOUR> TOURs { get; set; }
     }
 }
