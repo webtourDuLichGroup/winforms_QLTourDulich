@@ -1,4 +1,4 @@
-﻿namespace QLTOUR
+﻿namespace GUI
 {
     partial class frm_Main
     {

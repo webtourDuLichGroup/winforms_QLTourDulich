@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
 
-namespace QLTOUR
+namespace GUI
 {
     static class Program
     {
@@ -20,7 +20,7 @@ namespace QLTOUR
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new frm_Main());
+            Application.Run(new frm_DangNhap());
         }
     }
 }

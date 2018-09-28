@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLTOUR.Properties
+namespace GUI.Properties
 {
 
 

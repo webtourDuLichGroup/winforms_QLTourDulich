@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using BUS;
-namespace QLTOUR
+namespace GUI
 {
     public partial class frm_Main : DevExpress.XtraBars.Ribbon.RibbonForm
     {
