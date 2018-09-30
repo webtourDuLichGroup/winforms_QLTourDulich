@@ -46,12 +46,19 @@
             this.SDT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Email = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DC = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TinhTrang = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GhiChu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.AnhDaiDien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.grTKNV = new DevExpress.XtraEditors.GroupControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.lblMaNV = new System.Windows.Forms.Label();
+            this.txtMaTour = new DevExpress.XtraEditors.TextEdit();
+            this.lblMaTour = new DevExpress.XtraEditors.LabelControl();
+            this.txtTinhTrang = new DevExpress.XtraEditors.TextEdit();
+            this.lblDC = new DevExpress.XtraEditors.LabelControl();
+            this.txtDC = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
@@ -71,13 +78,6 @@
             this.txtGT = new DevExpress.XtraEditors.TextEdit();
             this.lblNgSinh = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.lblDC = new DevExpress.XtraEditors.LabelControl();
-            this.txtDC = new DevExpress.XtraEditors.TextEdit();
-            this.txtTinhTrang = new DevExpress.XtraEditors.TextEdit();
-            this.txtMaTour = new DevExpress.XtraEditors.TextEdit();
-            this.lblMaTour = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.lblMaNV = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cboMaTour_TK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHDV_TK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboTenHDV_TK.Properties)).BeginInit();
@@ -85,8 +85,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grTKNV)).BeginInit();
             this.grTKNV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaTour.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgSinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgSinh.Properties)).BeginInit();
@@ -94,10 +98,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenNV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaTour.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // cboMaTour_TK
@@ -249,14 +249,6 @@
             this.DC.VisibleIndex = 6;
             this.DC.Width = 98;
             // 
-            // GhiChu
-            // 
-            this.GhiChu.Caption = "Ghi chú";
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.Visible = true;
-            this.GhiChu.VisibleIndex = 7;
-            this.GhiChu.Width = 98;
-            // 
             // TinhTrang
             // 
             this.TinhTrang.Caption = "Tình trạng";
@@ -264,6 +256,14 @@
             this.TinhTrang.Visible = true;
             this.TinhTrang.VisibleIndex = 8;
             this.TinhTrang.Width = 98;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.Caption = "Ghi chú";
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Visible = true;
+            this.GhiChu.VisibleIndex = 7;
+            this.GhiChu.Width = 98;
             // 
             // AnhDaiDien
             // 
@@ -290,6 +290,13 @@
             this.grTKNV.Size = new System.Drawing.Size(284, 278);
             this.grTKNV.TabIndex = 6;
             this.grTKNV.Text = "Tìm kiếm";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(91, 104);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(154, 20);
+            this.textEdit1.TabIndex = 28;
             // 
             // labelControl1
             // 
@@ -334,6 +341,54 @@
             this.groupControl2.Size = new System.Drawing.Size(666, 278);
             this.groupControl2.TabIndex = 9;
             this.groupControl2.Text = "Thông tin nhân viên";
+            // 
+            // lblMaNV
+            // 
+            this.lblMaNV.AutoSize = true;
+            this.lblMaNV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNV.ForeColor = System.Drawing.Color.Turquoise;
+            this.lblMaNV.Location = new System.Drawing.Point(86, 176);
+            this.lblMaNV.Name = "lblMaNV";
+            this.lblMaNV.Size = new System.Drawing.Size(39, 19);
+            this.lblMaNV.TabIndex = 31;
+            this.lblMaNV.Text = "000";
+            // 
+            // txtMaTour
+            // 
+            this.txtMaTour.Location = new System.Drawing.Point(477, 142);
+            this.txtMaTour.Name = "txtMaTour";
+            this.txtMaTour.Size = new System.Drawing.Size(161, 20);
+            this.txtMaTour.TabIndex = 30;
+            // 
+            // lblMaTour
+            // 
+            this.lblMaTour.Location = new System.Drawing.Point(406, 145);
+            this.lblMaTour.Name = "lblMaTour";
+            this.lblMaTour.Size = new System.Drawing.Size(41, 13);
+            this.lblMaTour.TabIndex = 29;
+            this.lblMaTour.Text = "Mã tour:";
+            // 
+            // txtTinhTrang
+            // 
+            this.txtTinhTrang.Location = new System.Drawing.Point(477, 112);
+            this.txtTinhTrang.Name = "txtTinhTrang";
+            this.txtTinhTrang.Size = new System.Drawing.Size(161, 20);
+            this.txtTinhTrang.TabIndex = 28;
+            // 
+            // lblDC
+            // 
+            this.lblDC.Location = new System.Drawing.Point(406, 80);
+            this.lblDC.Name = "lblDC";
+            this.lblDC.Size = new System.Drawing.Size(36, 13);
+            this.lblDC.TabIndex = 27;
+            this.lblDC.Text = "Địa chỉ:";
+            // 
+            // txtDC
+            // 
+            this.txtDC.Location = new System.Drawing.Point(477, 73);
+            this.txtDC.Name = "txtDC";
+            this.txtDC.Size = new System.Drawing.Size(161, 20);
+            this.txtDC.TabIndex = 26;
             // 
             // simpleButton5
             // 
@@ -501,62 +556,7 @@
             this.labelControl3.TabIndex = 10;
             this.labelControl3.Text = "QUẢN LÍ HƯỚNG DẪN VIÊN";
             // 
-            // lblDC
-            // 
-            this.lblDC.Location = new System.Drawing.Point(406, 80);
-            this.lblDC.Name = "lblDC";
-            this.lblDC.Size = new System.Drawing.Size(36, 13);
-            this.lblDC.TabIndex = 27;
-            this.lblDC.Text = "Địa chỉ:";
-            // 
-            // txtDC
-            // 
-            this.txtDC.Location = new System.Drawing.Point(477, 73);
-            this.txtDC.Name = "txtDC";
-            this.txtDC.Size = new System.Drawing.Size(161, 20);
-            this.txtDC.TabIndex = 26;
-            // 
-            // txtTinhTrang
-            // 
-            this.txtTinhTrang.Location = new System.Drawing.Point(477, 112);
-            this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.Size = new System.Drawing.Size(161, 20);
-            this.txtTinhTrang.TabIndex = 28;
-            // 
-            // txtMaTour
-            // 
-            this.txtMaTour.Location = new System.Drawing.Point(477, 142);
-            this.txtMaTour.Name = "txtMaTour";
-            this.txtMaTour.Size = new System.Drawing.Size(161, 20);
-            this.txtMaTour.TabIndex = 30;
-            // 
-            // lblMaTour
-            // 
-            this.lblMaTour.Location = new System.Drawing.Point(406, 145);
-            this.lblMaTour.Name = "lblMaTour";
-            this.lblMaTour.Size = new System.Drawing.Size(41, 13);
-            this.lblMaTour.TabIndex = 29;
-            this.lblMaTour.Text = "Mã tour:";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(91, 104);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(154, 20);
-            this.textEdit1.TabIndex = 28;
-            // 
-            // lblMaNV
-            // 
-            this.lblMaNV.AutoSize = true;
-            this.lblMaNV.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaNV.ForeColor = System.Drawing.Color.Turquoise;
-            this.lblMaNV.Location = new System.Drawing.Point(86, 176);
-            this.lblMaNV.Name = "lblMaNV";
-            this.lblMaNV.Size = new System.Drawing.Size(39, 19);
-            this.lblMaNV.TabIndex = 31;
-            this.lblMaNV.Text = "000";
-            // 
-            // FrmQLHDV
+            // frm_QuanLiHuongDanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -566,7 +566,7 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.grTKNV);
             this.Controls.Add(this.labelControl1);
-            this.Name = "FrmQLHDV";
+            this.Name = "frm_QuanLiHuongDanVien";
             this.Text = "QUẢN LÍ HƯỚNG DẪN VIÊN";
             ((System.ComponentModel.ISupportInitialize)(this.cboMaTour_TK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaHDV_TK.Properties)).EndInit();
@@ -576,9 +576,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.grTKNV)).EndInit();
             this.grTKNV.ResumeLayout(false);
             this.grTKNV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaTour.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgSinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtNgSinh.Properties)).EndInit();
@@ -586,10 +590,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtTenNV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaTour.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

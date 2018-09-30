@@ -43,5 +43,10 @@ namespace GUI
         {
             Application.Run(new frm_Main());
         }
+
+        private void frm_DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

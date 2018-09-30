@@ -109,13 +109,13 @@
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
-            // Frm_ChiTietTour
+            // frm_ChiTietTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 356);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "Frm_ChiTietTour";
+            this.Name = "frm_ChiTietTour";
             this.Text = "Frm_ChiTietTour";
             this.Load += new System.EventHandler(this.Frm_ChiTietTour_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

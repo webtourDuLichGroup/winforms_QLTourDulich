@@ -46,10 +46,9 @@
             // 
             this.txt_matkhau.Location = new System.Drawing.Point(74, 126);
             this.txt_matkhau.Name = "txt_matkhau";
+            this.txt_matkhau.Properties.PasswordChar = '*';
             this.txt_matkhau.Size = new System.Drawing.Size(131, 20);
             this.txt_matkhau.TabIndex = 1;
-            this.txt_matkhau.Properties.PasswordChar = '*';
-           
             // 
             // btn_dangnhap
             // 
@@ -70,6 +69,7 @@
             this.Controls.Add(this.txt_tendn);
             this.Name = "frm_DangNhap";
             this.Text = "Đăng nhập";
+            this.Load += new System.EventHandler(this.frm_DangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_tendn.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_matkhau.Properties)).EndInit();
             this.ResumeLayout(false);
