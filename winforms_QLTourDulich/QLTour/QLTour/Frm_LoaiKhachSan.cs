@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace QLTour
+{
+    public partial class Frm_LoaiKhachSan : Form
+    {
+        public Frm_LoaiKhachSan()
+        {
+            InitializeComponent();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
