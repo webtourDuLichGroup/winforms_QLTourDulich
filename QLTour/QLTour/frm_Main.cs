@@ -20,5 +20,12 @@ namespace GUI
         {
             QuyenNguoiDungBus.PhanQuyenManHinh(this.ribbonMenu, "khadaica");
         }
+
+        private void barBtn_ShowTour_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_ShowTour form = new frm_ShowTour();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
