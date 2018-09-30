@@ -106,3 +106,6 @@ C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\BUS.pd
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\EntityFramework.xml
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe
 C:\Users\quangduyvo\Desktop\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.pdb
+C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.exe.config
+C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe
+C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.pdb

@@ -30,7 +30,7 @@ namespace QLTour
             string tendn = txt_tendn.Text;
             string matkhau = txt_matkhau.Text;
 
-            if (BUS.Thu.dangnhap(tendn,matkhau)==1)
+            if (BUS.Thu.dangnhap(tendn,matkhau)==true)
             {
                 this.Close();
                 th = new Thread(openform);

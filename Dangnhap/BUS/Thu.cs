@@ -12,12 +12,10 @@ namespace BUS
 
        
 
-        public static int dangnhap(string tendn, string matkhau)
+        public static bool dangnhap(string tendn, string matkhau)
         {
-            var info = DAO.KTDangNhap.dangnhap(tendn,matkhau);
-            if (info == true)
-                return 1;
-            return 0;
+            bool info = DAO.KTDangNhap.dangnhap(tendn,matkhau);
+            return info;
 
         }
        
