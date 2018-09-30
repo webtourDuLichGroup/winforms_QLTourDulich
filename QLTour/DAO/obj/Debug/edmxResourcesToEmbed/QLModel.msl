@@ -164,10 +164,10 @@
           <ScalarProperty Name="GIATOUR" ColumnName="GIATOUR" />
           <ScalarProperty Name="NGAYKHOIHANH" ColumnName="NGAYKHOIHANH" />
           <ScalarProperty Name="NGAYKETTHUC" ColumnName="NGAYKETTHUC" />
-          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
           <ScalarProperty Name="MOTA" ColumnName="MOTA" />
           <ScalarProperty Name="TENTOUR" ColumnName="TENTOUR" />
           <ScalarProperty Name="GIA" ColumnName="GIA" />
+          <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

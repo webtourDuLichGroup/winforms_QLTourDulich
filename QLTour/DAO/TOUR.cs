@@ -25,10 +25,10 @@ namespace DAO
         public decimal GIATOUR { get; set; }
         public System.DateTime NGAYKHOIHANH { get; set; }
         public System.DateTime NGAYKETTHUC { get; set; }
-        public byte[] HINHANH { get; set; }
         public string MOTA { get; set; }
         public string TENTOUR { get; set; }
         public Nullable<decimal> GIA { get; set; }
+        public string HINHANH { get; set; }
     
         public virtual ICollection<CHITIETHOPDONG> CHITIETHOPDONGs { get; set; }
         public virtual HANHTRINH HANHTRINH { get; set; }

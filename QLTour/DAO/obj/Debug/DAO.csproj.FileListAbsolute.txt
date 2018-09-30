@@ -26,3 +26,15 @@ D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompileInput
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DevExpress.Data.v17.1.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DevExpress.Data.v17.1.xml
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll

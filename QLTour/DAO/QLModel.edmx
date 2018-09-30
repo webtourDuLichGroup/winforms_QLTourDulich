@@ -122,7 +122,7 @@
           <Property Name="MAPHANQUYEN" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="MANHOM" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="MAMANHINH" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="COQUYEN" Type="bit" />
+          <Property Name="COQUYEN" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="QUANLINHOMNGUOIDUNG">
           <Key>
@@ -153,10 +153,10 @@
           <Property Name="GIATOUR" Type="money" Nullable="false" />
           <Property Name="NGAYKHOIHANH" Type="datetime" Nullable="false" />
           <Property Name="NGAYKETTHUC" Type="datetime" Nullable="false" />
-          <Property Name="HINHANH" Type="image" Nullable="false" />
           <Property Name="MOTA" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="TENTOUR" Type="varchar" MaxLength="100" />
           <Property Name="GIA" Type="money" />
+          <Property Name="HINHANH" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <Association Name="FK_CHITIETH_CHITIETHO_HOPDONG">
           <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="1" />
@@ -580,7 +580,7 @@
           <Property Name="MAPHANQUYEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MANHOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MAMANHINH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="COQUYEN" Type="Boolean" />
+          <Property Name="COQUYEN" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="MANHINH" Relationship="Self.FK_PHANQUYE_PHANQUYEN_MANHINH" FromRole="PHANQUYEN" ToRole="MANHINH" />
           <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_PHANQUYE_PHANQUYEN_NHOMNGUO" FromRole="PHANQUYEN" ToRole="NHOMNGUOIDUNG" />
         </EntityType>
@@ -615,10 +615,10 @@
           <Property Name="GIATOUR" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="NGAYKHOIHANH" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="NGAYKETTHUC" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
           <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TENTOUR" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="GIA" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="HINHANH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="CHITIETHOPDONGs" Relationship="Self.FK_CHITIETH_CHITIETHO_TOUR" FromRole="TOUR" ToRole="CHITIETHOPDONG" />
           <NavigationProperty Name="HANHTRINH" Relationship="Self.FK_TOUR_RELATIONS_HANHTRIN" FromRole="TOUR" ToRole="HANHTRINH" />
           <NavigationProperty Name="LOAITOUR" Relationship="Self.FK_TOUR_RELATIONS_LOAITOUR" FromRole="TOUR" ToRole="LOAITOUR" />
@@ -1067,10 +1067,10 @@
                 <ScalarProperty Name="GIATOUR" ColumnName="GIATOUR" />
                 <ScalarProperty Name="NGAYKHOIHANH" ColumnName="NGAYKHOIHANH" />
                 <ScalarProperty Name="NGAYKETTHUC" ColumnName="NGAYKETTHUC" />
-                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
                 <ScalarProperty Name="MOTA" ColumnName="MOTA" />
                 <ScalarProperty Name="TENTOUR" ColumnName="TENTOUR" />
                 <ScalarProperty Name="GIA" ColumnName="GIA" />
+                <ScalarProperty Name="HINHANH" ColumnName="HINHANH" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -78,3 +78,9 @@ D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\de\DevExpress.Pdf.v17.1.Cor
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll

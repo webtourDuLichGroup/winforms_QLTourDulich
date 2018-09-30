@@ -117,7 +117,7 @@
     <Property Name="MAPHANQUYEN" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="MANHOM" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="MAMANHINH" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="COQUYEN" Type="bit" />
+    <Property Name="COQUYEN" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="QUANLINHOMNGUOIDUNG">
     <Key>
@@ -148,10 +148,10 @@
     <Property Name="GIATOUR" Type="money" Nullable="false" />
     <Property Name="NGAYKHOIHANH" Type="datetime" Nullable="false" />
     <Property Name="NGAYKETTHUC" Type="datetime" Nullable="false" />
-    <Property Name="HINHANH" Type="image" Nullable="false" />
     <Property Name="MOTA" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="TENTOUR" Type="varchar" MaxLength="100" />
     <Property Name="GIA" Type="money" />
+    <Property Name="HINHANH" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
   <Association Name="FK_CHITIETH_CHITIETHO_HOPDONG">
     <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="1" />
