@@ -20,7 +20,7 @@ namespace GUI
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new frm_DangNhap());
+            Application.Run(new QLTour.frm_HopDong());
         }
     }
 }
