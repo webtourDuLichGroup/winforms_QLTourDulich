@@ -1,4 +1,4 @@
-﻿namespace QLTour
+﻿namespace GUI
 {
     partial class frm_HopDong
     {

@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frm_DatTour : Form
+    public partial class frm_ChiTietTour : Form
     {
-        public frm_DatTour()
+        public frm_ChiTietTour()
         {
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void Frm_ChiTietTour_Load(object sender, EventArgs e)
         {
 
         }

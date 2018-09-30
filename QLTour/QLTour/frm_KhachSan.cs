@@ -9,14 +9,19 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frm_DatTour : Form
+    public partial class frm_Kháchan : Form
     {
-        public frm_DatTour()
+        public frm_Kháchan()
         {
             InitializeComponent();
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void Frm_Quanlydoitac_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

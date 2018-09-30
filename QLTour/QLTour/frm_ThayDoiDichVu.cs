@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QLTour
+namespace GUI
 {
     public partial class frm_ThayDoiDichVu : Form
     {

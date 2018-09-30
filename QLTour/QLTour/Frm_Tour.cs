@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frm_DatTour : Form
+    public partial class frm_Tour : DevExpress.XtraEditors.XtraForm
     {
-        public frm_DatTour()
+        public frm_Tour()
         {
             InitializeComponent();
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
