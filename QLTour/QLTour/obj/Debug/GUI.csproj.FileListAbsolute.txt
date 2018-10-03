@@ -157,7 +157,6 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.pdb
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DAO.dll.config
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_DangNhap.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_Main.resources
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frm_DatTour.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.XtraGrid.v17.1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.XtraLayout.v17.1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
@@ -194,5 +193,14 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\de\DevExpress.Office.v17
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\es\DevExpress.Office.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ja\DevExpress.Office.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ru\DevExpress.Office.v17.1.Core.resources.dll
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frm_ThayDoiDichVu.resources
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frm_HopDong.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_PhanQuyen.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QuanLiHuongDanVien.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_ChiTietTour.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_DatTour.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_DoanhThu.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_HopDong.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_LoaiKhachSan.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QuanLiNhanVien.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_ThayDoiDichVu.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_Tour.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_KhachSan.resources

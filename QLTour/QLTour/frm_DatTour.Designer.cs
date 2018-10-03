@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -50,7 +51,19 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tOURBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colMATOUR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMALOAITOUR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMAHANTRINH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGIATOUR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYKHOIHANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNGAYKETTHUC = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMOTA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTENTOUR = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colGIA = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHINHANH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colHuongDanVien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel1.SuspendLayout();
@@ -69,6 +82,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOURBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +105,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.58123F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1067, 554);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // labelControl1
             // 
@@ -133,8 +146,8 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 112);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 67.70834F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.29167F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1061, 118);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
@@ -144,7 +157,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(162, 3);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(736, 73);
+            this.panelControl1.Size = new System.Drawing.Size(736, 70);
             this.panelControl1.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -176,24 +189,24 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(732, 69);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(732, 66);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // labelControl4
             // 
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl4.Location = new System.Drawing.Point(56, 37);
+            this.labelControl4.Location = new System.Drawing.Point(56, 36);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(57, 29);
+            this.labelControl4.Size = new System.Drawing.Size(57, 27);
             this.labelControl4.TabIndex = 1;
             this.labelControl4.Text = "Thời gian đi:";
             // 
             // labelControl5
             // 
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl5.Location = new System.Drawing.Point(266, 37);
+            this.labelControl5.Location = new System.Drawing.Point(266, 36);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(66, 29);
+            this.labelControl5.Size = new System.Drawing.Size(66, 27);
             this.labelControl5.TabIndex = 1;
             this.labelControl5.Text = "Thời gian đến:";
             // 
@@ -202,7 +215,7 @@
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl6.Location = new System.Drawing.Point(266, 3);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(66, 28);
+            this.labelControl6.Size = new System.Drawing.Size(66, 27);
             this.labelControl6.TabIndex = 1;
             this.labelControl6.Text = "Nơi đến:";
             // 
@@ -211,7 +224,7 @@
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl7.Location = new System.Drawing.Point(56, 3);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(57, 28);
+            this.labelControl7.Size = new System.Drawing.Size(57, 27);
             this.labelControl7.TabIndex = 1;
             this.labelControl7.Text = "Nơi đi:";
             // 
@@ -239,7 +252,7 @@
             // 
             this.dateEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(338, 37);
+            this.dateEdit1.Location = new System.Drawing.Point(338, 36);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -252,7 +265,7 @@
             // 
             this.dateEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(119, 37);
+            this.dateEdit2.Location = new System.Drawing.Point(119, 36);
             this.dateEdit2.Name = "dateEdit2";
             this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -266,16 +279,16 @@
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl3.Location = new System.Drawing.Point(486, 3);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(65, 28);
+            this.labelControl3.Size = new System.Drawing.Size(65, 27);
             this.labelControl3.TabIndex = 4;
             this.labelControl3.Text = "Người lớn:";
             // 
             // labelControl8
             // 
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl8.Location = new System.Drawing.Point(486, 37);
+            this.labelControl8.Location = new System.Drawing.Point(486, 36);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(65, 29);
+            this.labelControl8.Size = new System.Drawing.Size(65, 27);
             this.labelControl8.TabIndex = 4;
             this.labelControl8.Text = "Trẻ em:";
             // 
@@ -290,7 +303,7 @@
             // textEdit2
             // 
             this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit2.Location = new System.Drawing.Point(557, 37);
+            this.textEdit2.Location = new System.Drawing.Point(557, 36);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(112, 20);
             this.textEdit2.TabIndex = 5;
@@ -298,29 +311,28 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.86687F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.60326F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.63587F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.simpleButton1, 1, 1);
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.8236F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.58038F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.59602F));
+            this.tableLayoutPanel4.Controls.Add(this.simpleButton1, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(162, 82);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(162, 79);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 95F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(736, 33);
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(736, 36);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // simpleButton1
             // 
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton1.Location = new System.Drawing.Point(303, 4);
+            this.simpleButton1.Location = new System.Drawing.Point(303, 3);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 3, 15, 3);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(140, 26);
+            this.simpleButton1.Size = new System.Drawing.Size(140, 30);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Tìm kiếm";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -341,6 +353,7 @@
             // 
             // gridControl1
             // 
+            this.gridControl1.DataSource = this.tOURBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(162, 3);
             this.gridControl1.MainView = this.gridView1;
@@ -352,8 +365,97 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colMATOUR,
+            this.colMALOAITOUR,
+            this.colMAHANTRINH,
+            this.colGIATOUR,
+            this.colNGAYKHOIHANH,
+            this.colNGAYKETTHUC,
+            this.colMOTA,
+            this.colTENTOUR,
+            this.colGIA,
+            this.colHINHANH,
+            this.colHuongDanVien});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // colMATOUR
+            // 
+            this.colMATOUR.FieldName = "MATOUR";
+            this.colMATOUR.Name = "colMATOUR";
+            this.colMATOUR.Visible = true;
+            this.colMATOUR.VisibleIndex = 0;
+            // 
+            // colMALOAITOUR
+            // 
+            this.colMALOAITOUR.FieldName = "MALOAITOUR";
+            this.colMALOAITOUR.Name = "colMALOAITOUR";
+            this.colMALOAITOUR.Visible = true;
+            this.colMALOAITOUR.VisibleIndex = 1;
+            // 
+            // colMAHANTRINH
+            // 
+            this.colMAHANTRINH.FieldName = "MAHANTRINH";
+            this.colMAHANTRINH.Name = "colMAHANTRINH";
+            this.colMAHANTRINH.Visible = true;
+            this.colMAHANTRINH.VisibleIndex = 2;
+            // 
+            // colGIATOUR
+            // 
+            this.colGIATOUR.FieldName = "GIATOUR";
+            this.colGIATOUR.Name = "colGIATOUR";
+            this.colGIATOUR.Visible = true;
+            this.colGIATOUR.VisibleIndex = 3;
+            // 
+            // colNGAYKHOIHANH
+            // 
+            this.colNGAYKHOIHANH.FieldName = "NGAYKHOIHANH";
+            this.colNGAYKHOIHANH.Name = "colNGAYKHOIHANH";
+            this.colNGAYKHOIHANH.Visible = true;
+            this.colNGAYKHOIHANH.VisibleIndex = 4;
+            // 
+            // colNGAYKETTHUC
+            // 
+            this.colNGAYKETTHUC.FieldName = "NGAYKETTHUC";
+            this.colNGAYKETTHUC.Name = "colNGAYKETTHUC";
+            this.colNGAYKETTHUC.Visible = true;
+            this.colNGAYKETTHUC.VisibleIndex = 5;
+            // 
+            // colMOTA
+            // 
+            this.colMOTA.FieldName = "MOTA";
+            this.colMOTA.Name = "colMOTA";
+            this.colMOTA.Visible = true;
+            this.colMOTA.VisibleIndex = 6;
+            // 
+            // colTENTOUR
+            // 
+            this.colTENTOUR.FieldName = "TENTOUR";
+            this.colTENTOUR.Name = "colTENTOUR";
+            this.colTENTOUR.Visible = true;
+            this.colTENTOUR.VisibleIndex = 7;
+            // 
+            // colGIA
+            // 
+            this.colGIA.FieldName = "GIA";
+            this.colGIA.Name = "colGIA";
+            this.colGIA.Visible = true;
+            this.colGIA.VisibleIndex = 8;
+            // 
+            // colHINHANH
+            // 
+            this.colHINHANH.FieldName = "HINHANH";
+            this.colHINHANH.Name = "colHINHANH";
+            this.colHINHANH.Visible = true;
+            this.colHINHANH.VisibleIndex = 9;
+            // 
+            // colHuongDanVien
+            // 
+            this.colHuongDanVien.FieldName = "HuongDanVien";
+            this.colHuongDanVien.Name = "colHuongDanVien";
+            this.colHuongDanVien.Visible = true;
+            this.colHuongDanVien.VisibleIndex = 10;
             // 
             // tableLayoutPanel6
             // 
@@ -406,6 +508,7 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tOURBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -439,5 +542,17 @@
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private System.Windows.Forms.BindingSource tOURBindingSource;
+        private DevExpress.XtraGrid.Columns.GridColumn colMATOUR;
+        private DevExpress.XtraGrid.Columns.GridColumn colMALOAITOUR;
+        private DevExpress.XtraGrid.Columns.GridColumn colMAHANTRINH;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIATOUR;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYKHOIHANH;
+        private DevExpress.XtraGrid.Columns.GridColumn colNGAYKETTHUC;
+        private DevExpress.XtraGrid.Columns.GridColumn colMOTA;
+        private DevExpress.XtraGrid.Columns.GridColumn colTENTOUR;
+        private DevExpress.XtraGrid.Columns.GridColumn colGIA;
+        private DevExpress.XtraGrid.Columns.GridColumn colHINHANH;
+        private DevExpress.XtraGrid.Columns.GridColumn colHuongDanVien;
     }
 }

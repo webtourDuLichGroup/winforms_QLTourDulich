@@ -4,7 +4,6 @@ C:\Users\quangduyvo\Desktop\QLTour\DTO\obj\Debug\DTO.dll
 C:\Users\quangduyvo\Desktop\QLTour\DTO\obj\Debug\DTO.pdb
 D:\School\winforms_QLTourDulich\QLTour\DTO\bin\Debug\DTO.dll
 D:\School\winforms_QLTourDulich\QLTour\DTO\bin\Debug\DTO.pdb
-D:\School\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 D:\School\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\School\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.dll
 D:\School\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.pdb

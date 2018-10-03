@@ -403,7 +403,7 @@
             this.btnCancel.TabIndex = 19;
             this.btnCancel.Text = "Cancel";
             // 
-            // Form1
+            // frm_PhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -413,7 +413,7 @@
             this.Controls.Add(this.label2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "frm_PhanQuyen";
             this.ShowMdiChildCaptionInParentTitle = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

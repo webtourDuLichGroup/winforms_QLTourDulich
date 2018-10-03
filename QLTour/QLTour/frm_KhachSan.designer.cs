@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class frm_Kháchan
+    partial class frm_KhachSan
     {
         /// <summary>
         /// Required designer variable.

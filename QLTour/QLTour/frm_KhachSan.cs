@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class frm_Kháchan : Form
+    public partial class frm_KhachSan : Form
     {
-        public frm_Kháchan()
+        public frm_KhachSan()
         {
             InitializeComponent();
         }

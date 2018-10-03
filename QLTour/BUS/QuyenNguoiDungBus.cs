@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DTO;
+using DAO.DataSet1TableAdapters;
+using System.Data;
+
 namespace BUS
 {
     public class QuyenNguoiDungBus
@@ -53,5 +56,12 @@ namespace BUS
             return quyenNguoiDungLst;
         }
 
+      public static  void A()
+        {
+            DataSet1 dataSet = new DataSet1();
+            TOURTableAdapter adapter = new TOURTableAdapter();
+            DataTable table = new DataTable();
+            table = adapter.GetDataBy123();
+        }
     }
 }

@@ -18,12 +18,39 @@ namespace GUI
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            QuyenNguoiDungBus.PhanQuyenManHinh(this.ribbonMenu, "khadaica");
+            QuyenNguoiDungBus.A();
+            //QuyenNguoiDungBus.PhanQuyenManHinh(this.ribbonMenu, "khadaica");
         }
 
-        private void barBtn_ShowTour_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void barBtn_QLTourDuLich_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_ShowTour form = new frm_ShowTour();
+            frm_Tour form = new frm_Tour();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_KhachSan form = new frm_KhachSan();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_LoaiKhachSan form = new frm_LoaiKhachSan();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_DatTour form = new frm_DatTour();
             form.MdiParent = this;
             form.Show();
         }
