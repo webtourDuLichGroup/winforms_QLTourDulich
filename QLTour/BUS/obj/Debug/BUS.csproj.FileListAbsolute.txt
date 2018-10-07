@@ -77,3 +77,4 @@ D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\de\DevExpress.Pdf.v17.1.Cor
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
 D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache

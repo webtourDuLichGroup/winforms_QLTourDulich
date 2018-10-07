@@ -19,8 +19,9 @@ namespace DAO
             this.PHANQUYENs = new HashSet<PHANQUYEN>();
         }
     
-        public string MAMANHINH { get; set; }
-        public string TENMANHINH { get; set; }
+        public int MaMH { get; set; }
+        public string TenMH { get; set; }
+        public string GhiChu { get; set; }
     
         public virtual ICollection<PHANQUYEN> PHANQUYENs { get; set; }
     }

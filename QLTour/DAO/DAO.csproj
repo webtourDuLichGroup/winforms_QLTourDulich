@@ -46,11 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CHITIETHOPDONG.cs">
+    <Compile Include="CTPHIEUNHAP_TOUR.cs">
       <DependentUpon>QLModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataSet1.cs">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -67,6 +64,9 @@
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HOPDONG.cs">
+      <DependentUpon>QLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HUONGDANVIEN.cs">
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>
     <Compile Include="KHACHHANG.cs">
@@ -94,6 +94,9 @@
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>
     <Compile Include="PHANQUYEN.cs">
+      <DependentUpon>QLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PHIEUNHAPTOUR.cs">
       <DependentUpon>QLModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,32 +144,30 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <EntityDeploy Include="QLModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <EntityDeploy Include="QLModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLModel.edmx</DependentUpon>
+      <LastGenOutput>QLModel.Context.cs</LastGenOutput>
+    </None>
     <None Include="QLModel.edmx.diagram">
       <DependentUpon>QLModel.edmx</DependentUpon>
+    </None>
+    <None Include="QLModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLModel.edmx</DependentUpon>
+      <LastGenOutput>QLModel.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="QLModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLModel.edmx</DependentUpon>
-      <LastGenOutput>QLModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="QLModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLModel.edmx</DependentUpon>
-      <LastGenOutput>QLModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

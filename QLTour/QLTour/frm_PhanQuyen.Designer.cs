@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_PhanQuyen));
             this.label2 = new System.Windows.Forms.Label();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.MaNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.TenNV = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -48,28 +47,27 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.grPQ = new DevExpress.XtraEditors.GroupControl();
             this.grCT = new DevExpress.XtraEditors.GroupControl();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.grPhanQuyen = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPhgBan.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grPQ)).BeginInit();
@@ -82,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,17 +95,6 @@
             this.label2.TabIndex = 213;
             this.label2.Text = "PHÂN QUYỀN NHÂN VIÊN";
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(21, 60);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(386, 387);
-            this.gridControl1.TabIndex = 215;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
-            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
@@ -115,7 +103,6 @@
             this.PhgBan,
             this.ChucVu,
             this.MaMH});
-            this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // MaNV
@@ -173,11 +160,10 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.lblPhgban);
-            this.groupControl1.Controls.Add(this.gridControl1);
             this.groupControl1.Controls.Add(this.cboPhgBan);
             this.groupControl1.Location = new System.Drawing.Point(13, 62);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(426, 485);
+            this.groupControl1.Size = new System.Drawing.Size(426, 515);
             this.groupControl1.TabIndex = 218;
             this.groupControl1.Text = "Danh sách quyền nhân viên";
             // 
@@ -254,16 +240,6 @@
             this.textEdit2.Size = new System.Drawing.Size(283, 20);
             this.textEdit2.TabIndex = 9;
             // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(215, 191);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Size = new System.Drawing.Size(62, 48);
-            this.pictureEdit3.TabIndex = 10;
-            // 
             // textEdit3
             // 
             this.textEdit3.EditValue = "*********************************************************************************" +
@@ -285,15 +261,6 @@
             this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit4.Size = new System.Drawing.Size(283, 20);
             this.textEdit4.TabIndex = 13;
-            // 
-            // btnSave
-            // 
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(67, 427);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(83, 54);
-            this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "Save";
             // 
             // grPQ
             // 
@@ -330,6 +297,8 @@
             // 
             // grPhanQuyen
             // 
+            this.grPhanQuyen.Controls.Add(this.simpleButton2);
+            this.grPhanQuyen.Controls.Add(this.btnSave);
             this.grPhanQuyen.Controls.Add(this.pictureEdit1);
             this.grPhanQuyen.Controls.Add(this.pictureEdit5);
             this.grPhanQuyen.Controls.Add(this.label1);
@@ -338,9 +307,7 @@
             this.grPhanQuyen.Controls.Add(this.label4);
             this.grPhanQuyen.Controls.Add(this.pictureEdit2);
             this.grPhanQuyen.Controls.Add(this.label5);
-            this.grPhanQuyen.Controls.Add(this.btnCancel);
             this.grPhanQuyen.Controls.Add(this.label6);
-            this.grPhanQuyen.Controls.Add(this.btnSave);
             this.grPhanQuyen.Controls.Add(this.textEdit1);
             this.grPhanQuyen.Controls.Add(this.textEdit4);
             this.grPhanQuyen.Controls.Add(this.textEdit2);
@@ -352,6 +319,28 @@
             this.grPhanQuyen.TabIndex = 223;
             this.grPhanQuyen.Text = "Phân quyền nhân viên";
             // 
+            // simpleButton2
+            // 
+            this.simpleButton2.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(185, 427);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton2.TabIndex = 225;
+            this.simpleButton2.Text = "Cancel";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::QLTour.Properties.Resources.images;
+            this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
+            this.btnSave.Location = new System.Drawing.Point(66, 427);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(92, 32);
+            this.btnSave.TabIndex = 224;
+            this.btnSave.Text = "Save";
+            // 
             // pictureEdit1
             // 
             this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
@@ -361,6 +350,7 @@
             this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(62, 48);
             this.pictureEdit1.TabIndex = 220;
             // 
@@ -371,6 +361,7 @@
             this.pictureEdit5.Location = new System.Drawing.Point(215, 354);
             this.pictureEdit5.Name = "pictureEdit5";
             this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit5.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit5.Size = new System.Drawing.Size(62, 48);
             this.pictureEdit5.TabIndex = 222;
             // 
@@ -381,6 +372,7 @@
             this.pictureEdit4.Location = new System.Drawing.Point(215, 274);
             this.pictureEdit4.Name = "pictureEdit4";
             this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit4.Size = new System.Drawing.Size(62, 48);
             this.pictureEdit4.TabIndex = 221;
             // 
@@ -391,23 +383,39 @@
             this.pictureEdit2.Location = new System.Drawing.Point(215, 114);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit2.Size = new System.Drawing.Size(62, 48);
             this.pictureEdit2.TabIndex = 219;
             // 
-            // btnCancel
+            // pictureEdit3
             // 
-            this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(194, 427);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(83, 54);
-            this.btnCancel.TabIndex = 19;
-            this.btnCancel.Text = "Cancel";
+            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(215, 191);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit3.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit3.TabIndex = 10;
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));
+            this.simpleButton13.Location = new System.Drawing.Point(1084, 583);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton13.TabIndex = 220;
+            this.simpleButton13.Text = "Trở về";
             // 
             // frm_PhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1202, 601);
+            this.ClientSize = new System.Drawing.Size(1197, 627);
+            this.Controls.Add(this.simpleButton13);
             this.Controls.Add(this.grPQ);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.label2);
@@ -417,7 +425,6 @@
             this.ShowMdiChildCaptionInParentTitle = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboPhgBan.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -425,7 +432,6 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grPQ)).EndInit();
@@ -440,6 +446,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -469,9 +476,7 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.GroupControl grPQ;
-        private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.PictureEdit pictureEdit5;
         private DevExpress.XtraEditors.PictureEdit pictureEdit4;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
@@ -480,6 +485,9 @@
         private DevExpress.XtraEditors.GroupControl grCT;
         private System.Windows.Forms.TextBox textBox1;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
 
 
     }

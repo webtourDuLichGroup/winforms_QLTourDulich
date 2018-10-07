@@ -62,35 +62,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCTTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTTour.Designer.cs">
+      <DependentUpon>frmCTTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhMucDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhMucDichVu.Designer.cs">
+      <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLiHuongDanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLiHuongDanVien.Designer.cs">
+      <DependentUpon>frmQuanLiHuongDanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLiKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLiKhachHang.Designer.cs">
+      <DependentUpon>frmQuanLiKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_PhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_PhanQuyen.Designer.cs">
       <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_QuanLiHuongDanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_QuanLiHuongDanVien.designer.cs">
-      <DependentUpon>frm_QuanLiHuongDanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_ChiTietTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_ChiTietTour.designer.cs">
-      <DependentUpon>frm_ChiTietTour.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_Dangnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_DatTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_DatTour.Designer.cs">
-      <DependentUpon>frm_DatTour.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DoanhThu.cs">
       <SubType>Form</SubType>
@@ -103,18 +109,6 @@
     </Compile>
     <Compile Include="frm_HopDong.Designer.cs">
       <DependentUpon>frm_HopDong.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_KhachSan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_KhachSan.designer.cs">
-      <DependentUpon>frm_KhachSan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_LoaiKhachSan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_LoaiKhachSan.designer.cs">
-      <DependentUpon>frm_LoaiKhachSan.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
@@ -142,32 +136,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QlTourDuLichDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QlTourDuLichDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCTTour.resx">
+      <DependentUpon>frmCTTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhMucDichVu.resx">
+      <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLiHuongDanVien.resx">
+      <DependentUpon>frmQuanLiHuongDanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLiKhachHang.resx">
+      <DependentUpon>frmQuanLiKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_PhanQuyen.resx">
       <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_QuanLiHuongDanVien.resx">
-      <DependentUpon>frm_QuanLiHuongDanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_ChiTietTour.resx">
-      <DependentUpon>frm_ChiTietTour.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_Dangnhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_DatTour.resx">
-      <DependentUpon>frm_DatTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DoanhThu.resx">
       <DependentUpon>frm_DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_HopDong.resx">
       <DependentUpon>frm_HopDong.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_KhachSan.resx">
-      <DependentUpon>frm_KhachSan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_LoaiKhachSan.resx">
-      <DependentUpon>frm_LoaiKhachSan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
@@ -190,6 +186,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
@@ -213,6 +210,38 @@
       <Project>{72e0a559-c5a0-4296-a0cc-db8870996ed0}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QlTourDuLichDataSet.xsc">
+      <DependentUpon>QlTourDuLichDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QlTourDuLichDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QlTourDuLichDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QlTourDuLichDataSet.xss">
+      <DependentUpon>QlTourDuLichDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Violet.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink..PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greeen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

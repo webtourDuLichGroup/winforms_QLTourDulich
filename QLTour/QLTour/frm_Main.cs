@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using BUS;
+using QLTour;
 namespace GUI
 {
     public partial class frm_Main : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -31,14 +32,14 @@ namespace GUI
 
         private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_KhachSan form = new frm_KhachSan();
+            frmDanhMucDichVu form = new frmDanhMucDichVu();
             form.MdiParent = this;
             form.Show();
         }
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_LoaiKhachSan form = new frm_LoaiKhachSan();
+            frmQuanLiHuongDanVien form = new frmQuanLiHuongDanVien();
             form.MdiParent = this;
             form.Show();
         }
@@ -50,7 +51,14 @@ namespace GUI
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_DatTour form = new frm_DatTour();
+            frm_HopDong form = new frm_HopDong();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmQuanLiKhachHang form = new frmQuanLiKhachHang();
             form.MdiParent = this;
             form.Show();
         }

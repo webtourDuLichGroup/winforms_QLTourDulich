@@ -19,13 +19,15 @@ namespace DAO
             this.HOPDONGs = new HashSet<HOPDONG>();
         }
     
-        public string MAKH { get; set; }
-        public string MALOAIKH { get; set; }
-        public string TENKH { get; set; }
-        public string GIOITINH { get; set; }
-        public decimal SDT { get; set; }
-        public string EMAIL { get; set; }
-        public string DIACHI { get; set; }
+        public int MaKH { get; set; }
+        public string TenKH { get; set; }
+        public Nullable<System.DateTime> NgSinh { get; set; }
+        public Nullable<int> GioiTinh { get; set; }
+        public string Email { get; set; }
+        public string SDTKH { get; set; }
+        public string DCKH { get; set; }
+        public Nullable<int> MaLoaiKH { get; set; }
+        public string TenDoanhNghiep { get; set; }
     
         public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
         public virtual LOAIKHACHHANG LOAIKHACHHANG { get; set; }

@@ -1,167 +1,315 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QuanLiTourDuLichModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-  <EntityType Name="CHITIETHOPDONG">
+<Schema Namespace="QlTourDuLichModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="QlTourDuLichEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CTPHIEUNHAP_TOUR" EntityType="QlTourDuLichModel.CTPHIEUNHAP_TOUR" />
+    <EntitySet Name="DIADANHs" EntityType="QlTourDuLichModel.DIADANH" />
+    <EntitySet Name="DIADIEMs" EntityType="QlTourDuLichModel.DIADIEM" />
+    <EntitySet Name="HANHTRINHs" EntityType="QlTourDuLichModel.HANHTRINH" />
+    <EntitySet Name="HOPDONGs" EntityType="QlTourDuLichModel.HOPDONG" />
+    <EntitySet Name="HUONGDANVIENs" EntityType="QlTourDuLichModel.HUONGDANVIEN" />
+    <EntitySet Name="KHACHHANGs" EntityType="QlTourDuLichModel.KHACHHANG" />
+    <EntitySet Name="KHACHSANs" EntityType="QlTourDuLichModel.KHACHSAN" />
+    <EntitySet Name="LOAIKHACHHANGs" EntityType="QlTourDuLichModel.LOAIKHACHHANG" />
+    <EntitySet Name="LOAIKHACHSANs" EntityType="QlTourDuLichModel.LOAIKHACHSAN" />
+    <EntitySet Name="LOAITOURs" EntityType="QlTourDuLichModel.LOAITOUR" />
+    <EntitySet Name="MANHINHs" EntityType="QlTourDuLichModel.MANHINH" />
+    <EntitySet Name="NGUOIDUNGs" EntityType="QlTourDuLichModel.NGUOIDUNG" />
+    <EntitySet Name="NHOMNGUOIDUNGs" EntityType="QlTourDuLichModel.NHOMNGUOIDUNG" />
+    <EntitySet Name="PHANQUYENs" EntityType="QlTourDuLichModel.PHANQUYEN" />
+    <EntitySet Name="PHIEUNHAPTOURs" EntityType="QlTourDuLichModel.PHIEUNHAPTOUR" />
+    <EntitySet Name="QUANLINHOMNGUOIDUNGs" EntityType="QlTourDuLichModel.QUANLINHOMNGUOIDUNG" />
+    <EntitySet Name="sysdiagrams" EntityType="QlTourDuLichModel.sysdiagram" />
+    <EntitySet Name="TOURs" EntityType="QlTourDuLichModel.TOUR" />
+    <AssociationSet Name="FK_CTPHIEUNHAP_MaPN" Association="QlTourDuLichModel.FK_CTPHIEUNHAP_MaPN">
+      <End Role="PHIEUNHAPTOUR" EntitySet="PHIEUNHAPTOURs" />
+      <End Role="CTPHIEUNHAP_TOUR" EntitySet="CTPHIEUNHAP_TOUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CTPHIEUNHAP_MaTour" Association="QlTourDuLichModel.FK_CTPHIEUNHAP_MaTour">
+      <End Role="TOUR" EntitySet="TOURs" />
+      <End Role="CTPHIEUNHAP_TOUR" EntitySet="CTPHIEUNHAP_TOUR" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DiaDiem_DiaDanh" Association="QlTourDuLichModel.FK_DiaDiem_DiaDanh">
+      <End Role="DIADIEM" EntitySet="DIADIEMs" />
+      <End Role="DIADANH" EntitySet="DIADANHs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HT_NDen" Association="QlTourDuLichModel.FK_HT_NDen">
+      <End Role="DIADIEM" EntitySet="DIADIEMs" />
+      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HT_NDi" Association="QlTourDuLichModel.FK_HT_NDi">
+      <End Role="DIADIEM" EntitySet="DIADIEMs" />
+      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KS_DD" Association="QlTourDuLichModel.FK_KS_DD">
+      <End Role="DIADIEM" EntitySet="DIADIEMs" />
+      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOUR_HT" Association="QlTourDuLichModel.FK_TOUR_HT">
+      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
+      <End Role="TOUR" EntitySet="TOURs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HD_MaKH" Association="QlTourDuLichModel.FK_HD_MaKH">
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+      <End Role="HOPDONG" EntitySet="HOPDONGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HD_MaKS" Association="QlTourDuLichModel.FK_HD_MaKS">
+      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
+      <End Role="HOPDONG" EntitySet="HOPDONGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HD_MaTour" Association="QlTourDuLichModel.FK_HD_MaTour">
+      <End Role="TOUR" EntitySet="TOURs" />
+      <End Role="HOPDONG" EntitySet="HOPDONGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOUR_HDV" Association="QlTourDuLichModel.FK_TOUR_HDV">
+      <End Role="HUONGDANVIEN" EntitySet="HUONGDANVIENs" />
+      <End Role="TOUR" EntitySet="TOURs" />
+    </AssociationSet>
+    <AssociationSet Name="PK_KH_LOAI" Association="QlTourDuLichModel.PK_KH_LOAI">
+      <End Role="LOAIKHACHHANG" EntitySet="LOAIKHACHHANGs" />
+      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KS_LKS" Association="QlTourDuLichModel.FK_KS_LKS">
+      <End Role="LOAIKHACHSAN" EntitySet="LOAIKHACHSANs" />
+      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOUR_LOAI" Association="QlTourDuLichModel.FK_TOUR_LOAI">
+      <End Role="LOAITOUR" EntitySet="LOAITOURs" />
+      <End Role="TOUR" EntitySet="TOURs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PQ_MH" Association="QlTourDuLichModel.FK_PQ_MH">
+      <End Role="MANHINH" EntitySet="MANHINHs" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ND_NND" Association="QlTourDuLichModel.FK_ND_NND">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PNT_MANV" Association="QlTourDuLichModel.FK_PNT_MANV">
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+      <End Role="PHIEUNHAPTOUR" EntitySet="PHIEUNHAPTOURs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QLNND_ND" Association="QlTourDuLichModel.FK_QLNND_ND">
+      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
+      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PQ_MN" Association="QlTourDuLichModel.FK_PQ_MN">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
+      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QLNND_NND" Association="QlTourDuLichModel.FK_QLNND_NND">
+      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
+      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CTPHIEUNHAP_TOUR">
     <Key>
-      <PropertyRef Name="MACT_HOPDONG" />
+      <PropertyRef Name="Ma_CTPNhap" />
     </Key>
-    <Property Name="MATOUR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MAHOPDONG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TINHTRANG" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="GHICHU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="MACT_HOPDONG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="HOPDONG" Relationship="Self.FK_CHITIETH_CHITIETHO_HOPDONG" FromRole="CHITIETHOPDONG" ToRole="HOPDONG" />
-    <NavigationProperty Name="TOUR" Relationship="Self.FK_CHITIETH_CHITIETHO_TOUR" FromRole="CHITIETHOPDONG" ToRole="TOUR" />
+    <Property Name="Ma_CTPNhap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTour" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="MaPNhap" Type="Int32" />
+    <NavigationProperty Name="PHIEUNHAPTOUR" Relationship="QlTourDuLichModel.FK_CTPHIEUNHAP_MaPN" FromRole="CTPHIEUNHAP_TOUR" ToRole="PHIEUNHAPTOUR" />
+    <NavigationProperty Name="TOUR" Relationship="QlTourDuLichModel.FK_CTPHIEUNHAP_MaTour" FromRole="CTPHIEUNHAP_TOUR" ToRole="TOUR" />
   </EntityType>
   <EntityType Name="DIADANH">
     <Key>
-      <PropertyRef Name="MADIADANH" />
+      <PropertyRef Name="MaDiaDanh" />
     </Key>
-    <Property Name="MADIADANH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENDIADANH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="DIADIEMs" Relationship="Self.FK_DIADIEM_RELATIONS_DIADANH" FromRole="DIADANH" ToRole="DIADIEM" />
+    <Property Name="MaDiaDanh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDiaDanh" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MaDiaDiem" Type="Int32" />
+    <NavigationProperty Name="DIADIEM" Relationship="QlTourDuLichModel.FK_DiaDiem_DiaDanh" FromRole="DIADANH" ToRole="DIADIEM" />
   </EntityType>
   <EntityType Name="DIADIEM">
     <Key>
-      <PropertyRef Name="MADIADIEM" />
+      <PropertyRef Name="MaDiaDiem" />
     </Key>
-    <Property Name="MADIADIEM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MADIADANH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="TENDIADIEM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="DIADANH" Relationship="Self.FK_DIADIEM_RELATIONS_DIADANH" FromRole="DIADIEM" ToRole="DIADANH" />
-    <NavigationProperty Name="HANHTRINHs" Relationship="Self.FK_HANHTRIN_RELATIONS_DIADIEM" FromRole="DIADIEM" ToRole="HANHTRINH" />
-    <NavigationProperty Name="HANHTRINHs1" Relationship="Self.FK_HANHTRINH_DIADIEM" FromRole="DIADIEM" ToRole="HANHTRINH" />
-    <NavigationProperty Name="KHACHSANs" Relationship="Self.FK_KHACHSAN_RELATIONS_DIADIEM" FromRole="DIADIEM" ToRole="KHACHSAN" />
+    <Property Name="MaDiaDiem" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDiaDiem" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="DIADANHs" Relationship="QlTourDuLichModel.FK_DiaDiem_DiaDanh" FromRole="DIADIEM" ToRole="DIADANH" />
+    <NavigationProperty Name="HANHTRINHs" Relationship="QlTourDuLichModel.FK_HT_NDen" FromRole="DIADIEM" ToRole="HANHTRINH" />
+    <NavigationProperty Name="HANHTRINHs1" Relationship="QlTourDuLichModel.FK_HT_NDi" FromRole="DIADIEM" ToRole="HANHTRINH" />
+    <NavigationProperty Name="KHACHSANs" Relationship="QlTourDuLichModel.FK_KS_DD" FromRole="DIADIEM" ToRole="KHACHSAN" />
   </EntityType>
   <EntityType Name="HANHTRINH">
     <Key>
-      <PropertyRef Name="MAHANTRINH" />
+      <PropertyRef Name="MaHanhTrinh" />
     </Key>
-    <Property Name="MAHANTRINH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="NOIDI" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="NOIDEN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="DIADIEM" Relationship="Self.FK_HANHTRIN_RELATIONS_DIADIEM" FromRole="HANHTRINH" ToRole="DIADIEM" />
-    <NavigationProperty Name="DIADIEM1" Relationship="Self.FK_HANHTRINH_DIADIEM" FromRole="HANHTRINH" ToRole="DIADIEM" />
-    <NavigationProperty Name="TOURs" Relationship="Self.FK_TOUR_RELATIONS_HANHTRIN" FromRole="HANHTRINH" ToRole="TOUR" />
+    <Property Name="MaHanhTrinh" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoiDi" Type="Int32" />
+    <Property Name="NoiDen" Type="Int32" />
+    <NavigationProperty Name="DIADIEM" Relationship="QlTourDuLichModel.FK_HT_NDen" FromRole="HANHTRINH" ToRole="DIADIEM" />
+    <NavigationProperty Name="DIADIEM1" Relationship="QlTourDuLichModel.FK_HT_NDi" FromRole="HANHTRINH" ToRole="DIADIEM" />
+    <NavigationProperty Name="TOURs" Relationship="QlTourDuLichModel.FK_TOUR_HT" FromRole="HANHTRINH" ToRole="TOUR" />
   </EntityType>
   <EntityType Name="HOPDONG">
     <Key>
-      <PropertyRef Name="MAHOPDONG" />
+      <PropertyRef Name="MaHD" />
     </Key>
-    <Property Name="MAHOPDONG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MAKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MAKHACHSAN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="THOIGIANDAT" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="TONGTIEN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <Property Name="SONGUOI" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CHITIETHOPDONGs" Relationship="Self.FK_CHITIETH_CHITIETHO_HOPDONG" FromRole="HOPDONG" ToRole="CHITIETHOPDONG" />
-    <NavigationProperty Name="KHACHHANG" Relationship="Self.FK_HOPDONG_RELATIONS_KHACHHAN" FromRole="HOPDONG" ToRole="KHACHHANG" />
-    <NavigationProperty Name="KHACHSAN" Relationship="Self.FK_HOPDONG_RELATIONS_KHACHSAN" FromRole="HOPDONG" ToRole="KHACHSAN" />
+    <Property Name="MaHD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaTour" Type="Int32" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="MaKS" Type="Int32" />
+    <Property Name="ThoiGianDat" Type="DateTime" Precision="3" />
+    <Property Name="SoNguoiLon" Type="Int32" />
+    <Property Name="SoTreEm" Type="Int32" />
+    <Property Name="TinhTrang" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="KHACHHANG" Relationship="QlTourDuLichModel.FK_HD_MaKH" FromRole="HOPDONG" ToRole="KHACHHANG" />
+    <NavigationProperty Name="KHACHSAN" Relationship="QlTourDuLichModel.FK_HD_MaKS" FromRole="HOPDONG" ToRole="KHACHSAN" />
+    <NavigationProperty Name="TOUR" Relationship="QlTourDuLichModel.FK_HD_MaTour" FromRole="HOPDONG" ToRole="TOUR" />
+  </EntityType>
+  <EntityType Name="HUONGDANVIEN">
+    <Key>
+      <PropertyRef Name="MaHDV" />
+    </Key>
+    <Property Name="MaHDV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenHDV" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SDT" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+    <Property Name="GioiTinh" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="AnhDaiDien" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgayVaoLam" Type="DateTime" Precision="3" />
+    <Property Name="NgonNgu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TOURs" Relationship="QlTourDuLichModel.FK_TOUR_HDV" FromRole="HUONGDANVIEN" ToRole="TOUR" />
   </EntityType>
   <EntityType Name="KHACHHANG">
     <Key>
-      <PropertyRef Name="MAKH" />
+      <PropertyRef Name="MaKH" />
     </Key>
-    <Property Name="MAKH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MALOAIKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="GIOITINH" Type="String" MaxLength="3" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="SDT" Type="Decimal" Precision="11" Scale="0" Nullable="false" />
-    <Property Name="EMAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="DIACHI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="HOPDONGs" Relationship="Self.FK_HOPDONG_RELATIONS_KHACHHAN" FromRole="KHACHHANG" ToRole="HOPDONG" />
-    <NavigationProperty Name="LOAIKHACHHANG" Relationship="Self.FK_KHACHHAN_RELATIONS_LOAIKHAC" FromRole="KHACHHANG" ToRole="LOAIKHACHHANG" />
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKH" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="NgSinh" Type="DateTime" Precision="3" />
+    <Property Name="GioiTinh" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SDTKH" Type="String" MaxLength="11" Unicode="false" FixedLength="true" />
+    <Property Name="DCKH" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MaLoaiKH" Type="Int32" />
+    <Property Name="TenDoanhNghiep" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="HOPDONGs" Relationship="QlTourDuLichModel.FK_HD_MaKH" FromRole="KHACHHANG" ToRole="HOPDONG" />
+    <NavigationProperty Name="LOAIKHACHHANG" Relationship="QlTourDuLichModel.PK_KH_LOAI" FromRole="KHACHHANG" ToRole="LOAIKHACHHANG" />
   </EntityType>
   <EntityType Name="KHACHSAN">
     <Key>
-      <PropertyRef Name="MAKHACHSAN" />
+      <PropertyRef Name="MaKS" />
     </Key>
-    <Property Name="MAKHACHSAN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MADIADIEM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MALOAIKS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENKHACHSAN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="GIATIEN" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <NavigationProperty Name="DIADIEM" Relationship="Self.FK_KHACHSAN_RELATIONS_DIADIEM" FromRole="KHACHSAN" ToRole="DIADIEM" />
-    <NavigationProperty Name="HOPDONGs" Relationship="Self.FK_HOPDONG_RELATIONS_KHACHSAN" FromRole="KHACHSAN" ToRole="HOPDONG" />
-    <NavigationProperty Name="LOAIKHACHSAN" Relationship="Self.FK_KHACHSAN_RELATIONS_LOAIKHAC" FromRole="KHACHSAN" ToRole="LOAIKHACHSAN" />
+    <Property Name="MaKS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaLoaiKS" Type="Int32" />
+    <Property Name="MaDiaDiem" Type="Int32" />
+    <Property Name="GiaTien" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="DIADIEM" Relationship="QlTourDuLichModel.FK_KS_DD" FromRole="KHACHSAN" ToRole="DIADIEM" />
+    <NavigationProperty Name="HOPDONGs" Relationship="QlTourDuLichModel.FK_HD_MaKS" FromRole="KHACHSAN" ToRole="HOPDONG" />
+    <NavigationProperty Name="LOAIKHACHSAN" Relationship="QlTourDuLichModel.FK_KS_LKS" FromRole="KHACHSAN" ToRole="LOAIKHACHSAN" />
   </EntityType>
   <EntityType Name="LOAIKHACHHANG">
     <Key>
-      <PropertyRef Name="MALOAIKH" />
+      <PropertyRef Name="MaLoaiKH" />
     </Key>
-    <Property Name="MALOAIKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENLOAIKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="KHACHHANGs" Relationship="Self.FK_KHACHHAN_RELATIONS_LOAIKHAC" FromRole="LOAIKHACHHANG" ToRole="KHACHHANG" />
+    <Property Name="MaLoaiKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiKH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UuDai" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="KHACHHANGs" Relationship="QlTourDuLichModel.PK_KH_LOAI" FromRole="LOAIKHACHHANG" ToRole="KHACHHANG" />
   </EntityType>
   <EntityType Name="LOAIKHACHSAN">
     <Key>
-      <PropertyRef Name="MALOAIKS" />
+      <PropertyRef Name="MaLoaiKS" />
     </Key>
-    <Property Name="MALOAIKS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENLOAI" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="KHACHSANs" Relationship="Self.FK_KHACHSAN_RELATIONS_LOAIKHAC" FromRole="LOAIKHACHSAN" ToRole="KHACHSAN" />
+    <Property Name="MaLoaiKS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiKS" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="KHACHSANs" Relationship="QlTourDuLichModel.FK_KS_LKS" FromRole="LOAIKHACHSAN" ToRole="KHACHSAN" />
   </EntityType>
   <EntityType Name="LOAITOUR">
     <Key>
-      <PropertyRef Name="MALOAITOUR" />
+      <PropertyRef Name="MaLoaiTour" />
     </Key>
-    <Property Name="MALOAITOUR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENLOAITOUR" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="TOURs" Relationship="Self.FK_TOUR_RELATIONS_LOAITOUR" FromRole="LOAITOUR" ToRole="TOUR" />
+    <Property Name="MaLoaiTour" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiTour" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="TOURs" Relationship="QlTourDuLichModel.FK_TOUR_LOAI" FromRole="LOAITOUR" ToRole="TOUR" />
   </EntityType>
   <EntityType Name="MANHINH">
     <Key>
-      <PropertyRef Name="MAMANHINH" />
+      <PropertyRef Name="MaMH" />
     </Key>
-    <Property Name="MAMANHINH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENMANHINH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="PHANQUYENs" Relationship="Self.FK_PHANQUYE_PHANQUYEN_MANHINH" FromRole="MANHINH" ToRole="PHANQUYEN" />
+    <Property Name="MaMH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenMH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="PHANQUYENs" Relationship="QlTourDuLichModel.FK_PQ_MH" FromRole="MANHINH" ToRole="PHANQUYEN" />
   </EntityType>
   <EntityType Name="NGUOIDUNG">
     <Key>
-      <PropertyRef Name="TENDANGNHAP" />
+      <PropertyRef Name="MaNV" />
     </Key>
-    <Property Name="TENDANGNHAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MATKHAU" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="HOATDONG" Type="Boolean" />
-    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="Self.FK_QUANLINH_QUANLINHO_NGUOIDUN" FromRole="NGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
+    <Property Name="MaNV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDangNhap" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
+    <Property Name="GioiTinh" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="AnhDaiDien" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="SDT" Type="String" MaxLength="11" Unicode="false" FixedLength="false" />
+    <Property Name="TrangThai" Type="Int32" />
+    <Property Name="MatKhauCap2" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="MaPhgBan" Type="Int32" />
+    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="QlTourDuLichModel.FK_ND_NND" FromRole="NGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
+    <NavigationProperty Name="PHIEUNHAPTOURs" Relationship="QlTourDuLichModel.FK_PNT_MANV" FromRole="NGUOIDUNG" ToRole="PHIEUNHAPTOUR" />
+    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="QlTourDuLichModel.FK_QLNND_ND" FromRole="NGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="NHOMNGUOIDUNG">
     <Key>
-      <PropertyRef Name="MANHOM" />
+      <PropertyRef Name="MaNhom" />
     </Key>
-    <Property Name="MANHOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="TENNHOM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="GHICHU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="PHANQUYENs" Relationship="Self.FK_PHANQUYE_PHANQUYEN_NHOMNGUO" FromRole="NHOMNGUOIDUNG" ToRole="PHANQUYEN" />
-    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="Self.FK_QUANLINH_QUANLINHO_NHOMNGUO" FromRole="NHOMNGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
+    <Property Name="MaNhom" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNhom" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="NGUOIDUNGs" Relationship="QlTourDuLichModel.FK_ND_NND" FromRole="NHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
+    <NavigationProperty Name="PHANQUYENs" Relationship="QlTourDuLichModel.FK_PQ_MN" FromRole="NHOMNGUOIDUNG" ToRole="PHANQUYEN" />
+    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="QlTourDuLichModel.FK_QLNND_NND" FromRole="NHOMNGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="PHANQUYEN">
     <Key>
-      <PropertyRef Name="MAPHANQUYEN" />
+      <PropertyRef Name="MaPQ" />
     </Key>
-    <Property Name="MAPHANQUYEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="MANHOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MAMANHINH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="COQUYEN" Type="Boolean" />
-    <NavigationProperty Name="MANHINH" Relationship="Self.FK_PHANQUYE_PHANQUYEN_MANHINH" FromRole="PHANQUYEN" ToRole="MANHINH" />
-    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_PHANQUYE_PHANQUYEN_NHOMNGUO" FromRole="PHANQUYEN" ToRole="NHOMNGUOIDUNG" />
+    <Property Name="MaPQ" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNhom" Type="Int32" />
+    <Property Name="MaMH" Type="Int32" />
+    <Property Name="CoQuyen" Type="Int32" />
+    <NavigationProperty Name="MANHINH" Relationship="QlTourDuLichModel.FK_PQ_MH" FromRole="PHANQUYEN" ToRole="MANHINH" />
+    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="QlTourDuLichModel.FK_PQ_MN" FromRole="PHANQUYEN" ToRole="NHOMNGUOIDUNG" />
+  </EntityType>
+  <EntityType Name="PHIEUNHAPTOUR">
+    <Key>
+      <PropertyRef Name="MaPN" />
+    </Key>
+    <Property Name="MaPN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenPN" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Ngaynhap" Type="DateTime" Precision="0" />
+    <Property Name="MaNV" Type="Int32" />
+    <NavigationProperty Name="CTPHIEUNHAP_TOUR" Relationship="QlTourDuLichModel.FK_CTPHIEUNHAP_MaPN" FromRole="PHIEUNHAPTOUR" ToRole="CTPHIEUNHAP_TOUR" />
+    <NavigationProperty Name="NGUOIDUNG" Relationship="QlTourDuLichModel.FK_PNT_MANV" FromRole="PHIEUNHAPTOUR" ToRole="NGUOIDUNG" />
   </EntityType>
   <EntityType Name="QUANLINHOMNGUOIDUNG">
     <Key>
-      <PropertyRef Name="MAQL_NGUOIDUNG" />
+      <PropertyRef Name="MaQlNguoiDung" />
     </Key>
-    <Property Name="MAQL_NGUOIDUNG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TENDANGNHAP" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MANHOM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="GHICHU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK_QUANLINH_QUANLINHO_NGUOIDUN" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
-    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_QUANLINH_QUANLINHO_NHOMNGUO" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
+    <Property Name="MaQlNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaNhom" Type="Int32" />
+    <Property Name="MaNV" Type="Int32" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="NGUOIDUNG" Relationship="QlTourDuLichModel.FK_QLNND_ND" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
+    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="QlTourDuLichModel.FK_QLNND_NND" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
       <PropertyRef Name="diagram_id" />
     </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
     <Property Name="principal_id" Type="Int32" Nullable="false" />
     <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="version" Type="Int32" />
@@ -169,295 +317,264 @@
   </EntityType>
   <EntityType Name="TOUR">
     <Key>
-      <PropertyRef Name="MATOUR" />
+      <PropertyRef Name="MaTour" />
     </Key>
-    <Property Name="MATOUR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MALOAITOUR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MAHANTRINH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="GIATOUR" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
-    <Property Name="NGAYKHOIHANH" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="NGAYKETTHUC" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-    <Property Name="MOTA" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TENTOUR" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="GIA" Type="Decimal" Precision="19" Scale="4" />
-    <NavigationProperty Name="CHITIETHOPDONGs" Relationship="Self.FK_CHITIETH_CHITIETHO_TOUR" FromRole="TOUR" ToRole="CHITIETHOPDONG" />
-    <NavigationProperty Name="HANHTRINH" Relationship="Self.FK_TOUR_RELATIONS_HANHTRIN" FromRole="TOUR" ToRole="HANHTRINH" />
-    <NavigationProperty Name="LOAITOUR" Relationship="Self.FK_TOUR_RELATIONS_LOAITOUR" FromRole="TOUR" ToRole="LOAITOUR" />
+    <Property Name="MaTour" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenTour" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="NgayKhoiHanh" Type="DateTime" Precision="3" />
+    <Property Name="NgayKetThuc" Type="DateTime" Precision="3" />
+    <Property Name="GiaTreEm" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GiaNguoiLon" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="MoTa" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+    <Property Name="MaLoaiTour" Type="Int32" />
+    <Property Name="MaHanhTrinh" Type="Int32" />
+    <Property Name="MaHDV" Type="Int32" />
+    <Property Name="AnhDaiDien" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="SoLuongDuKhach" Type="Int32" />
+    <NavigationProperty Name="CTPHIEUNHAP_TOUR" Relationship="QlTourDuLichModel.FK_CTPHIEUNHAP_MaTour" FromRole="TOUR" ToRole="CTPHIEUNHAP_TOUR" />
+    <NavigationProperty Name="HANHTRINH" Relationship="QlTourDuLichModel.FK_TOUR_HT" FromRole="TOUR" ToRole="HANHTRINH" />
+    <NavigationProperty Name="HOPDONGs" Relationship="QlTourDuLichModel.FK_HD_MaTour" FromRole="TOUR" ToRole="HOPDONG" />
+    <NavigationProperty Name="HUONGDANVIEN" Relationship="QlTourDuLichModel.FK_TOUR_HDV" FromRole="TOUR" ToRole="HUONGDANVIEN" />
+    <NavigationProperty Name="LOAITOUR" Relationship="QlTourDuLichModel.FK_TOUR_LOAI" FromRole="TOUR" ToRole="LOAITOUR" />
   </EntityType>
-  <Association Name="FK_CHITIETH_CHITIETHO_HOPDONG">
-    <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="1" />
-    <End Role="CHITIETHOPDONG" Type="Self.CHITIETHOPDONG" Multiplicity="*" />
+  <Association Name="FK_CTPHIEUNHAP_MaPN">
+    <End Role="PHIEUNHAPTOUR" Type="QlTourDuLichModel.PHIEUNHAPTOUR" Multiplicity="0..1" />
+    <End Role="CTPHIEUNHAP_TOUR" Type="QlTourDuLichModel.CTPHIEUNHAP_TOUR" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="HOPDONG">
-        <PropertyRef Name="MAHOPDONG" />
+      <Principal Role="PHIEUNHAPTOUR">
+        <PropertyRef Name="MaPN" />
       </Principal>
-      <Dependent Role="CHITIETHOPDONG">
-        <PropertyRef Name="MAHOPDONG" />
+      <Dependent Role="CTPHIEUNHAP_TOUR">
+        <PropertyRef Name="MaPNhap" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_CHITIETH_CHITIETHO_TOUR">
-    <End Role="TOUR" Type="Self.TOUR" Multiplicity="1" />
-    <End Role="CHITIETHOPDONG" Type="Self.CHITIETHOPDONG" Multiplicity="*" />
+  <Association Name="FK_CTPHIEUNHAP_MaTour">
+    <End Role="TOUR" Type="QlTourDuLichModel.TOUR" Multiplicity="0..1" />
+    <End Role="CTPHIEUNHAP_TOUR" Type="QlTourDuLichModel.CTPHIEUNHAP_TOUR" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="TOUR">
-        <PropertyRef Name="MATOUR" />
+        <PropertyRef Name="MaTour" />
       </Principal>
-      <Dependent Role="CHITIETHOPDONG">
-        <PropertyRef Name="MATOUR" />
+      <Dependent Role="CTPHIEUNHAP_TOUR">
+        <PropertyRef Name="MaTour" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_DIADIEM_RELATIONS_DIADANH">
-    <End Role="DIADANH" Type="Self.DIADANH" Multiplicity="0..1" />
-    <End Role="DIADIEM" Type="Self.DIADIEM" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="DIADANH">
-        <PropertyRef Name="MADIADANH" />
-      </Principal>
-      <Dependent Role="DIADIEM">
-        <PropertyRef Name="MADIADANH" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_HANHTRIN_RELATIONS_DIADIEM">
-    <End Role="DIADIEM" Type="Self.DIADIEM" Multiplicity="1" />
-    <End Role="HANHTRINH" Type="Self.HANHTRINH" Multiplicity="*" />
+  <Association Name="FK_DiaDiem_DiaDanh">
+    <End Role="DIADIEM" Type="QlTourDuLichModel.DIADIEM" Multiplicity="0..1" />
+    <End Role="DIADANH" Type="QlTourDuLichModel.DIADANH" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DIADIEM">
-        <PropertyRef Name="MADIADIEM" />
+        <PropertyRef Name="MaDiaDiem" />
+      </Principal>
+      <Dependent Role="DIADANH">
+        <PropertyRef Name="MaDiaDiem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HT_NDen">
+    <End Role="DIADIEM" Type="QlTourDuLichModel.DIADIEM" Multiplicity="0..1" />
+    <End Role="HANHTRINH" Type="QlTourDuLichModel.HANHTRINH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DIADIEM">
+        <PropertyRef Name="MaDiaDiem" />
       </Principal>
       <Dependent Role="HANHTRINH">
-        <PropertyRef Name="NOIDI" />
+        <PropertyRef Name="NoiDen" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_HANHTRINH_DIADIEM">
-    <End Role="DIADIEM" Type="Self.DIADIEM" Multiplicity="0..1" />
-    <End Role="HANHTRINH" Type="Self.HANHTRINH" Multiplicity="*" />
+  <Association Name="FK_HT_NDi">
+    <End Role="DIADIEM" Type="QlTourDuLichModel.DIADIEM" Multiplicity="0..1" />
+    <End Role="HANHTRINH" Type="QlTourDuLichModel.HANHTRINH" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DIADIEM">
-        <PropertyRef Name="MADIADIEM" />
+        <PropertyRef Name="MaDiaDiem" />
       </Principal>
       <Dependent Role="HANHTRINH">
-        <PropertyRef Name="NOIDEN" />
+        <PropertyRef Name="NoiDi" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_KHACHSAN_RELATIONS_DIADIEM">
-    <End Role="DIADIEM" Type="Self.DIADIEM" Multiplicity="1" />
-    <End Role="KHACHSAN" Type="Self.KHACHSAN" Multiplicity="*" />
+  <Association Name="FK_KS_DD">
+    <End Role="DIADIEM" Type="QlTourDuLichModel.DIADIEM" Multiplicity="0..1" />
+    <End Role="KHACHSAN" Type="QlTourDuLichModel.KHACHSAN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DIADIEM">
-        <PropertyRef Name="MADIADIEM" />
+        <PropertyRef Name="MaDiaDiem" />
       </Principal>
       <Dependent Role="KHACHSAN">
-        <PropertyRef Name="MADIADIEM" />
+        <PropertyRef Name="MaDiaDiem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_TOUR_RELATIONS_HANHTRIN">
-    <End Role="HANHTRINH" Type="Self.HANHTRINH" Multiplicity="1" />
-    <End Role="TOUR" Type="Self.TOUR" Multiplicity="*" />
+  <Association Name="FK_TOUR_HT">
+    <End Role="HANHTRINH" Type="QlTourDuLichModel.HANHTRINH" Multiplicity="0..1" />
+    <End Role="TOUR" Type="QlTourDuLichModel.TOUR" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="HANHTRINH">
-        <PropertyRef Name="MAHANTRINH" />
+        <PropertyRef Name="MaHanhTrinh" />
       </Principal>
       <Dependent Role="TOUR">
-        <PropertyRef Name="MAHANTRINH" />
+        <PropertyRef Name="MaHanhTrinh" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_HOPDONG_RELATIONS_KHACHHAN">
-    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="1" />
-    <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+  <Association Name="FK_HD_MaKH">
+    <End Role="KHACHHANG" Type="QlTourDuLichModel.KHACHHANG" Multiplicity="0..1" />
+    <End Role="HOPDONG" Type="QlTourDuLichModel.HOPDONG" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KHACHHANG">
-        <PropertyRef Name="MAKH" />
+        <PropertyRef Name="MaKH" />
       </Principal>
       <Dependent Role="HOPDONG">
-        <PropertyRef Name="MAKH" />
+        <PropertyRef Name="MaKH" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_HOPDONG_RELATIONS_KHACHSAN">
-    <End Role="KHACHSAN" Type="Self.KHACHSAN" Multiplicity="1" />
-    <End Role="HOPDONG" Type="Self.HOPDONG" Multiplicity="*" />
+  <Association Name="FK_HD_MaKS">
+    <End Role="KHACHSAN" Type="QlTourDuLichModel.KHACHSAN" Multiplicity="0..1" />
+    <End Role="HOPDONG" Type="QlTourDuLichModel.HOPDONG" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="KHACHSAN">
-        <PropertyRef Name="MAKHACHSAN" />
+        <PropertyRef Name="MaKS" />
       </Principal>
       <Dependent Role="HOPDONG">
-        <PropertyRef Name="MAKHACHSAN" />
+        <PropertyRef Name="MaKS" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_KHACHHAN_RELATIONS_LOAIKHAC">
-    <End Role="LOAIKHACHHANG" Type="Self.LOAIKHACHHANG" Multiplicity="1" />
-    <End Role="KHACHHANG" Type="Self.KHACHHANG" Multiplicity="*" />
+  <Association Name="FK_HD_MaTour">
+    <End Role="TOUR" Type="QlTourDuLichModel.TOUR" Multiplicity="0..1" />
+    <End Role="HOPDONG" Type="QlTourDuLichModel.HOPDONG" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="LOAIKHACHHANG">
-        <PropertyRef Name="MALOAIKH" />
+      <Principal Role="TOUR">
+        <PropertyRef Name="MaTour" />
       </Principal>
-      <Dependent Role="KHACHHANG">
-        <PropertyRef Name="MALOAIKH" />
+      <Dependent Role="HOPDONG">
+        <PropertyRef Name="MaTour" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_KHACHSAN_RELATIONS_LOAIKHAC">
-    <End Role="LOAIKHACHSAN" Type="Self.LOAIKHACHSAN" Multiplicity="1" />
-    <End Role="KHACHSAN" Type="Self.KHACHSAN" Multiplicity="*" />
+  <Association Name="FK_TOUR_HDV">
+    <End Role="HUONGDANVIEN" Type="QlTourDuLichModel.HUONGDANVIEN" Multiplicity="0..1" />
+    <End Role="TOUR" Type="QlTourDuLichModel.TOUR" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="LOAIKHACHSAN">
-        <PropertyRef Name="MALOAIKS" />
-      </Principal>
-      <Dependent Role="KHACHSAN">
-        <PropertyRef Name="MALOAIKS" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_TOUR_RELATIONS_LOAITOUR">
-    <End Role="LOAITOUR" Type="Self.LOAITOUR" Multiplicity="1" />
-    <End Role="TOUR" Type="Self.TOUR" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="LOAITOUR">
-        <PropertyRef Name="MALOAITOUR" />
+      <Principal Role="HUONGDANVIEN">
+        <PropertyRef Name="MaHDV" />
       </Principal>
       <Dependent Role="TOUR">
-        <PropertyRef Name="MALOAITOUR" />
+        <PropertyRef Name="MaHDV" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PHANQUYE_PHANQUYEN_MANHINH">
-    <End Role="MANHINH" Type="Self.MANHINH" Multiplicity="1" />
-    <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+  <Association Name="PK_KH_LOAI">
+    <End Role="LOAIKHACHHANG" Type="QlTourDuLichModel.LOAIKHACHHANG" Multiplicity="0..1" />
+    <End Role="KHACHHANG" Type="QlTourDuLichModel.KHACHHANG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIKHACHHANG">
+        <PropertyRef Name="MaLoaiKH" />
+      </Principal>
+      <Dependent Role="KHACHHANG">
+        <PropertyRef Name="MaLoaiKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KS_LKS">
+    <End Role="LOAIKHACHSAN" Type="QlTourDuLichModel.LOAIKHACHSAN" Multiplicity="0..1" />
+    <End Role="KHACHSAN" Type="QlTourDuLichModel.KHACHSAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAIKHACHSAN">
+        <PropertyRef Name="MaLoaiKS" />
+      </Principal>
+      <Dependent Role="KHACHSAN">
+        <PropertyRef Name="MaLoaiKS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOUR_LOAI">
+    <End Role="LOAITOUR" Type="QlTourDuLichModel.LOAITOUR" Multiplicity="0..1" />
+    <End Role="TOUR" Type="QlTourDuLichModel.TOUR" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LOAITOUR">
+        <PropertyRef Name="MaLoaiTour" />
+      </Principal>
+      <Dependent Role="TOUR">
+        <PropertyRef Name="MaLoaiTour" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PQ_MH">
+    <End Role="MANHINH" Type="QlTourDuLichModel.MANHINH" Multiplicity="0..1" />
+    <End Role="PHANQUYEN" Type="QlTourDuLichModel.PHANQUYEN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="MANHINH">
-        <PropertyRef Name="MAMANHINH" />
+        <PropertyRef Name="MaMH" />
       </Principal>
       <Dependent Role="PHANQUYEN">
-        <PropertyRef Name="MAMANHINH" />
+        <PropertyRef Name="MaMH" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_QUANLINH_QUANLINHO_NGUOIDUN">
-    <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="1" />
-    <End Role="QUANLINHOMNGUOIDUNG" Type="Self.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
+  <Association Name="FK_ND_NND">
+    <End Role="NHOMNGUOIDUNG" Type="QlTourDuLichModel.NHOMNGUOIDUNG" Multiplicity="0..1" />
+    <End Role="NGUOIDUNG" Type="QlTourDuLichModel.NGUOIDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOMNGUOIDUNG">
+        <PropertyRef Name="MaNhom" />
+      </Principal>
+      <Dependent Role="NGUOIDUNG">
+        <PropertyRef Name="MaPhgBan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PNT_MANV">
+    <End Role="NGUOIDUNG" Type="QlTourDuLichModel.NGUOIDUNG" Multiplicity="0..1" />
+    <End Role="PHIEUNHAPTOUR" Type="QlTourDuLichModel.PHIEUNHAPTOUR" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NGUOIDUNG">
-        <PropertyRef Name="TENDANGNHAP" />
+        <PropertyRef Name="MaNV" />
       </Principal>
-      <Dependent Role="QUANLINHOMNGUOIDUNG">
-        <PropertyRef Name="TENDANGNHAP" />
+      <Dependent Role="PHIEUNHAPTOUR">
+        <PropertyRef Name="MaNV" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PHANQUYE_PHANQUYEN_NHOMNGUO">
-    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="1" />
-    <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
+  <Association Name="FK_QLNND_ND">
+    <End Role="NGUOIDUNG" Type="QlTourDuLichModel.NGUOIDUNG" Multiplicity="0..1" />
+    <End Role="QUANLINHOMNGUOIDUNG" Type="QlTourDuLichModel.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOIDUNG">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="QUANLINHOMNGUOIDUNG">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PQ_MN">
+    <End Role="NHOMNGUOIDUNG" Type="QlTourDuLichModel.NHOMNGUOIDUNG" Multiplicity="0..1" />
+    <End Role="PHANQUYEN" Type="QlTourDuLichModel.PHANQUYEN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NHOMNGUOIDUNG">
-        <PropertyRef Name="MANHOM" />
+        <PropertyRef Name="MaNhom" />
       </Principal>
       <Dependent Role="PHANQUYEN">
-        <PropertyRef Name="MANHOM" />
+        <PropertyRef Name="MaNhom" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_QUANLINH_QUANLINHO_NHOMNGUO">
-    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="1" />
-    <End Role="QUANLINHOMNGUOIDUNG" Type="Self.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
+  <Association Name="FK_QLNND_NND">
+    <End Role="NHOMNGUOIDUNG" Type="QlTourDuLichModel.NHOMNGUOIDUNG" Multiplicity="0..1" />
+    <End Role="QUANLINHOMNGUOIDUNG" Type="QlTourDuLichModel.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NHOMNGUOIDUNG">
-        <PropertyRef Name="MANHOM" />
+        <PropertyRef Name="MaNhom" />
       </Principal>
       <Dependent Role="QUANLINHOMNGUOIDUNG">
-        <PropertyRef Name="MANHOM" />
+        <PropertyRef Name="MaNhom" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="QuanLiTourDuLichEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="CHITIETHOPDONGs" EntityType="Self.CHITIETHOPDONG" />
-    <EntitySet Name="DIADANHs" EntityType="Self.DIADANH" />
-    <EntitySet Name="DIADIEMs" EntityType="Self.DIADIEM" />
-    <EntitySet Name="HANHTRINHs" EntityType="Self.HANHTRINH" />
-    <EntitySet Name="HOPDONGs" EntityType="Self.HOPDONG" />
-    <EntitySet Name="KHACHHANGs" EntityType="Self.KHACHHANG" />
-    <EntitySet Name="KHACHSANs" EntityType="Self.KHACHSAN" />
-    <EntitySet Name="LOAIKHACHHANGs" EntityType="Self.LOAIKHACHHANG" />
-    <EntitySet Name="LOAIKHACHSANs" EntityType="Self.LOAIKHACHSAN" />
-    <EntitySet Name="LOAITOURs" EntityType="Self.LOAITOUR" />
-    <EntitySet Name="MANHINHs" EntityType="Self.MANHINH" />
-    <EntitySet Name="NGUOIDUNGs" EntityType="Self.NGUOIDUNG" />
-    <EntitySet Name="NHOMNGUOIDUNGs" EntityType="Self.NHOMNGUOIDUNG" />
-    <EntitySet Name="PHANQUYENs" EntityType="Self.PHANQUYEN" />
-    <EntitySet Name="QUANLINHOMNGUOIDUNGs" EntityType="Self.QUANLINHOMNGUOIDUNG" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <EntitySet Name="TOURs" EntityType="Self.TOUR" />
-    <AssociationSet Name="FK_CHITIETH_CHITIETHO_HOPDONG" Association="Self.FK_CHITIETH_CHITIETHO_HOPDONG">
-      <End Role="HOPDONG" EntitySet="HOPDONGs" />
-      <End Role="CHITIETHOPDONG" EntitySet="CHITIETHOPDONGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_CHITIETH_CHITIETHO_TOUR" Association="Self.FK_CHITIETH_CHITIETHO_TOUR">
-      <End Role="TOUR" EntitySet="TOURs" />
-      <End Role="CHITIETHOPDONG" EntitySet="CHITIETHOPDONGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_DIADIEM_RELATIONS_DIADANH" Association="Self.FK_DIADIEM_RELATIONS_DIADANH">
-      <End Role="DIADANH" EntitySet="DIADANHs" />
-      <End Role="DIADIEM" EntitySet="DIADIEMs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_HANHTRIN_RELATIONS_DIADIEM" Association="Self.FK_HANHTRIN_RELATIONS_DIADIEM">
-      <End Role="DIADIEM" EntitySet="DIADIEMs" />
-      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_HANHTRINH_DIADIEM" Association="Self.FK_HANHTRINH_DIADIEM">
-      <End Role="DIADIEM" EntitySet="DIADIEMs" />
-      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KHACHSAN_RELATIONS_DIADIEM" Association="Self.FK_KHACHSAN_RELATIONS_DIADIEM">
-      <End Role="DIADIEM" EntitySet="DIADIEMs" />
-      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TOUR_RELATIONS_HANHTRIN" Association="Self.FK_TOUR_RELATIONS_HANHTRIN">
-      <End Role="HANHTRINH" EntitySet="HANHTRINHs" />
-      <End Role="TOUR" EntitySet="TOURs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_HOPDONG_RELATIONS_KHACHHAN" Association="Self.FK_HOPDONG_RELATIONS_KHACHHAN">
-      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
-      <End Role="HOPDONG" EntitySet="HOPDONGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_HOPDONG_RELATIONS_KHACHSAN" Association="Self.FK_HOPDONG_RELATIONS_KHACHSAN">
-      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
-      <End Role="HOPDONG" EntitySet="HOPDONGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KHACHHAN_RELATIONS_LOAIKHAC" Association="Self.FK_KHACHHAN_RELATIONS_LOAIKHAC">
-      <End Role="LOAIKHACHHANG" EntitySet="LOAIKHACHHANGs" />
-      <End Role="KHACHHANG" EntitySet="KHACHHANGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_KHACHSAN_RELATIONS_LOAIKHAC" Association="Self.FK_KHACHSAN_RELATIONS_LOAIKHAC">
-      <End Role="LOAIKHACHSAN" EntitySet="LOAIKHACHSANs" />
-      <End Role="KHACHSAN" EntitySet="KHACHSANs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_TOUR_RELATIONS_LOAITOUR" Association="Self.FK_TOUR_RELATIONS_LOAITOUR">
-      <End Role="LOAITOUR" EntitySet="LOAITOURs" />
-      <End Role="TOUR" EntitySet="TOURs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PHANQUYE_PHANQUYEN_MANHINH" Association="Self.FK_PHANQUYE_PHANQUYEN_MANHINH">
-      <End Role="MANHINH" EntitySet="MANHINHs" />
-      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_QUANLINH_QUANLINHO_NGUOIDUN" Association="Self.FK_QUANLINH_QUANLINHO_NGUOIDUN">
-      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
-      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PHANQUYE_PHANQUYEN_NHOMNGUO" Association="Self.FK_PHANQUYE_PHANQUYEN_NHOMNGUO">
-      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
-      <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
-    </AssociationSet>
-    <AssociationSet Name="FK_QUANLINH_QUANLINHO_NHOMNGUO" Association="Self.FK_QUANLINH_QUANLINHO_NHOMNGUO">
-      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
-      <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
-    </AssociationSet>
-  </EntityContainer>
 </Schema>

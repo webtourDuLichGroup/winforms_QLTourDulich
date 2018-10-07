@@ -19,9 +19,9 @@ namespace DAO
             this.TOURs = new HashSet<TOUR>();
         }
     
-        public string MAHANTRINH { get; set; }
-        public string NOIDI { get; set; }
-        public string NOIDEN { get; set; }
+        public int MaHanhTrinh { get; set; }
+        public Nullable<int> NoiDi { get; set; }
+        public Nullable<int> NoiDen { get; set; }
     
         public virtual DIADIEM DIADIEM { get; set; }
         public virtual DIADIEM DIADIEM1 { get; set; }
