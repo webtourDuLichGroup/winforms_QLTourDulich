@@ -204,6 +204,7 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QuanLiNhanVien.r
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_ThayDoiDichVu.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_Tour.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_KhachSan.resources
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frmCTTour.resources
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frmDanhMucDichVu.resources
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frmQuanLiHuongDanVien.resources
@@ -219,5 +220,4 @@ C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.Properties.Resources.resources
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csproj.GenerateResource.Cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe.licenses
-C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.exe.config

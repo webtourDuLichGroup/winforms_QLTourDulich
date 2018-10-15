@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label maKHLabel;
             System.Windows.Forms.Label tenKHLabel;
             System.Windows.Forms.Label ngSinhLabel;
@@ -39,10 +38,9 @@
             System.Windows.Forms.Label tenDoanhNghiepLabel;
             System.Windows.Forms.Label gioiTinhLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLiKhachHang));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gioiTinhRadioButton = new System.Windows.Forms.RadioButton();
-            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource();
             this.qlTourDuLichDataSet = new QLTour.QlTourDuLichDataSet();
             this.maKHSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.tenKHTextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -84,7 +82,7 @@
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.kHACHHANGTableAdapter = new QLTour.QlTourDuLichDataSetTableAdapters.KHACHHANGTableAdapter();
             this.tableAdapterManager = new QLTour.QlTourDuLichDataSetTableAdapters.TableAdapterManager();
-            this.kHACHHANGBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.kHACHHANGBindingNavigator = new System.Windows.Forms.BindingNavigator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
@@ -244,9 +242,9 @@
             this.groupControl2.Controls.Add(this.simpleButton6);
             this.groupControl2.Controls.Add(this.simpleButton7);
             this.groupControl2.Controls.Add(this.textEdit5);
-            this.groupControl2.Location = new System.Drawing.Point(308, 51);
+            this.groupControl2.Location = new System.Drawing.Point(298, 93);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(664, 265);
+            this.groupControl2.Size = new System.Drawing.Size(664, 263);
             this.groupControl2.TabIndex = 14;
             this.groupControl2.Text = "groupControl2";
             // 
@@ -424,7 +422,7 @@
             // textEdit5
             // 
             this.textEdit5.EditValue = "Thong tin khach hang";
-            this.textEdit5.Location = new System.Drawing.Point(0, 0);
+            this.textEdit5.Location = new System.Drawing.Point(-1, -3);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Properties.Appearance.BackColor = System.Drawing.Color.Maroon;
             this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,7 +430,7 @@
             this.textEdit5.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit5.Properties.Appearance.Options.UseFont = true;
             this.textEdit5.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit5.Size = new System.Drawing.Size(644, 32);
+            this.textEdit5.Size = new System.Drawing.Size(665, 32);
             this.textEdit5.TabIndex = 24;
             // 
             // groupControl1
@@ -449,7 +447,7 @@
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.textEdit1);
             this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Location = new System.Drawing.Point(12, 48);
+            this.groupControl1.Location = new System.Drawing.Point(12, 93);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(280, 263);
             this.groupControl1.TabIndex = 13;
@@ -542,7 +540,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(344, 9);
+            this.label1.Location = new System.Drawing.Point(324, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 25);
             this.label1.TabIndex = 12;
@@ -572,14 +570,6 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
             this.kHACHHANGDataGridView.DataSource = this.kHACHHANGBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.kHACHHANGDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.kHACHHANGDataGridView.Location = new System.Drawing.Point(17, 33);
             this.kHACHHANGDataGridView.Name = "kHACHHANGDataGridView";
             this.kHACHHANGDataGridView.Size = new System.Drawing.Size(918, 220);

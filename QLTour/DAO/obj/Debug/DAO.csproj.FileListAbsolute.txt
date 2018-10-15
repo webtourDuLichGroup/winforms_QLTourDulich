@@ -33,4 +33,3 @@ C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\Entity
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.xml
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
-C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
