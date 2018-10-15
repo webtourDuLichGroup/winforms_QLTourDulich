@@ -15,5 +15,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+        private void labelControl17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

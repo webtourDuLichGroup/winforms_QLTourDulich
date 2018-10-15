@@ -16,22 +16,27 @@ namespace DAO
     {
         public TOUR()
         {
-            this.CHITIETHOPDONGs = new HashSet<CHITIETHOPDONG>();
+            this.CTPHIEUNHAP_TOUR = new HashSet<CTPHIEUNHAP_TOUR>();
+            this.HOPDONGs = new HashSet<HOPDONG>();
         }
     
-        public string MATOUR { get; set; }
-        public string MALOAITOUR { get; set; }
-        public string MAHANTRINH { get; set; }
-        public decimal GIATOUR { get; set; }
-        public System.DateTime NGAYKHOIHANH { get; set; }
-        public System.DateTime NGAYKETTHUC { get; set; }
-        public byte[] HINHANH { get; set; }
-        public string MOTA { get; set; }
-        public string TENTOUR { get; set; }
-        public Nullable<decimal> GIA { get; set; }
+        public int MaTour { get; set; }
+        public string TenTour { get; set; }
+        public Nullable<System.DateTime> NgayKhoiHanh { get; set; }
+        public Nullable<System.DateTime> NgayKetThuc { get; set; }
+        public Nullable<decimal> GiaTreEm { get; set; }
+        public Nullable<decimal> GiaNguoiLon { get; set; }
+        public string MoTa { get; set; }
+        public Nullable<int> MaLoaiTour { get; set; }
+        public Nullable<int> MaHanhTrinh { get; set; }
+        public Nullable<int> MaHDV { get; set; }
+        public string AnhDaiDien { get; set; }
+        public Nullable<int> SoLuongDuKhach { get; set; }
     
-        public virtual ICollection<CHITIETHOPDONG> CHITIETHOPDONGs { get; set; }
+        public virtual ICollection<CTPHIEUNHAP_TOUR> CTPHIEUNHAP_TOUR { get; set; }
         public virtual HANHTRINH HANHTRINH { get; set; }
+        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
+        public virtual HUONGDANVIEN HUONGDANVIEN { get; set; }
         public virtual LOAITOUR LOAITOUR { get; set; }
     }
 }

@@ -28,58 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_tendn = new DevExpress.XtraEditors.TextEdit();
-            this.txt_matkhau = new DevExpress.XtraEditors.TextEdit();
-            this.btn_dangnhap = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_tendn.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_matkhau.Properties)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_DangNhap));
+            this.txtMK = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.cboTenDN = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.btnDN = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMK.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboTenDN.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // txt_tendn
+            // txtMK
             // 
-            this.txt_tendn.Location = new System.Drawing.Point(74, 81);
-            this.txt_tendn.Name = "txt_tendn";
-            this.txt_tendn.Size = new System.Drawing.Size(131, 20);
-            this.txt_tendn.TabIndex = 0;
+            this.txtMK.Location = new System.Drawing.Point(299, 117);
+            this.txtMK.Name = "txtMK";
+            this.txtMK.Size = new System.Drawing.Size(170, 20);
+            this.txtMK.TabIndex = 0;
             // 
-            // txt_matkhau
+            // labelControl1
             // 
-            this.txt_matkhau.Location = new System.Drawing.Point(74, 126);
-            this.txt_matkhau.Name = "txt_matkhau";
-            this.txt_matkhau.Properties.PasswordChar = '*';
-            this.txt_matkhau.Size = new System.Drawing.Size(131, 20);
-            this.txt_matkhau.TabIndex = 1;
+            this.labelControl1.Location = new System.Drawing.Point(196, 83);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(72, 13);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "Tên đăng nhập";
             // 
-            // btn_dangnhap
+            // cboTenDN
             // 
-            this.btn_dangnhap.Location = new System.Drawing.Point(92, 162);
-            this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(75, 21);
-            this.btn_dangnhap.TabIndex = 2;
-            this.btn_dangnhap.Text = "&Đăng nhập";
-            this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
+            this.cboTenDN.Location = new System.Drawing.Point(299, 80);
+            this.cboTenDN.Name = "cboTenDN";
+            this.cboTenDN.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboTenDN.Size = new System.Drawing.Size(170, 20);
+            this.cboTenDN.TabIndex = 4;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit1.Location = new System.Drawing.Point(31, 55);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit1.Size = new System.Drawing.Size(144, 136);
+            this.pictureEdit1.TabIndex = 5;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(196, 120);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(44, 13);
+            this.labelControl2.TabIndex = 6;
+            this.labelControl2.Text = "Mật khẩu";
+            // 
+            // btnDN
+            // 
+            this.btnDN.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDN.BackgroundImage")));
+            this.btnDN.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnDN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDN.ImageOptions.Image")));
+            this.btnDN.Location = new System.Drawing.Point(215, 159);
+            this.btnDN.Name = "btnDN";
+            this.btnDN.Size = new System.Drawing.Size(92, 32);
+            this.btnDN.TabIndex = 36;
+            this.btnDN.Text = "&Sign In";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
+            this.btnCancel.Location = new System.Drawing.Point(325, 159);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(92, 32);
+            this.btnCancel.TabIndex = 38;
+            this.btnCancel.Text = "Cancel";
             // 
             // frm_DangNhap
             // 
+            this.Appearance.BackColor = System.Drawing.Color.AliceBlue;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 242);
-            this.Controls.Add(this.btn_dangnhap);
-            this.Controls.Add(this.txt_matkhau);
-            this.Controls.Add(this.txt_tendn);
+            this.ClientSize = new System.Drawing.Size(551, 305);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnDN);
+            this.Controls.Add(this.labelControl2);
+            this.Controls.Add(this.pictureEdit1);
+            this.Controls.Add(this.cboTenDN);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.txtMK);
             this.Name = "frm_DangNhap";
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.frm_DangNhap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txt_tendn.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_matkhau.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMK.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboTenDN.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.TextEdit txt_tendn;
-        private DevExpress.XtraEditors.TextEdit txt_matkhau;
-        private DevExpress.XtraEditors.SimpleButton btn_dangnhap;
+        private DevExpress.XtraEditors.TextEdit txtMK;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit cboTenDN;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.SimpleButton btnDN;
+        private DevExpress.XtraEditors.SimpleButton btnCancel;
     }
 }

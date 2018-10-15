@@ -22,7 +22,7 @@ namespace GUI
 
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            string tendn = txt_tendn.Text;
+            string tendn = txtMK.Text;
             string matkhau = txt_matkhau.Text;
 
             if (BUS.DangNhapBus.DangNhap(tendn,matkhau))

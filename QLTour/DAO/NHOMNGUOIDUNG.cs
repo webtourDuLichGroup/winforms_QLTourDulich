@@ -16,14 +16,16 @@ namespace DAO
     {
         public NHOMNGUOIDUNG()
         {
+            this.NGUOIDUNGs = new HashSet<NGUOIDUNG>();
             this.PHANQUYENs = new HashSet<PHANQUYEN>();
             this.QUANLINHOMNGUOIDUNGs = new HashSet<QUANLINHOMNGUOIDUNG>();
         }
     
-        public string MANHOM { get; set; }
-        public string TENNHOM { get; set; }
-        public string GHICHU { get; set; }
+        public int MaNhom { get; set; }
+        public string TenNhom { get; set; }
+        public string GhiChu { get; set; }
     
+        public virtual ICollection<NGUOIDUNG> NGUOIDUNGs { get; set; }
         public virtual ICollection<PHANQUYEN> PHANQUYENs { get; set; }
         public virtual ICollection<QUANLINHOMNGUOIDUNG> QUANLINHOMNGUOIDUNGs { get; set; }
     }

@@ -19,8 +19,8 @@ namespace DAO
             this.KHACHSANs = new HashSet<KHACHSAN>();
         }
     
-        public string MALOAIKS { get; set; }
-        public string TENLOAI { get; set; }
+        public int MaLoaiKS { get; set; }
+        public string TenLoaiKS { get; set; }
     
         public virtual ICollection<KHACHSAN> KHACHSANs { get; set; }
     }

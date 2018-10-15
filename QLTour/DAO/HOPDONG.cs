@@ -14,20 +14,19 @@ namespace DAO
     
     public partial class HOPDONG
     {
-        public HOPDONG()
-        {
-            this.CHITIETHOPDONGs = new HashSet<CHITIETHOPDONG>();
-        }
+        public int MaHD { get; set; }
+        public Nullable<int> MaTour { get; set; }
+        public Nullable<int> MaKH { get; set; }
+        public Nullable<int> MaKS { get; set; }
+        public Nullable<System.DateTime> ThoiGianDat { get; set; }
+        public Nullable<int> SoNguoiLon { get; set; }
+        public Nullable<int> SoTreEm { get; set; }
+        public string TinhTrang { get; set; }
+        public string GhiChu { get; set; }
+        public Nullable<decimal> TongTien { get; set; }
     
-        public string MAHOPDONG { get; set; }
-        public string MAKH { get; set; }
-        public string MAKHACHSAN { get; set; }
-        public System.DateTime THOIGIANDAT { get; set; }
-        public decimal TONGTIEN { get; set; }
-        public int SONGUOI { get; set; }
-    
-        public virtual ICollection<CHITIETHOPDONG> CHITIETHOPDONGs { get; set; }
         public virtual KHACHHANG KHACHHANG { get; set; }
         public virtual KHACHSAN KHACHSAN { get; set; }
+        public virtual TOUR TOUR { get; set; }
     }
 }

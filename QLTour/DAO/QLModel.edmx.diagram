@@ -4,40 +4,46 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="13623aee3ea9450a81ce0e5bb3b89cdb" Name="Diagram1">
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.CHITIETHOPDONG" Width="1.5" PointX="9.75" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.DIADANH" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.DIADIEM" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.HANHTRINH" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.HOPDONG" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.KHACHHANG" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.KHACHSAN" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.LOAIKHACHHANG" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.LOAIKHACHSAN" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.LOAITOUR" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.MANHINH" Width="1.5" PointX="7.75" PointY="17.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.NGUOIDUNG" Width="1.5" PointX="7.75" PointY="14.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.NHOMNGUOIDUNG" Width="1.5" PointX="7.75" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.PHANQUYEN" Width="1.5" PointX="10" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.QUANLINHOMNGUOIDUNG" Width="1.5" PointX="10" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.sysdiagram" Width="1.5" PointX="0.75" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLiTourDuLichModel.TOUR" Width="1.5" PointX="7.5" PointY="4.375" IsExpanded="true" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_CHITIETH_CHITIETHO_HOPDONG" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_CHITIETH_CHITIETHO_TOUR" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_DIADIEM_RELATIONS_DIADANH" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_HANHTRIN_RELATIONS_DIADIEM" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_HANHTRINH_DIADIEM" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_KHACHSAN_RELATIONS_DIADIEM" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_TOUR_RELATIONS_HANHTRIN" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_HOPDONG_RELATIONS_KHACHHAN" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_HOPDONG_RELATIONS_KHACHSAN" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_KHACHHAN_RELATIONS_LOAIKHAC" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_KHACHSAN_RELATIONS_LOAIKHAC" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_TOUR_RELATIONS_LOAITOUR" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_PHANQUYE_PHANQUYEN_MANHINH" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_QUANLINH_QUANLINHO_NGUOIDUN" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_PHANQUYE_PHANQUYEN_NHOMNGUO" ManuallyRouted="false" />
-        <AssociationConnector Association="QuanLiTourDuLichModel.FK_QUANLINH_QUANLINHO_NHOMNGUO" ManuallyRouted="false" />
+      <Diagram DiagramId="dc7368238229439497655e6539d3ba67" Name="Diagram1">
+        <EntityTypeShape EntityType="QlTourDuLichModel.CTPHIEUNHAP_TOUR" Width="1.5" PointX="7.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.DIADANH" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.DIADIEM" Width="1.5" PointX="0.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.HANHTRINH" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.HOPDONG" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.HUONGDANVIEN" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.KHACHHANG" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.KHACHSAN" Width="1.5" PointX="6" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.LOAIKHACHHANG" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.LOAIKHACHSAN" Width="1.5" PointX="3.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.LOAITOUR" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.MANHINH" Width="1.5" PointX="3.75" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.NGUOIDUNG" Width="1.5" PointX="3" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.NHOMNGUOIDUNG" Width="1.5" PointX="0.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.PHANQUYEN" Width="1.5" PointX="6" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.PHIEUNHAPTOUR" Width="1.5" PointX="5.25" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.QUANLINHOMNGUOIDUNG" Width="1.5" PointX="5.25" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.sysdiagram" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QlTourDuLichModel.TOUR" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_CTPHIEUNHAP_MaPN" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_CTPHIEUNHAP_MaTour" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_DiaDiem_DiaDanh" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_HT_NDen" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_HT_NDi" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_KS_DD" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_TOUR_HT" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_HD_MaKH" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_HD_MaKS" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_HD_MaTour" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_TOUR_HDV" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.PK_KH_LOAI" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_KS_LKS" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_TOUR_LOAI" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_PQ_MH" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_ND_NND" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_PNT_MANV" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_QLNND_ND" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_PQ_MN" ManuallyRouted="false" />
+        <AssociationConnector Association="QlTourDuLichModel.FK_QLNND_NND" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -14,10 +14,10 @@ namespace DAO
     
     public partial class PHANQUYEN
     {
-        public string MAPHANQUYEN { get; set; }
-        public string MANHOM { get; set; }
-        public string MAMANHINH { get; set; }
-        public bool COQUYEN { get; set; }
+        public int MaPQ { get; set; }
+        public Nullable<int> MaNhom { get; set; }
+        public Nullable<int> MaMH { get; set; }
+        public Nullable<int> CoQuyen { get; set; }
     
         public virtual MANHINH MANHINH { get; set; }
         public virtual NHOMNGUOIDUNG NHOMNGUOIDUNG { get; set; }

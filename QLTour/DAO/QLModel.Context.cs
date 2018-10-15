@@ -13,10 +13,10 @@ namespace DAO
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QuanLiTourDuLichEntities : DbContext
+    public partial class QlTourDuLichEntities : DbContext
     {
-        public QuanLiTourDuLichEntities()
-            : base("name=QuanLiTourDuLichEntities")
+        public QlTourDuLichEntities()
+            : base("name=QlTourDuLichEntities")
         {
         }
     
@@ -25,11 +25,12 @@ namespace DAO
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<CHITIETHOPDONG> CHITIETHOPDONGs { get; set; }
+        public DbSet<CTPHIEUNHAP_TOUR> CTPHIEUNHAP_TOUR { get; set; }
         public DbSet<DIADANH> DIADANHs { get; set; }
         public DbSet<DIADIEM> DIADIEMs { get; set; }
         public DbSet<HANHTRINH> HANHTRINHs { get; set; }
         public DbSet<HOPDONG> HOPDONGs { get; set; }
+        public DbSet<HUONGDANVIEN> HUONGDANVIENs { get; set; }
         public DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public DbSet<KHACHSAN> KHACHSANs { get; set; }
         public DbSet<LOAIKHACHHANG> LOAIKHACHHANGs { get; set; }
@@ -39,6 +40,7 @@ namespace DAO
         public DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
         public DbSet<NHOMNGUOIDUNG> NHOMNGUOIDUNGs { get; set; }
         public DbSet<PHANQUYEN> PHANQUYENs { get; set; }
+        public DbSet<PHIEUNHAPTOUR> PHIEUNHAPTOURs { get; set; }
         public DbSet<QUANLINHOMNGUOIDUNG> QUANLINHOMNGUOIDUNGs { get; set; }
         public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<TOUR> TOURs { get; set; }
