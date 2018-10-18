@@ -26,3 +26,15 @@ D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompileInput
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
 D:\School\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
+<<<<<<< HEAD:winforms_QLTourDulich/QLTour/DAO/obj/Debug/DAO.csproj.FileListAbsolute.txt
+=======
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll.config
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.pdb
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.xml
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.pdb
+>>>>>>> master:QLTour/DAO/obj/Debug/DAO.csproj.FileListAbsolute.txt

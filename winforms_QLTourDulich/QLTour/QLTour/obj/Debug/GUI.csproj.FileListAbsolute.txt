@@ -202,3 +202,6 @@ C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\winforms_QLTourDulich
 C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.Frm_LoaiKhachSan.resources
 C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.Frm_Tour.resources
 C:\Users\quangduyvo\Desktop\Winforms\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.Frm_KhachSan.resources
+C:\Users\quangduyvo\Desktop\winform_tour\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\QLTour.exe.config
+C:\Users\quangduyvo\Desktop\winform_tour\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.exe
+C:\Users\quangduyvo\Desktop\winform_tour\winforms_QLTourDulich\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.pdb
