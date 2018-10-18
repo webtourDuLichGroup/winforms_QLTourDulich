@@ -191,7 +191,6 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ru\DevExpress.Office.v17
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_PhanQuyen.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_DoanhThu.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_HopDong.resources
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_ThayDoiDichVu.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_Tour.resources
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.csprojResolveAssemblyReference.cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\QLTour.frmCTTour.resources

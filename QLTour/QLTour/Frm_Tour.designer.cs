@@ -368,7 +368,6 @@
             // 
             // btn_Reset
             // 
-            this.btn_Reset.BackgroundImage = global::QLTour.Properties.Resources.greeen;
             this.btn_Reset.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btn_Reset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Reset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reset.ImageOptions.Image")));
