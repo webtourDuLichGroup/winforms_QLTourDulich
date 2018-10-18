@@ -1,4 +1,4 @@
-﻿namespace QLTour
+﻿namespace GUI
 {
     partial class frm_QuanLiNhanVien
     {
@@ -104,7 +104,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(143, 179);
@@ -115,7 +115,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.btnOK.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.btnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnOK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageOptions.Image")));
             this.btnOK.Location = new System.Drawing.Point(29, 179);
@@ -219,7 +219,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton1.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(423, 179);
@@ -230,7 +230,7 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.BackgroundImage = global::QLTour.Properties.Resources.images;
+            this.simpleButton3.BackgroundImage = global::GUI.Properties.Resources.images;
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(325, 179);
@@ -252,7 +252,7 @@
             // 
             // simpleButton5
             // 
-            this.simpleButton5.BackgroundImage = global::QLTour.Properties.Resources.images__1_;
+            this.simpleButton5.BackgroundImage = global::GUI.Properties.Resources.images__1_;
             this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(227, 179);
@@ -263,7 +263,7 @@
             // 
             // simpleButton6
             // 
-            this.simpleButton6.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.simpleButton6.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
@@ -275,7 +275,7 @@
             // 
             // simpleButton7
             // 
-            this.simpleButton7.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.simpleButton7.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.Location = new System.Drawing.Point(532, 179);
@@ -447,7 +447,7 @@
             // 
             // simpleButton13
             // 
-            this.simpleButton13.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));

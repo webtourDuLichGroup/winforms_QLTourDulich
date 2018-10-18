@@ -14,9 +14,9 @@ namespace DAO
     
     public partial class QUANLINHOMNGUOIDUNG
     {
-        public int MaQlNguoiDung { get; set; }
+        public string MaQlNguoiDung { get; set; }
         public Nullable<int> MaNhom { get; set; }
-        public Nullable<int> MaNV { get; set; }
+        public string MaNV { get; set; }
         public string GhiChu { get; set; }
     
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }

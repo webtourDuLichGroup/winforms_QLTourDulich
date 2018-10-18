@@ -33,3 +33,5 @@ C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\Entity
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.xml
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.dll
+D:\School\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.pdb

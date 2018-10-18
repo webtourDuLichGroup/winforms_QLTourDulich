@@ -96,7 +96,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.btnCancel.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.Location = new System.Drawing.Point(325, 159);

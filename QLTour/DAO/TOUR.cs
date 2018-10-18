@@ -16,27 +16,29 @@ namespace DAO
     {
         public TOUR()
         {
+            this.ChiTietHopDongs = new HashSet<ChiTietHopDong>();
             this.CTPHIEUNHAP_TOUR = new HashSet<CTPHIEUNHAP_TOUR>();
-            this.HOPDONGs = new HashSet<HOPDONG>();
         }
     
-        public int MaTour { get; set; }
+        public string MaTour { get; set; }
+        public string MaKS { get; set; }
         public string TenTour { get; set; }
         public Nullable<System.DateTime> NgayKhoiHanh { get; set; }
         public Nullable<System.DateTime> NgayKetThuc { get; set; }
         public Nullable<decimal> GiaTreEm { get; set; }
         public Nullable<decimal> GiaNguoiLon { get; set; }
         public string MoTa { get; set; }
-        public Nullable<int> MaLoaiTour { get; set; }
-        public Nullable<int> MaHanhTrinh { get; set; }
+        public string MaLoaiTour { get; set; }
+        public string MaHanhTrinh { get; set; }
         public Nullable<int> MaHDV { get; set; }
         public string AnhDaiDien { get; set; }
         public Nullable<int> SoLuongDuKhach { get; set; }
     
+        public virtual ICollection<ChiTietHopDong> ChiTietHopDongs { get; set; }
         public virtual ICollection<CTPHIEUNHAP_TOUR> CTPHIEUNHAP_TOUR { get; set; }
         public virtual HANHTRINH HANHTRINH { get; set; }
-        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
         public virtual HUONGDANVIEN HUONGDANVIEN { get; set; }
+        public virtual KHACHSAN KHACHSAN { get; set; }
         public virtual LOAITOUR LOAITOUR { get; set; }
     }
 }

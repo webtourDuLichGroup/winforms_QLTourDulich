@@ -8,7 +8,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace QLTour
+namespace GUI
 {
     public partial class frmQuanLiHuongDanVien : DevExpress.XtraEditors.XtraForm
     {

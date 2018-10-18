@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using BUS;
-using QLTour;
+using GUI;
 namespace GUI
 {
     public partial class frm_Main : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -19,7 +19,6 @@ namespace GUI
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            QuyenNguoiDungBus.A();
             //QuyenNguoiDungBus.PhanQuyenManHinh(this.ribbonMenu, "khadaica");
         }
 
@@ -51,7 +50,7 @@ namespace GUI
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_HopDong form = new frm_HopDong();
+            frm_Tour form = new frm_Tour();
             form.MdiParent = this;
             form.Show();
         }

@@ -22,20 +22,20 @@ namespace GUI
 
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            string tendn = txtMK.Text;
-            string matkhau = txt_matkhau.Text;
+            //string tendn = txtMK.Text;
+            //string matkhau = txt_matkhau.Text;
 
-            if (BUS.DangNhapBus.DangNhap(tendn,matkhau))
-            {
-                this.Close();
-                th = new Thread(OpenForm);
-                th.SetApartmentState(ApartmentState.STA);
-                th.Start();
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại");
-            }
+            //if (BUS.DangNhapBus.DangNhap(tendn,matkhau))
+            //{
+            //    this.Close();
+            //    th = new Thread(OpenForm);
+            //    th.SetApartmentState(ApartmentState.STA);
+            //    th.Start();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Đăng nhập thất bại");
+            //}
 
         }
 

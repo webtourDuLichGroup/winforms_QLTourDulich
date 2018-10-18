@@ -19,14 +19,14 @@ namespace DAO
             this.HOPDONGs = new HashSet<HOPDONG>();
         }
     
-        public int MaKH { get; set; }
+        public string MaKH { get; set; }
         public string TenKH { get; set; }
         public Nullable<System.DateTime> NgSinh { get; set; }
         public Nullable<int> GioiTinh { get; set; }
         public string Email { get; set; }
         public string SDTKH { get; set; }
         public string DCKH { get; set; }
-        public Nullable<int> MaLoaiKH { get; set; }
+        public string MaLoaiKH { get; set; }
         public string TenDoanhNghiep { get; set; }
     
         public virtual ICollection<HOPDONG> HOPDONGs { get; set; }

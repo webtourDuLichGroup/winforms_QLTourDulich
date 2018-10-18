@@ -19,10 +19,10 @@ namespace DAO
             this.CTPHIEUNHAP_TOUR = new HashSet<CTPHIEUNHAP_TOUR>();
         }
     
-        public int MaPN { get; set; }
+        public string MaPN { get; set; }
         public string TenPN { get; set; }
         public Nullable<System.DateTime> Ngaynhap { get; set; }
-        public Nullable<int> MaNV { get; set; }
+        public string MaNV { get; set; }
     
         public virtual ICollection<CTPHIEUNHAP_TOUR> CTPHIEUNHAP_TOUR { get; set; }
         public virtual NGUOIDUNG NGUOIDUNG { get; set; }

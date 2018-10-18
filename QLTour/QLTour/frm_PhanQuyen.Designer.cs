@@ -320,7 +320,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(185, 427);
@@ -331,7 +331,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackgroundImage = global::QLTour.Properties.Resources.images;
+            this.btnSave.BackgroundImage = global::GUI.Properties.Resources.images;
             this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.Location = new System.Drawing.Point(66, 427);
@@ -399,7 +399,7 @@
             // 
             // simpleButton13
             // 
-            this.simpleButton13.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));

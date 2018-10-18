@@ -1,4 +1,4 @@
-﻿namespace QLTour
+﻿namespace GUI
 {
     partial class frmQuanLiKhachHang
     {
@@ -41,7 +41,6 @@
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.gioiTinhRadioButton = new System.Windows.Forms.RadioButton();
             this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource();
-            this.qlTourDuLichDataSet = new QLTour.QlTourDuLichDataSet();
             this.maKHSpinEdit = new DevExpress.XtraEditors.SpinEdit();
             this.tenKHTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.ngSinhDateEdit = new DevExpress.XtraEditors.DateEdit();
@@ -80,8 +79,6 @@
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.kHACHHANGTableAdapter = new QLTour.QlTourDuLichDataSetTableAdapters.KHACHHANGTableAdapter();
-            this.tableAdapterManager = new QLTour.QlTourDuLichDataSetTableAdapters.TableAdapterManager();
             this.kHACHHANGBindingNavigator = new System.Windows.Forms.BindingNavigator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -107,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qlTourDuLichDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maKHSpinEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngSinhDateEdit.Properties.CalendarTimeProperties)).BeginInit();
@@ -261,13 +257,6 @@
             // 
             // kHACHHANGBindingSource
             // 
-            this.kHACHHANGBindingSource.DataMember = "KHACHHANG";
-            this.kHACHHANGBindingSource.DataSource = this.qlTourDuLichDataSet;
-            // 
-            // qlTourDuLichDataSet
-            // 
-            this.qlTourDuLichDataSet.DataSetName = "QlTourDuLichDataSet";
-            this.qlTourDuLichDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // maKHSpinEdit
             // 
@@ -354,7 +343,6 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.BackgroundImage = global::QLTour.Properties.Resources.Blue;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(404, 209);
@@ -365,7 +353,6 @@
             // 
             // simpleButton3
             // 
-            this.simpleButton3.BackgroundImage = global::QLTour.Properties.Resources.images;
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(306, 209);
@@ -387,7 +374,6 @@
             // 
             // simpleButton5
             // 
-            this.simpleButton5.BackgroundImage = global::QLTour.Properties.Resources.images__1_;
             this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(208, 209);
@@ -398,8 +384,7 @@
             // 
             // simpleButton6
             // 
-            this.simpleButton6.BackgroundImage = global::QLTour.Properties.Resources.yellow;
-            this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
             this.simpleButton6.Location = new System.Drawing.Point(12, 209);
@@ -410,7 +395,7 @@
             // 
             // simpleButton7
             // 
-            this.simpleButton7.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.simpleButton7.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.Location = new System.Drawing.Point(513, 209);
@@ -455,7 +440,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(156, 170);
@@ -466,7 +451,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.btnOK.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.btnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnOK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageOptions.Image")));
             this.btnOK.Location = new System.Drawing.Point(42, 170);
@@ -632,7 +617,7 @@
             // 
             // simpleButton13
             // 
-            this.simpleButton13.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));
@@ -644,30 +629,6 @@
             // 
             // kHACHHANGTableAdapter
             // 
-            this.kHACHHANGTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CTPHIEUNHAP_TOURTableAdapter = null;
-            this.tableAdapterManager.DIADANHTableAdapter = null;
-            this.tableAdapterManager.DIADIEMTableAdapter = null;
-            this.tableAdapterManager.HANHTRINHTableAdapter = null;
-            this.tableAdapterManager.HOPDONGTableAdapter = null;
-            this.tableAdapterManager.HUONGDANVIENTableAdapter = null;
-            this.tableAdapterManager.KHACHHANGTableAdapter = this.kHACHHANGTableAdapter;
-            this.tableAdapterManager.KHACHSANTableAdapter = null;
-            this.tableAdapterManager.LOAIKHACHHANGTableAdapter = null;
-            this.tableAdapterManager.LOAIKHACHSANTableAdapter = null;
-            this.tableAdapterManager.LOAITOURTableAdapter = null;
-            this.tableAdapterManager.MANHINHTableAdapter = null;
-            this.tableAdapterManager.NGUOIDUNGTableAdapter = null;
-            this.tableAdapterManager.NHOMNGUOIDUNGTableAdapter = null;
-            this.tableAdapterManager.PHANQUYENTableAdapter = null;
-            this.tableAdapterManager.PHIEUNHAPTOURTableAdapter = null;
-            this.tableAdapterManager.QUANLINHOMNGUOIDUNGTableAdapter = null;
-            this.tableAdapterManager.TOURTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = QLTour.QlTourDuLichDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // kHACHHANGBindingNavigator
             // 
@@ -811,7 +772,6 @@
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qlTourDuLichDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maKHSpinEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngSinhDateEdit.Properties.CalendarTimeProperties)).EndInit();
@@ -863,10 +823,8 @@
         private DevExpress.XtraEditors.SimpleButton btnOK;
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private QlTourDuLichDataSet qlTourDuLichDataSet;
         private System.Windows.Forms.BindingSource kHACHHANGBindingSource;
-        private QlTourDuLichDataSetTableAdapters.KHACHHANGTableAdapter kHACHHANGTableAdapter;
-        private QlTourDuLichDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+
         private System.Windows.Forms.BindingNavigator kHACHHANGBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;

@@ -19,7 +19,7 @@ namespace DAO
             this.KHACHHANGs = new HashSet<KHACHHANG>();
         }
     
-        public int MaLoaiKH { get; set; }
+        public string MaLoaiKH { get; set; }
         public string TenLoaiKH { get; set; }
         public string UuDai { get; set; }
         public string GhiChu { get; set; }

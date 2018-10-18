@@ -15,9 +15,9 @@ namespace DAO
     public partial class CTPHIEUNHAP_TOUR
     {
         public int Ma_CTPNhap { get; set; }
-        public Nullable<int> MaTour { get; set; }
+        public string MaTour { get; set; }
         public Nullable<int> SoLuong { get; set; }
-        public Nullable<int> MaPNhap { get; set; }
+        public string MaPNhap { get; set; }
     
         public virtual PHIEUNHAPTOUR PHIEUNHAPTOUR { get; set; }
         public virtual TOUR TOUR { get; set; }
