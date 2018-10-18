@@ -14,10 +14,13 @@ namespace DAO
     
     public partial class HOPDONG
     {
-        public int MaHD { get; set; }
-        public Nullable<int> MaTour { get; set; }
-        public Nullable<int> MaKH { get; set; }
-        public Nullable<int> MaKS { get; set; }
+        public HOPDONG()
+        {
+            this.ChiTietHopDongs = new HashSet<ChiTietHopDong>();
+        }
+    
+        public string MaHD { get; set; }
+        public string MaKH { get; set; }
         public Nullable<System.DateTime> ThoiGianDat { get; set; }
         public Nullable<int> SoNguoiLon { get; set; }
         public Nullable<int> SoTreEm { get; set; }
@@ -25,8 +28,7 @@ namespace DAO
         public string GhiChu { get; set; }
         public Nullable<decimal> TongTien { get; set; }
     
+        public virtual ICollection<ChiTietHopDong> ChiTietHopDongs { get; set; }
         public virtual KHACHHANG KHACHHANG { get; set; }
-        public virtual KHACHSAN KHACHSAN { get; set; }
-        public virtual TOUR TOUR { get; set; }
     }
 }

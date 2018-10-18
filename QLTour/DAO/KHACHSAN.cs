@@ -16,17 +16,17 @@ namespace DAO
     {
         public KHACHSAN()
         {
-            this.HOPDONGs = new HashSet<HOPDONG>();
+            this.TOURs = new HashSet<TOUR>();
         }
     
-        public int MaKS { get; set; }
+        public string MaKS { get; set; }
         public string TenKS { get; set; }
-        public Nullable<int> MaLoaiKS { get; set; }
+        public string MaLoaiKS { get; set; }
         public Nullable<int> MaDiaDiem { get; set; }
         public Nullable<decimal> GiaTien { get; set; }
     
         public virtual DIADIEM DIADIEM { get; set; }
-        public virtual ICollection<HOPDONG> HOPDONGs { get; set; }
         public virtual LOAIKHACHSAN LOAIKHACHSAN { get; set; }
+        public virtual ICollection<TOUR> TOURs { get; set; }
     }
 }

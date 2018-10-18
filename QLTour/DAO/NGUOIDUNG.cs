@@ -20,7 +20,7 @@ namespace DAO
             this.QUANLINHOMNGUOIDUNGs = new HashSet<QUANLINHOMNGUOIDUNG>();
         }
     
-        public int MaNV { get; set; }
+        public string MaNV { get; set; }
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }

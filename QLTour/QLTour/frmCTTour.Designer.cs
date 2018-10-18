@@ -1,4 +1,4 @@
-﻿namespace QLTour
+﻿namespace GUI
 {
     partial class frmCTTour
     {
@@ -155,7 +155,6 @@
             this.pictureEdit1.Location = new System.Drawing.Point(555, 71);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(100, 96);
             this.pictureEdit1.TabIndex = 55;
             // 
@@ -268,7 +267,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.btnCancel.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.Location = new System.Drawing.Point(464, 176);
@@ -287,7 +286,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackgroundImage = global::QLTour.Properties.Resources.images;
+            this.btnSave.BackgroundImage = global::GUI.Properties.Resources.images;
             this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.Location = new System.Drawing.Point(366, 176);
@@ -309,7 +308,7 @@
             // 
             // btnXoaNV
             // 
-            this.btnXoaNV.BackgroundImage = global::QLTour.Properties.Resources.images__1_;
+            this.btnXoaNV.BackgroundImage = global::GUI.Properties.Resources.images__1_;
             this.btnXoaNV.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnXoaNV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.ImageOptions.Image")));
             this.btnXoaNV.Location = new System.Drawing.Point(268, 176);
@@ -320,7 +319,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackgroundImage = global::QLTour.Properties.Resources.yellow;
+            this.btnThem.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
@@ -332,7 +331,7 @@
             // 
             // btnRefesh
             // 
-            this.btnRefesh.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.btnRefesh.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
             this.btnRefesh.Location = new System.Drawing.Point(573, 176);
@@ -421,7 +420,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.BackgroundImage = global::QLTour.Properties.Resources.Blue;
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(641, 79);
@@ -432,7 +431,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.BackgroundImage = global::QLTour.Properties.Resources.greeen;
+            this.btnOK.BackgroundImage = global::GUI.Properties.Resources.greeen;
             this.btnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnOK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageOptions.Image")));
             this.btnOK.Location = new System.Drawing.Point(641, 39);

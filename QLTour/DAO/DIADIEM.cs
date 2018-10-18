@@ -16,7 +16,6 @@ namespace DAO
     {
         public DIADIEM()
         {
-            this.DIADANHs = new HashSet<DIADANH>();
             this.HANHTRINHs = new HashSet<HANHTRINH>();
             this.HANHTRINHs1 = new HashSet<HANHTRINH>();
             this.KHACHSANs = new HashSet<KHACHSAN>();
@@ -24,8 +23,9 @@ namespace DAO
     
         public int MaDiaDiem { get; set; }
         public string TenDiaDiem { get; set; }
+        public string MaDiaDanh { get; set; }
     
-        public virtual ICollection<DIADANH> DIADANHs { get; set; }
+        public virtual DIADANH DIADANH { get; set; }
         public virtual ICollection<HANHTRINH> HANHTRINHs { get; set; }
         public virtual ICollection<HANHTRINH> HANHTRINHs1 { get; set; }
         public virtual ICollection<KHACHSAN> KHACHSANs { get; set; }

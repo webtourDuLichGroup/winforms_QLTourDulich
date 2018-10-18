@@ -14,7 +14,7 @@ namespace DAO
     
     public partial class PHANQUYEN
     {
-        public int MaPQ { get; set; }
+        public string MaPQ { get; set; }
         public Nullable<int> MaNhom { get; set; }
         public Nullable<int> MaMH { get; set; }
         public Nullable<int> CoQuyen { get; set; }

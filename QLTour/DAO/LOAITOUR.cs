@@ -19,7 +19,7 @@ namespace DAO
             this.TOURs = new HashSet<TOUR>();
         }
     
-        public int MaLoaiTour { get; set; }
+        public string MaLoaiTour { get; set; }
         public string TenLoaiTour { get; set; }
     
         public virtual ICollection<TOUR> TOURs { get; set; }

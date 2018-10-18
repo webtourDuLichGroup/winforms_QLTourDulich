@@ -19,7 +19,7 @@ namespace DAO
             this.TOURs = new HashSet<TOUR>();
         }
     
-        public int MaHanhTrinh { get; set; }
+        public string MaHanhTrinh { get; set; }
         public Nullable<int> NoiDi { get; set; }
         public Nullable<int> NoiDen { get; set; }
     

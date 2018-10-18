@@ -14,10 +14,14 @@ namespace DAO
     
     public partial class DIADANH
     {
-        public int MaDiaDanh { get; set; }
-        public string TenDiaDanh { get; set; }
-        public Nullable<int> MaDiaDiem { get; set; }
+        public DIADANH()
+        {
+            this.DIADIEMs = new HashSet<DIADIEM>();
+        }
     
-        public virtual DIADIEM DIADIEM { get; set; }
+        public string MaDiaDanh { get; set; }
+        public string TenDiaDanh { get; set; }
+    
+        public virtual ICollection<DIADIEM> DIADIEMs { get; set; }
     }
 }
