@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root Type="DevExpress.CodeRush.Foundation.Markers.SolutionBookmarksContainer">
+  <Options Language="Neutral">
+    <Items>
+      <Item Id="{2c419ebd-c92e-4f27-a824-6e5ca58a6805}">
+        <Id>1</Id>
+        <File>QLTour\DAO\ChiTietHopDongDAO.cs</File>
+        <Line>12</Line>
+        <Character>37</Character>
+        <ViewportTopMax>16</ViewportTopMax>
+      </Item>
+    </Items>
+  </Options>
+</Root>

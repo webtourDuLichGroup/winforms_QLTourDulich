@@ -20,7 +20,6 @@ namespace DTO
         [DisplayName("Ngày trở về")]
         public DateTime? NgayKT { get; set; }
 
-        //public string AnhDiaDiem { get; set; }
 
         [DisplayName("Nơi đi")]
         public string DiemDi { get; set; }
@@ -32,11 +31,7 @@ namespace DTO
         public decimal? GiaTreEm { get; set; }
 
         [DisplayName("Giá người lớn")]
-        public decimal? GiaNguoiLon { get; set; }
-
-        //public int? MaDiemDi { get; set; }
-
-        //public int? MaDiemDen { get; set; }
+        public decimal? GiaNguoiLon { get; set; } 
 
     }
 
@@ -48,12 +43,21 @@ namespace DTO
 
         public int TreEm { get; set; }
 
-        public string AnhTour { get; set; }
-
         public decimal? TongTien { get; set; }
 
         public decimal? GiaTreEm { get; set; }
 
         public decimal? GiaNguoiLon { get; set; }
     }
+
+    public class TourChiTietDTO
+    {
+        public TourDTO Tour { get; set; }
+
+        public decimal? GiaKhachSan { get; set; }
+
+        public string AnhDiaDiem { get; set; }
+    }
+
+
 }

@@ -220,9 +220,12 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\MyControl.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\UserDL.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\MyControl.pdb
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\UserDL.pdb
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frmCTTour.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frmDanhMucDichVu.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frmQuanLiHuongDanVien.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frmQuanLiKhachHang.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_DatTour.resources
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QuanLiNhanVien.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ClassLibrary1.dll
+D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ClassLibrary1.pdb
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QLTour.resources
+D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QLTour1.resources

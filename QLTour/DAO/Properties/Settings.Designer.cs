@@ -26,33 +26,11 @@ namespace DAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LIJ5HIK\\SQLEXPRESS;Initial Catalog=QuanLiTourDuLich;Integrate" +
-            "d Security=True")]
-        public string QuanLiTourDuLichConnectionString {
-            get {
-                return ((string)(this["QuanLiTourDuLichConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-1FR6IG6\\SQLEXPRESS;Initial Catalog=QlTourDuLich;Integrated Se" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LIJ5HIK\\SQLEXPRESS;Initial Catalog=QlTourDuLich;Integrated Se" +
             "curity=True")]
         public string QlTourDuLichConnectionString {
             get {
                 return ((string)(this["QlTourDuLichConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-LIJ5HIK\\SQLEXPRESS;Initial Catalog=QlTourDuLich;Integrated Se" +
-            "curity=True")]
-        public string QlTourDuLichConnectionString1 {
-            get {
-                return ((string)(this["QlTourDuLichConnectionString1"]));
             }
         }
     }

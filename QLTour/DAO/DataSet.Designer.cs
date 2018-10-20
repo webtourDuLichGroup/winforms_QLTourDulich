@@ -829,7 +829,7 @@ SELECT MaDiaDiem, TenDiaDiem, MaDiaDanh FROM DIADIEM WHERE (MaDiaDiem = @MaDiaDi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::DAO.Properties.Settings.Default.QlTourDuLichConnectionString1;
+            this._connection.ConnectionString = global::DAO.Properties.Settings.Default.QlTourDuLichConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

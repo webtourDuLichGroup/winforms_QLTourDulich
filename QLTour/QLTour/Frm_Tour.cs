@@ -85,7 +85,7 @@ namespace GUI
                 BookedTour.GiaTreEm = tour.GiaTreEm;
                 BookedTour.TongTien = BookedTour.NguoiLon * BookedTour.GiaNguoiLon + BookedTour.TreEm * BookedTour.GiaTreEm;
                 frm_DatTour form = new frm_DatTour();
-                form.Show();
+                form.ShowDialog(this);
             }
 
         }

@@ -40,9 +40,7 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.cbo_NoiDen = new System.Windows.Forms.ComboBox();
-            this.date_Edit_NgayDen = new DevExpress.XtraEditors.DateEdit();
             this.cbo_NoiDi = new System.Windows.Forms.ComboBox();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -68,8 +66,6 @@
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.date_Edit_NgayDen.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_Edit_NgayDen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayDi.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayDi.Properties)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
@@ -90,8 +86,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.41667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.58333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.79167F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.20833F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(849, 501);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -110,7 +106,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.699482F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.30052F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(843, 188);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(843, 185);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // grTK
@@ -122,7 +118,7 @@
             this.grTK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grTK.Location = new System.Drawing.Point(28, 13);
             this.grTK.Name = "grTK";
-            this.grTK.Size = new System.Drawing.Size(787, 172);
+            this.grTK.Size = new System.Drawing.Size(787, 169);
             this.grTK.TabIndex = 58;
             this.grTK.Text = "Tim kiem";
             // 
@@ -138,7 +134,7 @@
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(787, 172);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(787, 169);
             this.tableLayoutPanel3.TabIndex = 57;
             // 
             // groupControl1
@@ -150,7 +146,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(41, 3);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(704, 166);
+            this.groupControl1.Size = new System.Drawing.Size(704, 163);
             this.groupControl1.TabIndex = 10;
             this.groupControl1.Text = "Tim kiem";
             // 
@@ -170,13 +166,14 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.35802F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.03704F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(704, 166);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(704, 163);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // textEdit1
             // 
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textEdit1.EditValue = "DANH MUC TOUR";
+            this.textEdit1.Enabled = false;
             this.textEdit1.Location = new System.Drawing.Point(3, 3);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.LightPink;
@@ -185,6 +182,9 @@
             this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.textEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.textEdit1.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.textEdit1.Size = new System.Drawing.Size(698, 32);
             this.textEdit1.TabIndex = 57;
             // 
@@ -201,9 +201,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.91404F));
             this.tableLayoutPanel5.Controls.Add(this.labelControl2, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.cbo_NoiDen, 4, 1);
-            this.tableLayoutPanel5.Controls.Add(this.date_Edit_NgayDen, 1, 1);
             this.tableLayoutPanel5.Controls.Add(this.cbo_NoiDi, 4, 0);
-            this.tableLayoutPanel5.Controls.Add(this.labelControl3, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.labelControl4, 3, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelControl5, 3, 1);
             this.tableLayoutPanel5.Controls.Add(this.labelControl6, 6, 0);
@@ -212,12 +210,12 @@
             this.tableLayoutPanel5.Controls.Add(this.txt_NguoiLon, 7, 0);
             this.tableLayoutPanel5.Controls.Add(this.txt_TreEm, 7, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 48);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 47);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 44.8718F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.1282F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(698, 57);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(698, 56);
             this.tableLayoutPanel5.TabIndex = 58;
             // 
             // labelControl2
@@ -227,7 +225,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(72, 19);
             this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "Ngay di";
+            this.labelControl2.Text = "Ngày đi:";
             // 
             // cbo_NoiDen
             // 
@@ -237,19 +235,6 @@
             this.cbo_NoiDen.Name = "cbo_NoiDen";
             this.cbo_NoiDen.Size = new System.Drawing.Size(118, 21);
             this.cbo_NoiDen.TabIndex = 24;
-            // 
-            // date_Edit_NgayDen
-            // 
-            this.date_Edit_NgayDen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.date_Edit_NgayDen.EditValue = null;
-            this.date_Edit_NgayDen.Location = new System.Drawing.Point(81, 28);
-            this.date_Edit_NgayDen.Name = "date_Edit_NgayDen";
-            this.date_Edit_NgayDen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_Edit_NgayDen.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_Edit_NgayDen.Size = new System.Drawing.Size(122, 20);
-            this.date_Edit_NgayDen.TabIndex = 24;
             // 
             // cbo_NoiDi
             // 
@@ -261,15 +246,6 @@
             this.cbo_NoiDi.TabIndex = 24;
             this.cbo_NoiDi.SelectedIndexChanged += new System.EventHandler(this.cbo_NoiDi_SelectedIndexChanged);
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(3, 28);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 26);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "Ngay den";
-            // 
             // labelControl4
             // 
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -277,16 +253,16 @@
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(68, 19);
             this.labelControl4.TabIndex = 6;
-            this.labelControl4.Text = "Noi di";
+            this.labelControl4.Text = "Nơi đi:";
             // 
             // labelControl5
             // 
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl5.Location = new System.Drawing.Point(234, 28);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(68, 26);
+            this.labelControl5.Size = new System.Drawing.Size(68, 25);
             this.labelControl5.TabIndex = 7;
-            this.labelControl5.Text = "Noi den";
+            this.labelControl5.Text = "Nơi đến:";
             // 
             // labelControl6
             // 
@@ -295,16 +271,16 @@
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(96, 19);
             this.labelControl6.TabIndex = 9;
-            this.labelControl6.Text = "Gia tre em";
+            this.labelControl6.Text = "Trẻ em:";
             // 
             // labelControl7
             // 
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl7.Location = new System.Drawing.Point(458, 28);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(96, 26);
+            this.labelControl7.Size = new System.Drawing.Size(96, 25);
             this.labelControl7.TabIndex = 11;
-            this.labelControl7.Text = "Gia nguoi lon";
+            this.labelControl7.Text = "Người lớn:";
             // 
             // dateEdit_NgayDi
             // 
@@ -338,42 +314,45 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 5;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.09169F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.20057F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.581662F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.78223F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.41026F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.58974F));
             this.tableLayoutPanel6.Controls.Add(this.btn_Tim, 1, 1);
             this.tableLayoutPanel6.Controls.Add(this.btn_Reset, 3, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 111);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 109);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(698, 52);
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(698, 51);
             this.tableLayoutPanel6.TabIndex = 59;
             // 
             // btn_Tim
             // 
+            this.btn_Tim.AutoSize = true;
+            this.btn_Tim.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Tim.BackgroundImage")));
             this.btn_Tim.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btn_Tim.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Tim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tim.ImageOptions.Image")));
-            this.btn_Tim.Location = new System.Drawing.Point(227, 11);
+            this.btn_Tim.Location = new System.Drawing.Point(227, 22);
             this.btn_Tim.Name = "btn_Tim";
-            this.btn_Tim.Size = new System.Drawing.Size(135, 38);
+            this.btn_Tim.Size = new System.Drawing.Size(94, 26);
             this.btn_Tim.TabIndex = 13;
             this.btn_Tim.Text = "Tim";
             this.btn_Tim.Click += new System.EventHandler(this.btn_Tim_Click);
             // 
             // btn_Reset
             // 
+            this.btn_Reset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Reset.BackgroundImage")));
             this.btn_Reset.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btn_Reset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Reset.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reset.ImageOptions.Image")));
-            this.btn_Reset.Location = new System.Drawing.Point(393, 11);
+            this.btn_Reset.Location = new System.Drawing.Point(427, 22);
             this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(160, 38);
+            this.btn_Reset.Size = new System.Drawing.Size(94, 26);
             this.btn_Reset.TabIndex = 23;
             this.btn_Reset.Text = "Cancel";
             // 
@@ -385,12 +364,12 @@
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.969121F));
             this.tableLayoutPanel7.Controls.Add(this.dgv_Tour, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 197);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 194);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(843, 280);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(843, 283);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // dgv_Tour
@@ -399,17 +378,24 @@
             this.dgv_Tour.Location = new System.Drawing.Point(26, 3);
             this.dgv_Tour.MainView = this.gridView1;
             this.dgv_Tour.Name = "dgv_Tour";
-            this.dgv_Tour.Size = new System.Drawing.Size(788, 274);
+            this.dgv_Tour.Size = new System.Drawing.Size(788, 277);
             this.dgv_Tour.TabIndex = 0;
             this.dgv_Tour.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.gridView1.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridView1.Appearance.OddRow.BackColor = System.Drawing.Color.PapayaWhip;
+            this.gridView1.Appearance.OddRow.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.BackColor = System.Drawing.Color.White;
+            this.gridView1.Appearance.Row.Options.UseBackColor = true;
             this.gridView1.GridControl = this.dgv_Tour;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsBehavior.ReadOnly = true;
+            this.gridView1.OptionsView.EnableAppearanceOddRow = true;
             this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
             // 
             // errorProvider1
@@ -437,11 +423,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.date_Edit_NgayDen.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.date_Edit_NgayDen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayDi.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayDi.Properties)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Tour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -464,7 +449,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl6;
@@ -477,7 +461,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.ComboBox cbo_NoiDen;
         private System.Windows.Forms.ComboBox cbo_NoiDi;
-        private DevExpress.XtraEditors.DateEdit date_Edit_NgayDen;
         private DevExpress.XtraEditors.DateEdit dateEdit_NgayDi;
         private MyControl.NumbericTextBox txt_NguoiLon;
         private MyControl.NumbericTextBox txt_TreEm;

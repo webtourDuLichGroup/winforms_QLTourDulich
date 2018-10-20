@@ -9,5 +9,7 @@ namespace GUI.Constants
     {
         public const string EMPTY = "Không được bỏ trống trường này";
         public const string THIEUTHONGTIN = "Nhập chưa đủ thông tin";
+        public const string LOIDULIEU = "Có lỗi khi lưu trữ dữ liệu";
+
     }
 }

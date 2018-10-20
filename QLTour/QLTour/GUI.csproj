@@ -36,6 +36,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>C:\Users\tranthibay\source\repos\WindowsFormsApp1\ClassLibrary1\bin\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.33, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.BonusSkins.v17.1" />
     <Reference Include="DevExpress.Data.v17.1" />
@@ -72,13 +75,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\ErrorProviderConstants.cs" />
     <Compile Include="Constants\MessgeBoxConstants.cs" />
-    <Compile Include="frmCTTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCTTour.Designer.cs">
-      <DependentUpon>frmCTTour.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDanhMucDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +131,12 @@
     <Compile Include="frm_Main.designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QLTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLTour.Designer.cs">
+      <DependentUpon>frm_QLTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QuanLiNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,9 +151,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCTTour.resx">
-      <DependentUpon>frmCTTour.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmDanhMucDichVu.resx">
       <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLTour.resx">
+      <DependentUpon>frm_QLTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLiNhanVien.resx">
       <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>

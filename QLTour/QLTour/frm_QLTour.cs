@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace GUI
 {
-    public partial class frmCTTour : DevExpress.XtraEditors.XtraForm
+    public partial class frm_QLTour : Form
     {
-        public frmCTTour()
+        public frm_QLTour()
         {
             InitializeComponent();
+        }
+
+        private void frm_QLTour1_Load(object sender, EventArgs e)
+        {
+            //comboBoxEdit1
         }
     }
 }

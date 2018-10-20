@@ -24,7 +24,7 @@ namespace GUI
 
         private void barBtn_QLTourDuLich_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            frm_Tour form = new frm_Tour();
+            frm_QLTour form = new frm_QLTour();
             form.MdiParent = this;
             form.Show();
         }

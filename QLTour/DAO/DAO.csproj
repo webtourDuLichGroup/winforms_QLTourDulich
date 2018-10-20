@@ -49,6 +49,8 @@
     <Compile Include="ChiTietHopDong.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietHopDongDAO.cs" />
+    <Compile Include="HopDongDAO.cs" />
     <Compile Include="CTPHIEUNHAP_TOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -76,6 +78,7 @@
     <Compile Include="KHACHHANG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KHACHSAN.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
