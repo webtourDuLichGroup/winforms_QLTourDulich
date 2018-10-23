@@ -8,7 +8,7 @@
     <ProjectGuid>{CF7879A1-9659-4E4B-A80A-2A551B3A0E33}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QLTour</RootNamespace>
+    <RootNamespace>GUI</RootNamespace>
     <AssemblyName>QLTour</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -53,10 +53,16 @@
     <Reference Include="MyControl">
       <HintPath>C:\Users\tranthibay\source\repos\WindowsFormsApp1\MyControl\bin\Debug\MyControl.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+    <Reference Include="PresentationCore" />
+=======
+>>>>>>> master
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -67,6 +73,16 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+<<<<<<< HEAD
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UserDL">
+      <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\MessgeBoxConstants.cs" />
+=======
     <Reference Include="UserDL">
       <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
     </Reference>
@@ -79,6 +95,7 @@
     <Compile Include="frmCTTour.Designer.cs">
       <DependentUpon>frmCTTour.cs</DependentUpon>
     </Compile>
+>>>>>>> master
     <Compile Include="frmDanhMucDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,12 +150,21 @@
     <Compile Include="frm_Main.designer.cs">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_PhanQuyen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PhanQuyen1.Designer.cs">
+      <DependentUpon>frm_PhanQuyen1.cs</DependentUpon>
+    </Compile>
+<<<<<<< HEAD
     <Compile Include="frm_QuanLiNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_QuanLiNhanVien.Designer.cs">
       <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="frm_Tour.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,9 +173,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
     <EmbeddedResource Include="frmCTTour.resx">
       <DependentUpon>frmCTTour.cs</DependentUpon>
     </EmbeddedResource>
+>>>>>>> master
     <EmbeddedResource Include="frmDanhMucDichVu.resx">
       <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhanQuyen1.resx">
+      <DependentUpon>frm_PhanQuyen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLiNhanVien.resx">
       <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>

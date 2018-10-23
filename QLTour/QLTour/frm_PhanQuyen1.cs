@@ -10,9 +10,9 @@ using DevExpress.XtraEditors;
 
 namespace GUI
 {
-    public partial class frmCTTour : DevExpress.XtraEditors.XtraForm
+    public partial class frm_PhanQuyen1 : DevExpress.XtraEditors.XtraForm
     {
-        public frmCTTour()
+        public frm_PhanQuyen1()
         {
             InitializeComponent();
         }

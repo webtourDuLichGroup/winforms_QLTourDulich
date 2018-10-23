@@ -45,7 +45,7 @@ namespace GUI
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+           //frm_QuanLiNhanVien 
         }
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -58,6 +58,13 @@ namespace GUI
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmQuanLiKhachHang form = new frmQuanLiKhachHang();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_PhanQuyen form = new frm_PhanQuyen();
             form.MdiParent = this;
             form.Show();
         }

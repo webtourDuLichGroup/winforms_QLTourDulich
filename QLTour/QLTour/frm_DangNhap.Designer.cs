@@ -71,7 +71,6 @@
             this.pictureEdit1.Location = new System.Drawing.Point(31, 55);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(144, 136);
             this.pictureEdit1.TabIndex = 5;
             // 
@@ -93,10 +92,14 @@
             this.btnDN.Size = new System.Drawing.Size(92, 32);
             this.btnDN.TabIndex = 36;
             this.btnDN.Text = "&Sign In";
+            this.btnDN.Click += new System.EventHandler(this.btnDN_Click);
             // 
             // btnCancel
             // 
+<<<<<<< HEAD
+=======
             this.btnCancel.BackgroundImage = global::GUI.Properties.Resources.Blue;
+>>>>>>> master
             this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.Location = new System.Drawing.Point(325, 159);

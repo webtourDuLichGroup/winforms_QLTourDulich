@@ -10,6 +10,28 @@ namespace DAO
 {
     public class DiaDiemDAO
     {
+<<<<<<< HEAD
+        //QlTourDuLichEntities entities = new QlTourDuLichEntities();
+        //DIADIEMTableAdapter diaDiemAdapter = new DIADIEMTableAdapter();
+        //public DataTable LayDiaDiem()
+        //{
+        //    return diaDiemAdapter.GetData();
+        //}
+
+        //public List<DiaDiemDTO> TimDiemDen(int? MaDiemDi)
+        //{
+        //    var result = (from ht in entities.HANHTRINHs
+        //                  join dd in entities.DIADIEMs
+        //                  on ht.NoiDen equals dd.MaDiaDiem
+        //                  where ht.NoiDi == MaDiemDi
+        //                  select new DiaDiemDTO()
+        //                  {
+        //                      MaDiaDiem = dd.MaDiaDiem,
+        //                      TenDiaDiem = dd.TenDiaDiem
+        //                  });
+        //    return result.ToList<DiaDiemDTO>();
+        //}
+=======
         QlTourDuLichEntities entities = new QlTourDuLichEntities();
         DIADIEMTableAdapter diaDiemAdapter = new DIADIEMTableAdapter();
         public DataTable LayDiaDiem()
@@ -30,5 +52,6 @@ namespace DAO
                           });
             return result.ToList<DiaDiemDTO>();
         }
+>>>>>>> master
     }
 }

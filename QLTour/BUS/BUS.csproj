@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_PhanQuyen.cs" />
+    <Compile Include="BUS_QLHDV.cs" />
+    <Compile Include="BUS_QLKH.cs" />
+    <Compile Include="BUS_QLNV.cs" />
     <Compile Include="DangNhapBus.cs" />
     <Compile Include="QuyenNguoiDungBus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

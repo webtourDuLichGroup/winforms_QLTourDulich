@@ -1,0 +1,6 @@
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.dll.config
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.pdb
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.csprojResolveAssemblyReference.cache
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.dll
+C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.pdb

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QlTourDuLich" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-1FR6IG6\SQLEXPRESS;Initial Catalog=QlTourDuLich;Integrated Security=True" SettingsObjectName="Linq.Properties.Settings" SettingsPropertyName="QlTourDuLichConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HANHTRINH" Member="HANHTRINHs">
+    <Type Name="HANHTRINH">
+      <Column Name="MaHanhTrinh" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NoiDi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiDen" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DIADIEM_HANHTRINH" Member="DIADIEM" ThisKey="NoiDen" OtherKey="MaDiaDiem" Type="DIADIEM" IsForeignKey="true" />
+      <Association Name="DIADIEM_HANHTRINH1" Member="DIADIEM1" ThisKey="NoiDi" OtherKey="MaDiaDiem" Type="DIADIEM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIADIEM" Member="DIADIEMs">
+    <Type Name="DIADIEM">
+      <Column Name="MaDiaDiem" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenDiaDiem" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MaDiaDanh" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="DIADIEM_HANHTRINH" Member="HANHTRINHs" ThisKey="MaDiaDiem" OtherKey="NoiDen" Type="HANHTRINH" />
+      <Association Name="DIADIEM_HANHTRINH1" Member="HANHTRINHs1" ThisKey="MaDiaDiem" OtherKey="NoiDi" Type="HANHTRINH" />
+      <Association Name="DIADIEM_KHACHSAN" Member="KHACHSANs" ThisKey="MaDiaDiem" OtherKey="MaDiaDiem" Type="KHACHSAN" />
+      <Association Name="DIADANH_DIADIEM" Member="DIADANH" ThisKey="MaDiaDanh" OtherKey="MaDiaDanh" Type="DIADANH" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIADANH" Member="DIADANHs">
+    <Type Name="DIADANH">
+      <Column Name="MaDiaDanh" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDiaDanh" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="DIADANH_DIADIEM" Member="DIADIEMs" ThisKey="MaDiaDanh" OtherKey="MaDiaDanh" Type="DIADIEM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHSAN" Member="KHACHSANs">
+    <Type Name="KHACHSAN">
+      <Column Name="MaKS" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaLoaiKS" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MaDiaDiem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GiaTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="DIADIEM_KHACHSAN" Member="DIADIEM" ThisKey="MaDiaDiem" OtherKey="MaDiaDiem" Type="DIADIEM" IsForeignKey="true" />
+      <Association Name="LOAIKHACHSAN_KHACHSAN" Member="LOAIKHACHSAN" ThisKey="MaLoaiKS" OtherKey="MaLoaiKS" Type="LOAIKHACHSAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIKHACHSAN" Member="LOAIKHACHSANs">
+    <Type Name="LOAIKHACHSAN">
+      <Column Name="MaLoaiKS" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoaiKS" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="LOAIKHACHSAN_KHACHSAN" Member="KHACHSANs" ThisKey="MaLoaiKS" OtherKey="MaLoaiKS" Type="KHACHSAN" />
+    </Type>
+  </Table>
+</Database>
