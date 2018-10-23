@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLiKhachHang));
             this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
@@ -350,11 +351,18 @@
             this.dgvKH.TabIndex = 58;
             this.dgvKH.SelectionChanged += new System.EventHandler(this.dgvKH_SelectionChanged);
             // 
+=======
+            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+>>>>>>> master
             // frmQuanLiKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 631);
+<<<<<<< HEAD
             this.Controls.Add(this.dgvKH);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnEdit);
@@ -363,14 +371,19 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnRefesh);
             this.Controls.Add(this.groupControl1);
+=======
+>>>>>>> master
             this.Name = "frmQuanLiKhachHang";
             this.Text = "frmQuanLiKhachHang";
             this.Load += new System.EventHandler(this.frmQuanLiKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).EndInit();
+=======
+>>>>>>> master
             this.ResumeLayout(false);
 
         }

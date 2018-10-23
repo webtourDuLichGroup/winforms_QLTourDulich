@@ -52,6 +52,7 @@
     <Compile Include="CTPHIEUNHAP_TOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="DAO_DMDV.cs" />
     <Compile Include="DAO_PhanQuyen.cs" />
     <Compile Include="DAO_QLHDV.cs" />
@@ -61,6 +62,8 @@
       <DependentUpon>DataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -134,6 +134,7 @@
             this.groupControl1.TabIndex = 218;
             this.groupControl1.Text = "Danh sách quyền nhân viên";
             // 
+<<<<<<< HEAD
             // cboPhgBan
             // 
             this.cboPhgBan.FormattingEnabled = true;
@@ -161,6 +162,242 @@
             // 
             // simpleButton13
             // 
+=======
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(27, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Quản lí hệ thống";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(27, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 19);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Quản lí tour du lịch";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 191);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(169, 19);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Qủan lí điều hành tour";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(27, 274);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(178, 19);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Quản lí kinh doanh tour";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(27, 360);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 19);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Báo cáo,thống kê";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.EditValue = "*********************************************************************************" +
+    "*******************";
+            this.textEdit1.Location = new System.Drawing.Point(22, 88);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Size = new System.Drawing.Size(283, 20);
+            this.textEdit1.TabIndex = 8;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.EditValue = "*********************************************************************************" +
+    "*******************";
+            this.textEdit2.Location = new System.Drawing.Point(22, 168);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit2.Size = new System.Drawing.Size(283, 20);
+            this.textEdit2.TabIndex = 9;
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.EditValue = "*********************************************************************************" +
+    "*******************";
+            this.textEdit3.Location = new System.Drawing.Point(22, 248);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit3.Size = new System.Drawing.Size(283, 20);
+            this.textEdit3.TabIndex = 12;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.EditValue = "*********************************************************************************" +
+    "*******************";
+            this.textEdit4.Location = new System.Drawing.Point(22, 328);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textEdit4.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit4.Size = new System.Drawing.Size(283, 20);
+            this.textEdit4.TabIndex = 13;
+            // 
+            // grPQ
+            // 
+            this.grPQ.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.grPQ.Appearance.Options.UseBackColor = true;
+            this.grPQ.Controls.Add(this.grCT);
+            this.grPQ.Controls.Add(this.grPhanQuyen);
+            this.grPQ.Location = new System.Drawing.Point(457, 62);
+            this.grPQ.Name = "grPQ";
+            this.grPQ.Size = new System.Drawing.Size(719, 515);
+            this.grPQ.TabIndex = 219;
+            this.grPQ.Text = "Phân quyền";
+            // 
+            // grCT
+            // 
+            this.grCT.Controls.Add(this.textBox1);
+            this.grCT.Location = new System.Drawing.Point(375, 26);
+            this.grCT.Name = "grCT";
+            this.grCT.Size = new System.Drawing.Size(339, 481);
+            this.grCT.TabIndex = 224;
+            this.grCT.Text = "Chi tiết quyền";
+            this.grCT.Paint += new System.Windows.Forms.PaintEventHandler(this.grCT_Paint);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(21, 24);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(305, 298);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Quyền nhân viên sẽ được miêu tả tại đây.Click vào quyền nhân viên để xem chi tiết" +
+    ".";
+            // 
+            // grPhanQuyen
+            // 
+            this.grPhanQuyen.Controls.Add(this.simpleButton2);
+            this.grPhanQuyen.Controls.Add(this.btnSave);
+            this.grPhanQuyen.Controls.Add(this.pictureEdit1);
+            this.grPhanQuyen.Controls.Add(this.pictureEdit5);
+            this.grPhanQuyen.Controls.Add(this.label1);
+            this.grPhanQuyen.Controls.Add(this.pictureEdit4);
+            this.grPhanQuyen.Controls.Add(this.label3);
+            this.grPhanQuyen.Controls.Add(this.label4);
+            this.grPhanQuyen.Controls.Add(this.pictureEdit2);
+            this.grPhanQuyen.Controls.Add(this.label5);
+            this.grPhanQuyen.Controls.Add(this.label6);
+            this.grPhanQuyen.Controls.Add(this.textEdit1);
+            this.grPhanQuyen.Controls.Add(this.textEdit4);
+            this.grPhanQuyen.Controls.Add(this.textEdit2);
+            this.grPhanQuyen.Controls.Add(this.textEdit3);
+            this.grPhanQuyen.Controls.Add(this.pictureEdit3);
+            this.grPhanQuyen.Location = new System.Drawing.Point(5, 26);
+            this.grPhanQuyen.Name = "grPhanQuyen";
+            this.grPhanQuyen.Size = new System.Drawing.Size(363, 484);
+            this.grPhanQuyen.TabIndex = 223;
+            this.grPhanQuyen.Text = "Phân quyền nhân viên";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(185, 427);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton2.TabIndex = 225;
+            this.simpleButton2.Text = "Cancel";
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::GUI.Properties.Resources.images;
+            this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
+            this.btnSave.Location = new System.Drawing.Point(66, 427);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(92, 32);
+            this.btnSave.TabIndex = 224;
+            this.btnSave.Text = "Save";
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(215, 34);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit1.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit1.TabIndex = 220;
+            // 
+            // pictureEdit5
+            // 
+            this.pictureEdit5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit5.EditValue = ((object)(resources.GetObject("pictureEdit5.EditValue")));
+            this.pictureEdit5.Location = new System.Drawing.Point(215, 354);
+            this.pictureEdit5.Name = "pictureEdit5";
+            this.pictureEdit5.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit5.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit5.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit5.TabIndex = 222;
+            // 
+            // pictureEdit4
+            // 
+            this.pictureEdit4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit4.EditValue = ((object)(resources.GetObject("pictureEdit4.EditValue")));
+            this.pictureEdit4.Location = new System.Drawing.Point(215, 274);
+            this.pictureEdit4.Name = "pictureEdit4";
+            this.pictureEdit4.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit4.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit4.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit4.TabIndex = 221;
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(215, 114);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit2.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit2.TabIndex = 219;
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(215, 191);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit3.Size = new System.Drawing.Size(62, 48);
+            this.pictureEdit3.TabIndex = 10;
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
+>>>>>>> master
             this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));

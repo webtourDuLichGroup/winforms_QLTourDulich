@@ -97,7 +97,191 @@
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "groupControl1";
             // 
+<<<<<<< HEAD
             // label12
+=======
+            // simpleButton2
+            // 
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.Blue;
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(143, 179);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton2.TabIndex = 24;
+            this.simpleButton2.Text = "Cancel";
+            // 
+            // btnOK
+            // 
+            this.btnOK.BackgroundImage = global::GUI.Properties.Resources.greeen;
+            this.btnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnOK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageOptions.Image")));
+            this.btnOK.Location = new System.Drawing.Point(29, 179);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(92, 32);
+            this.btnOK.TabIndex = 23;
+            this.btnOK.Text = "Tim";
+            // 
+            // comboBoxEdit1
+            // 
+            this.comboBoxEdit1.Location = new System.Drawing.Point(116, 117);
+            this.comboBoxEdit1.Name = "comboBoxEdit1";
+            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxEdit1.Size = new System.Drawing.Size(132, 20);
+            this.comboBoxEdit1.TabIndex = 22;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(17, 120);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(72, 13);
+            this.labelControl11.TabIndex = 21;
+            this.labelControl11.Text = "Ten phong ban";
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(116, 81);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(132, 20);
+            this.textEdit2.TabIndex = 8;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Location = new System.Drawing.Point(17, 84);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(64, 13);
+            this.labelControl8.TabIndex = 7;
+            this.labelControl8.Text = "Ma nhan vien";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(116, 47);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(132, 20);
+            this.textEdit1.TabIndex = 6;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Location = new System.Drawing.Point(17, 50);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(64, 13);
+            this.labelControl7.TabIndex = 5;
+            this.labelControl7.Text = "Ma nhan vien";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Appearance.Options.UseForeColor = true;
+            this.labelControl6.Location = new System.Drawing.Point(17, 13);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(86, 25);
+            this.labelControl6.TabIndex = 0;
+            this.labelControl6.Text = "Tim kiem";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Appearance.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.groupControl2.Appearance.Options.UseBackColor = true;
+            this.groupControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl2.Controls.Add(this.simpleButton1);
+            this.groupControl2.Controls.Add(this.simpleButton3);
+            this.groupControl2.Controls.Add(this.simpleButton4);
+            this.groupControl2.Controls.Add(this.simpleButton5);
+            this.groupControl2.Controls.Add(this.simpleButton6);
+            this.groupControl2.Controls.Add(this.simpleButton7);
+            this.groupControl2.Controls.Add(this.cboPhgBan);
+            this.groupControl2.Controls.Add(this.labelControl10);
+            this.groupControl2.Controls.Add(this.textEdit3);
+            this.groupControl2.Controls.Add(this.dateEdit1);
+            this.groupControl2.Controls.Add(this.labelControl9);
+            this.groupControl2.Controls.Add(this.radNu);
+            this.groupControl2.Controls.Add(this.radNam);
+            this.groupControl2.Controls.Add(this.labelControl3);
+            this.groupControl2.Controls.Add(this.txtDC);
+            this.groupControl2.Controls.Add(this.pictureEdit1);
+            this.groupControl2.Controls.Add(this.labelControl2);
+            this.groupControl2.Controls.Add(this.labelControl1);
+            this.groupControl2.Controls.Add(this.txtTenNV);
+            this.groupControl2.Controls.Add(this.labelControl5);
+            this.groupControl2.Controls.Add(this.labelControl4);
+            this.groupControl2.Controls.Add(this.txtMaNV);
+            this.groupControl2.Controls.Add(this.lblMaNV);
+            this.groupControl2.Location = new System.Drawing.Point(12, 40);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(646, 263);
+            this.groupControl2.TabIndex = 8;
+            this.groupControl2.Text = "groupControl2";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.BackgroundImage = global::GUI.Properties.Resources.Blue;
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(423, 179);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton1.TabIndex = 43;
+            this.simpleButton1.Text = "Cancel";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.BackgroundImage = global::GUI.Properties.Resources.images;
+            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(325, 179);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton3.TabIndex = 42;
+            this.simpleButton3.Text = "Save";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("simpleButton4.BackgroundImage")));
+            this.simpleButton4.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.Location = new System.Drawing.Point(129, 179);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton4.TabIndex = 41;
+            this.simpleButton4.Text = "Edit";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.BackgroundImage = global::GUI.Properties.Resources.images__1_;
+            this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.Location = new System.Drawing.Point(227, 179);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton5.TabIndex = 40;
+            this.simpleButton5.Text = "Delete";
+            // 
+            // simpleButton6
+            // 
+            this.simpleButton6.BackgroundImage = global::GUI.Properties.Resources.yellow;
+            this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.simpleButton6.Location = new System.Drawing.Point(31, 179);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton6.TabIndex = 39;
+            this.simpleButton6.Text = "Insert";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.BackgroundImage = global::GUI.Properties.Resources.greeen;
+            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
+            this.simpleButton7.Location = new System.Drawing.Point(532, 179);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton7.TabIndex = 38;
+            this.simpleButton7.Text = "Refesh";
+>>>>>>> master
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -286,6 +470,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(75, 170);
             this.label1.Name = "label1";
+<<<<<<< HEAD
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
@@ -376,6 +561,23 @@
             this.dataGridView1.TabIndex = 50;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+=======
+            this.label1.Size = new System.Drawing.Size(209, 25);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Danh sach nhan vien";
+            // 
+            // simpleButton13
+            // 
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
+            this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));
+            this.simpleButton13.Location = new System.Drawing.Point(871, 571);
+            this.simpleButton13.Name = "simpleButton13";
+            this.simpleButton13.Size = new System.Drawing.Size(92, 32);
+            this.simpleButton13.TabIndex = 51;
+            this.simpleButton13.Text = "Trở về";
+>>>>>>> master
             // 
             // frm_QuanLiNhanVien
             // 

@@ -7,7 +7,11 @@ using System.Text;
 using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+<<<<<<< HEAD
 using BUS;
+=======
+
+>>>>>>> master
 namespace GUI
 {
     public partial class frmQuanLiKhachHang : DevExpress.XtraEditors.XtraForm
@@ -21,12 +25,15 @@ namespace GUI
         private void kHACHHANGBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
 
         }
         public void ClearTextBox()
         {
             txtShowMaNV.Text = txtTen.Text = txtShowMaNV.Text = txtSDT.Text = txtDC.Text = string.Empty;
             dtNgSinh.Text = string.Empty;
+=======
+>>>>>>> master
 
         }
         int b;
@@ -50,6 +57,7 @@ namespace GUI
         }
         private void frmQuanLiKhachHang_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             dgvKH.DataSource = kh.LoadKH();
             cboLoaiKH.DataSource = kh.LoadTenLoai();
             cboLoaiKH.DisplayMember = "TenLoaiKH";
@@ -192,6 +200,9 @@ namespace GUI
             }
             catch (Exception)
             {
+=======
+
+>>>>>>> master
 
                 throw;
             }

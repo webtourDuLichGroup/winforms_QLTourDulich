@@ -92,3 +92,9 @@ C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DTO.pd
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.dll
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\BUS\obj\Debug\BUS.pdb
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DevExpress.Xpo.v17.1.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\DevExpress.Xpo.v17.1.xml
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\de\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\es\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ja\DevExpress.Xpo.v17.1.resources.dll
+D:\School\winforms_QLTourDulich\QLTour\BUS\bin\Debug\ru\DevExpress.Xpo.v17.1.resources.dll

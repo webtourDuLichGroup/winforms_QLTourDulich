@@ -215,6 +215,10 @@
             // 
             // simpleButton7
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton7.BackgroundImage = global::GUI.Properties.Resources.Blue;
+>>>>>>> master
             this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
             this.simpleButton7.Location = new System.Drawing.Point(162, 190);
@@ -225,6 +229,10 @@
             // 
             // simpleButton8
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton8.BackgroundImage = global::GUI.Properties.Resources.images;
+>>>>>>> master
             this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
             this.simpleButton8.Location = new System.Drawing.Point(42, 190);
@@ -246,6 +254,10 @@
             // 
             // simpleButton10
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton10.BackgroundImage = global::GUI.Properties.Resources.images__1_;
+>>>>>>> master
             this.simpleButton10.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
             this.simpleButton10.Location = new System.Drawing.Point(289, 134);
@@ -256,6 +268,10 @@
             // 
             // simpleButton11
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton11.BackgroundImage = global::GUI.Properties.Resources.yellow;
+>>>>>>> master
             this.simpleButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton11.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton11.ImageOptions.Image")));
@@ -267,6 +283,10 @@
             // 
             // simpleButton12
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton12.BackgroundImage = global::GUI.Properties.Resources.greeen;
+>>>>>>> master
             this.simpleButton12.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton12.ImageOptions.Image")));
             this.simpleButton12.Location = new System.Drawing.Point(289, 190);
@@ -414,6 +434,10 @@
             // 
             // simpleButton1
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton1.BackgroundImage = global::GUI.Properties.Resources.Blue;
+>>>>>>> master
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(177, 190);
@@ -424,6 +448,10 @@
             // 
             // simpleButton3
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton3.BackgroundImage = global::GUI.Properties.Resources.images;
+>>>>>>> master
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(57, 190);
@@ -445,6 +473,10 @@
             // 
             // simpleButton5
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton5.BackgroundImage = global::GUI.Properties.Resources.images__1_;
+>>>>>>> master
             this.simpleButton5.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(304, 134);
@@ -455,6 +487,10 @@
             // 
             // simpleButton6
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton6.BackgroundImage = global::GUI.Properties.Resources.yellow;
+>>>>>>> master
             this.simpleButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
@@ -466,6 +502,10 @@
             // 
             // simpleButton2
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton2.BackgroundImage = global::GUI.Properties.Resources.greeen;
+>>>>>>> master
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(304, 190);
@@ -626,6 +666,10 @@
             // 
             // simpleButton13
             // 
+<<<<<<< HEAD
+=======
+            this.simpleButton13.BackgroundImage = global::GUI.Properties.Resources.yellow;
+>>>>>>> master
             this.simpleButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.simpleButton13.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.simpleButton13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton13.ImageOptions.Image")));

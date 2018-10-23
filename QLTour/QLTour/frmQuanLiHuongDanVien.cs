@@ -7,7 +7,11 @@ using System.Text;
 using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+<<<<<<< HEAD
 using BUS;
+=======
+
+>>>>>>> master
 namespace GUI
 {
     public partial class frmQuanLiHuongDanVien : DevExpress.XtraEditors.XtraForm

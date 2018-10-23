@@ -53,7 +53,10 @@
     <Reference Include="MyControl">
       <HintPath>C:\Users\tranthibay\source\repos\WindowsFormsApp1\MyControl\bin\Debug\MyControl.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="PresentationCore" />
+=======
+>>>>>>> master
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -70,6 +73,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+<<<<<<< HEAD
     <Reference Include="UIAutomationClient" />
     <Reference Include="UserDL">
       <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
@@ -78,6 +82,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\MessgeBoxConstants.cs" />
+=======
+    <Reference Include="UserDL">
+      <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\MessgeBoxConstants.cs" />
+    <Compile Include="frmCTTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTTour.Designer.cs">
+      <DependentUpon>frmCTTour.cs</DependentUpon>
+    </Compile>
+>>>>>>> master
     <Compile Include="frmDanhMucDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +156,15 @@
     <Compile Include="frm_PhanQuyen1.Designer.cs">
       <DependentUpon>frm_PhanQuyen1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frm_QuanLiNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_QuanLiNhanVien.Designer.cs">
       <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="frm_Tour.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +173,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="frmCTTour.resx">
+      <DependentUpon>frmCTTour.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> master
     <EmbeddedResource Include="frmDanhMucDichVu.resx">
       <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
     </EmbeddedResource>
