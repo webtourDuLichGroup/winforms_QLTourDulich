@@ -228,4 +228,3 @@ D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QuanLiNhanVien.r
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ClassLibrary1.dll
 D:\School\winforms_QLTourDulich\QLTour\QLTour\bin\Debug\ClassLibrary1.pdb
 D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QLTour.resources
-D:\School\winforms_QLTourDulich\QLTour\QLTour\obj\Debug\GUI.frm_QLTour1.resources

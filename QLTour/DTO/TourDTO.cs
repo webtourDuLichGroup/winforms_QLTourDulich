@@ -8,6 +8,12 @@ namespace DTO
 {
     public class TourDTO
     {
+        [DisplayName("Tên Tour")]
+        public string TenTour { get; set; }
+
+        [DisplayName("Loại Tour")]
+        public string LoaiTour { get; set; }
+
         [DisplayName("Mã Tour")]
         public string MaTour { get; set; }
 
@@ -59,5 +65,18 @@ namespace DTO
         public string AnhDiaDiem { get; set; }
     }
 
+    public class ThemTourDTO
+    {
+        public string MaHanhTrinh { get; set; }
 
+        public TourDTO TourDTO { get; set; }
+
+        public string MaKS { get; set; }
+
+        public int? MaHDV { get; set; }
+
+        public string AnhDiaDiem { get; set; }
+
+        public string MaLoaiTour { get; set; }
+    }
 }

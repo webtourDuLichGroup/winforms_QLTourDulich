@@ -7,25 +7,19 @@ namespace DTO
 {
     public class QuyenNhomNguoiDungDTO
     {
-        public QuyenNhomNguoiDungDTO(string maNhomNguoiDung, List<Quyen> quyens)
+        public QuyenNhomNguoiDungDTO(int maNhomNguoiDung, List<QuyenDTO> quyens)
         {
             MaNhomNguoiDung = maNhomNguoiDung;
             Quyens = quyens;
         }
 
-        public string MaNhomNguoiDung { get; set; }
-        public List<Quyen> Quyens { get; set; }
+        public int MaNhomNguoiDung { get; set; }
+        public List<QuyenDTO> Quyens { get; set; }
     }
 
-    public class Quyen
+    public class QuyenDTO
     {
-        //public Quyen(string maMH, bool coQuyen)
-        //{
-        //    MaMH = maMH;
-        //    CoQuyen = coQuyen;
-        //}
-
-        public string MaMH { get; set; }
-        public bool CoQuyen { get; set; }
+        public int? MaMH { get; set; }
+        public int? CoQuyen { get; set; }
     }
 }

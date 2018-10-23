@@ -112,6 +112,7 @@
             this.ribbonPage4});
             this.ribbonMenu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonMenu.Size = new System.Drawing.Size(857, 146);
+            this.ribbonMenu.Tag = "1";
             // 
             // barBtn_QLTour
             // 
@@ -274,8 +275,9 @@
             this.ribbonPageGroup5,
             this.ribbonPageGroup4});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Tag = "showtour";
+            this.ribbonPage1.Tag = "1";
             this.ribbonPage1.Text = "Quản lí";
+            this.ribbonPage1.Visible = false;
             // 
             // ribbonPageGroup1_XemTour
             // 
@@ -305,8 +307,9 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup7});
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Tag = "quanlytour";
+            this.ribbonPage2.Tag = "2";
             this.ribbonPage2.Text = "Đặt Tour";
+            this.ribbonPage2.Visible = false;
             // 
             // ribbonPageGroup2
             // 
@@ -332,7 +335,9 @@
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.barPageGrp_KhachSan});
             this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Tag = "3";
             this.ribbonPage3.Text = "Khách Sạn";
+            this.ribbonPage3.Visible = false;
             // 
             // barPageGrp_KhachSan
             // 
@@ -346,7 +351,9 @@
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup6});
             this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Tag = "5";
             this.ribbonPage5.Text = "Quản Trị Viên";
+            this.ribbonPage5.Visible = false;
             // 
             // ribbonPageGroup6
             // 
@@ -361,7 +368,9 @@
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
             this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Tag = "6";
             this.ribbonPage4.Text = "Thống kê";
+            this.ribbonPage4.Visible = false;
             // 
             // ribbonPageGroup3
             // 
@@ -401,6 +410,7 @@
             this.IsMdiContainer = true;
             this.Name = "frm_Main";
             this.Ribbon = this.ribbonMenu;
+            this.Tag = "4";
             this.Text = "Form Main";
             this.Load += new System.EventHandler(this.frm_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMenu)).EndInit();

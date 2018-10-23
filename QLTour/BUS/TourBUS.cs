@@ -6,7 +6,7 @@ using DTO;
 namespace BUS
 {
 
-    public class DatTourBUS
+    public class TourBUS
     {
         public List<TourDTO> LoadTourToDataGridView()
         {
@@ -38,6 +38,21 @@ namespace BUS
             new KhachHangDAO().ThemKhachHangMoi(khachHang);
             new HopDongDAO().ThemHopDong(hopDong);
             new ChiTietHopDongDAO().ThemCTHopDong(chiTietHopDong);
+        }
+
+        public void ThemTour(ThemTourDTO tourDTO)
+        {
+            new TourDAO().ThemTour(tourDTO);
+        }
+
+        public void XoaTour(string MaTour)
+        {
+            new TourDAO().XoaTour(MaTour);
+        }
+
+        public void ChinhSuaTour(ThemTourDTO tourDTO)
+        {
+            new TourDAO().ChinhSuaTour(tourDTO);
         }
     }
 

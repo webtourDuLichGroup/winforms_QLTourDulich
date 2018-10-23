@@ -8,6 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using BUS;
 using GUI;
+using DTO;
+using DevExpress.XtraBars.Ribbon;
+
 namespace GUI
 {
     public partial class frm_Main : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -19,7 +22,25 @@ namespace GUI
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
-            //QuyenNguoiDungBus.PhanQuyenManHinh(this.ribbonMenu, "khadaica");
+            QuyenNguoiDungBus quyenNguoiDungBus = new QuyenNguoiDungBus();
+            List<QuyenDTO> quyenNhomNguoiDungLst = quyenNguoiDungBus.LayQuyenNguoiDung(Program.Username);
+            if (quyenNhomNguoiDungLst.Count > 0)
+            {
+                foreach (RibbonPage page in ribbonMenu.Pages)
+                {
+                    QuyenDTO quyen = quyenNhomNguoiDungLst.FirstOrDefault(t => (t.MaMH == int.Parse(page.Tag.ToString()) && t.CoQuyen == 1));
+                    bool hienThi = quyen != null;
+                    page.Visible = hienThi;
+                }
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Không thể truy cập", "Bạn không có một quyền nào được thực hiện trong ứng dụng này.", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.OK)
+                {
+                    //
+                }
+            }
         }
 
         private void barBtn_QLTourDuLich_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -50,6 +50,7 @@
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ChiTietHopDongDAO.cs" />
+    <Compile Include="HanhTrinhDAO.cs" />
     <Compile Include="HopDongDAO.cs" />
     <Compile Include="CTPHIEUNHAP_TOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
@@ -75,6 +76,7 @@
     <Compile Include="HUONGDANVIEN.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="HuongDanVienDAO.cs" />
     <Compile Include="KHACHHANG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -82,6 +84,7 @@
     <Compile Include="KHACHSAN.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="KhachSanDAO.cs" />
     <Compile Include="LOAIKHACHHANG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -91,12 +94,14 @@
     <Compile Include="LOAITOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="LoaiTourDAO.cs" />
     <Compile Include="MANHINH.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
     <Compile Include="NGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="NguoiDungDAO.cs" />
     <Compile Include="NHOMNGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -130,6 +135,7 @@
     <Compile Include="QUANLINHOMNGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="QuyenNguoiDungDAO.cs" />
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>

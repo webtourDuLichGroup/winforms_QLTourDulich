@@ -28,75 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_QLTour));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.grTK = new DevExpress.XtraEditors.GroupControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
-            this.comboBoxEdit6 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit5 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cbo_NoiDen = new System.Windows.Forms.ComboBox();
+            this.dateEdit_NgayKT = new System.Windows.Forms.DateTimePicker();
+            this.dateEdit_NgayKH = new System.Windows.Forms.DateTimePicker();
+            this.cbo_KhachSan = new System.Windows.Forms.ComboBox();
+            this.cbo_LoaiTour = new System.Windows.Forms.ComboBox();
+            this.cbo_HuongDanVien = new System.Windows.Forms.ComboBox();
+            this.cbo_NoiDi = new System.Windows.Forms.ComboBox();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit_NgayKT = new DevExpress.XtraEditors.DateEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txt_GiaNguoiLon = new DevExpress.XtraEditors.TextEdit();
-            this.dateEdit_NgayKH = new DevExpress.XtraEditors.DateEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.txt_GiaTreEm = new DevExpress.XtraEditors.TextEdit();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSuaNV = new DevExpress.XtraEditors.SimpleButton();
-            this.btnXoaNV = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.txt_TenTour = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.lblMaKH = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.cbo_NoiDi = new System.Windows.Forms.ComboBox();
-            this.cbo_NoiDen = new System.Windows.Forms.ComboBox();
-            this.cbo_HuongDanVien = new System.Windows.Forms.ComboBox();
-            this.cbo_LoaiTour = new System.Windows.Forms.ComboBox();
-            this.cbo_KhachSan = new System.Windows.Forms.ComboBox();
+            this.gridControl_Tour = new DevExpress.XtraGrid.GridControl();
+            this.gridView_Tour = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.errorProvider_TenTour = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider_GiaTreEm = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider_GiaNguoiLon = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grTK)).BeginInit();
-            this.grTK.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKT.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GiaNguoiLon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKH.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GiaTreEm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTour.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Tour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Tour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_TenTour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_GiaTreEm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_GiaNguoiLon)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -105,198 +86,45 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 786F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.grTK, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.groupControl1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.gridControl1, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.groupControl1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.gridControl_Tour, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 222F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 622);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // grTK
-            // 
-            this.grTK.Appearance.BackColor = System.Drawing.Color.LightCyan;
-            this.grTK.Appearance.Options.UseBackColor = true;
-            this.grTK.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.grTK.Controls.Add(this.textEdit1);
-            this.grTK.Controls.Add(this.simpleButton2);
-            this.grTK.Controls.Add(this.btnOK);
-            this.grTK.Controls.Add(this.comboBoxEdit6);
-            this.grTK.Controls.Add(this.labelControl7);
-            this.grTK.Controls.Add(this.comboBoxEdit5);
-            this.grTK.Controls.Add(this.labelControl6);
-            this.grTK.Controls.Add(this.comboBoxEdit4);
-            this.grTK.Controls.Add(this.labelControl5);
-            this.grTK.Controls.Add(this.comboBoxEdit3);
-            this.grTK.Controls.Add(this.labelControl4);
-            this.grTK.Controls.Add(this.comboBoxEdit2);
-            this.grTK.Controls.Add(this.labelControl3);
-            this.grTK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grTK.Location = new System.Drawing.Point(10, 3);
-            this.grTK.Name = "grTK";
-            this.grTK.Size = new System.Drawing.Size(780, 116);
-            this.grTK.TabIndex = 10;
-            this.grTK.Text = "Tim kiem";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.EditValue = "DANH MUC TOUR";
-            this.textEdit1.Location = new System.Drawing.Point(0, -3);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.LightPink;
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Yellow;
-            this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit1.Size = new System.Drawing.Size(786, 32);
-            this.textEdit1.TabIndex = 56;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(641, 79);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(92, 32);
-            this.simpleButton2.TabIndex = 22;
-            this.simpleButton2.Text = "Cancel";
-            // 
-            // btnOK
-            // 
-            this.btnOK.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnOK.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.ImageOptions.Image")));
-            this.btnOK.Location = new System.Drawing.Point(641, 39);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(92, 32);
-            this.btnOK.TabIndex = 12;
-            this.btnOK.Text = "Tim";
-            // 
-            // comboBoxEdit6
-            // 
-            this.comboBoxEdit6.Location = new System.Drawing.Point(499, 69);
-            this.comboBoxEdit6.Name = "comboBoxEdit6";
-            this.comboBoxEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit6.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit6.TabIndex = 11;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(430, 70);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(61, 13);
-            this.labelControl7.TabIndex = 10;
-            this.labelControl7.Text = "Gia nguoi lon";
-            // 
-            // comboBoxEdit5
-            // 
-            this.comboBoxEdit5.Location = new System.Drawing.Point(499, 37);
-            this.comboBoxEdit5.Name = "comboBoxEdit5";
-            this.comboBoxEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit5.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit5.TabIndex = 9;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(430, 40);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(49, 13);
-            this.labelControl6.TabIndex = 8;
-            this.labelControl6.Text = "Gia tre em";
-            // 
-            // comboBoxEdit4
-            // 
-            this.comboBoxEdit4.Location = new System.Drawing.Point(299, 69);
-            this.comboBoxEdit4.Name = "comboBoxEdit4";
-            this.comboBoxEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit4.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit4.TabIndex = 7;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(230, 70);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(36, 13);
-            this.labelControl5.TabIndex = 6;
-            this.labelControl5.Text = "Noi den";
-            // 
-            // comboBoxEdit3
-            // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(299, 39);
-            this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit3.TabIndex = 5;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(230, 40);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(26, 13);
-            this.labelControl4.TabIndex = 4;
-            this.labelControl4.Text = "Noi di";
-            // 
-            // comboBoxEdit2
-            // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(95, 69);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(100, 20);
-            this.comboBoxEdit2.TabIndex = 3;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(26, 72);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(46, 13);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Ngay den";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(514, 63);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(30, 13);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "Nơi đi:";
             // 
             // groupControl1
             // 
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.LightCyan;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.cbo_NoiDen);
+            this.groupControl1.Controls.Add(this.dateEdit_NgayKT);
+            this.groupControl1.Controls.Add(this.dateEdit_NgayKH);
             this.groupControl1.Controls.Add(this.cbo_KhachSan);
             this.groupControl1.Controls.Add(this.cbo_LoaiTour);
             this.groupControl1.Controls.Add(this.cbo_HuongDanVien);
-            this.groupControl1.Controls.Add(this.cbo_NoiDen);
             this.groupControl1.Controls.Add(this.cbo_NoiDi);
             this.groupControl1.Controls.Add(this.textEdit2);
             this.groupControl1.Controls.Add(this.pictureEdit1);
             this.groupControl1.Controls.Add(this.labelControl12);
-            this.groupControl1.Controls.Add(this.dateEdit_NgayKT);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.txt_GiaNguoiLon);
-            this.groupControl1.Controls.Add(this.dateEdit_NgayKH);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.btnCancel);
             this.groupControl1.Controls.Add(this.txt_GiaTreEm);
-            this.groupControl1.Controls.Add(this.btnSave);
-            this.groupControl1.Controls.Add(this.btnSuaNV);
-            this.groupControl1.Controls.Add(this.btnXoaNV);
+            this.groupControl1.Controls.Add(this.btn_Save);
+            this.groupControl1.Controls.Add(this.btn_Sua);
+            this.groupControl1.Controls.Add(this.btn_Xoa);
             this.groupControl1.Controls.Add(this.btnThem);
             this.groupControl1.Controls.Add(this.btnRefesh);
             this.groupControl1.Controls.Add(this.txt_TenTour);
@@ -304,11 +132,68 @@
             this.groupControl1.Controls.Add(this.labelControl14);
             this.groupControl1.Controls.Add(this.lblMaKH);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(10, 125);
+            this.groupControl1.Location = new System.Drawing.Point(44, 3);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(780, 216);
             this.groupControl1.TabIndex = 11;
             this.groupControl1.Text = "groupControl1";
+            // 
+            // cbo_NoiDen
+            // 
+            this.cbo_NoiDen.FormattingEnabled = true;
+            this.cbo_NoiDen.Location = new System.Drawing.Point(573, 65);
+            this.cbo_NoiDen.Name = "cbo_NoiDen";
+            this.cbo_NoiDen.Size = new System.Drawing.Size(100, 21);
+            this.cbo_NoiDen.TabIndex = 58;
+            // 
+            // dateEdit_NgayKT
+            // 
+            this.dateEdit_NgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateEdit_NgayKT.Location = new System.Drawing.Point(154, 128);
+            this.dateEdit_NgayKT.Name = "dateEdit_NgayKT";
+            this.dateEdit_NgayKT.Size = new System.Drawing.Size(100, 21);
+            this.dateEdit_NgayKT.TabIndex = 57;
+            // 
+            // dateEdit_NgayKH
+            // 
+            this.dateEdit_NgayKH.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateEdit_NgayKH.Location = new System.Drawing.Point(154, 101);
+            this.dateEdit_NgayKH.Name = "dateEdit_NgayKH";
+            this.dateEdit_NgayKH.Size = new System.Drawing.Size(100, 21);
+            this.dateEdit_NgayKH.TabIndex = 57;
+            // 
+            // cbo_KhachSan
+            // 
+            this.cbo_KhachSan.FormattingEnabled = true;
+            this.cbo_KhachSan.Location = new System.Drawing.Point(154, 41);
+            this.cbo_KhachSan.Name = "cbo_KhachSan";
+            this.cbo_KhachSan.Size = new System.Drawing.Size(100, 21);
+            this.cbo_KhachSan.TabIndex = 56;
+            // 
+            // cbo_LoaiTour
+            // 
+            this.cbo_LoaiTour.FormattingEnabled = true;
+            this.cbo_LoaiTour.Location = new System.Drawing.Point(358, 92);
+            this.cbo_LoaiTour.Name = "cbo_LoaiTour";
+            this.cbo_LoaiTour.Size = new System.Drawing.Size(100, 21);
+            this.cbo_LoaiTour.TabIndex = 56;
+            // 
+            // cbo_HuongDanVien
+            // 
+            this.cbo_HuongDanVien.FormattingEnabled = true;
+            this.cbo_HuongDanVien.Location = new System.Drawing.Point(358, 119);
+            this.cbo_HuongDanVien.Name = "cbo_HuongDanVien";
+            this.cbo_HuongDanVien.Size = new System.Drawing.Size(100, 21);
+            this.cbo_HuongDanVien.TabIndex = 56;
+            // 
+            // cbo_NoiDi
+            // 
+            this.cbo_NoiDi.FormattingEnabled = true;
+            this.cbo_NoiDi.Location = new System.Drawing.Point(573, 39);
+            this.cbo_NoiDi.Name = "cbo_NoiDi";
+            this.cbo_NoiDi.Size = new System.Drawing.Size(100, 21);
+            this.cbo_NoiDi.TabIndex = 56;
+            this.cbo_NoiDi.SelectedIndexChanged += new System.EventHandler(this.cbo_NoiDi_SelectedIndexChanged);
             // 
             // textEdit2
             // 
@@ -344,18 +229,6 @@
             this.labelControl12.TabIndex = 51;
             this.labelControl12.Text = "Gia nguoi lon";
             // 
-            // dateEdit_NgayKT
-            // 
-            this.dateEdit_NgayKT.EditValue = null;
-            this.dateEdit_NgayKT.Location = new System.Drawing.Point(154, 120);
-            this.dateEdit_NgayKT.Name = "dateEdit_NgayKT";
-            this.dateEdit_NgayKT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit_NgayKT.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit_NgayKT.Size = new System.Drawing.Size(100, 20);
-            this.dateEdit_NgayKT.TabIndex = 50;
-            // 
             // labelControl8
             // 
             this.labelControl8.Location = new System.Drawing.Point(273, 127);
@@ -380,18 +253,6 @@
             this.txt_GiaNguoiLon.Size = new System.Drawing.Size(100, 20);
             this.txt_GiaNguoiLon.TabIndex = 45;
             // 
-            // dateEdit_NgayKH
-            // 
-            this.dateEdit_NgayKH.EditValue = null;
-            this.dateEdit_NgayKH.Location = new System.Drawing.Point(154, 94);
-            this.dateEdit_NgayKH.Name = "dateEdit_NgayKH";
-            this.dateEdit_NgayKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit_NgayKH.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit_NgayKH.Size = new System.Drawing.Size(100, 20);
-            this.dateEdit_NgayKH.TabIndex = 44;
-            // 
             // labelControl9
             // 
             this.labelControl9.Location = new System.Drawing.Point(273, 101);
@@ -399,6 +260,22 @@
             this.labelControl9.Size = new System.Drawing.Size(42, 13);
             this.labelControl9.TabIndex = 43;
             this.labelControl9.Text = "Loai tour";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Location = new System.Drawing.Point(514, 75);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(40, 13);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Nơi đến:";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(514, 47);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(30, 13);
+            this.labelControl2.TabIndex = 0;
+            this.labelControl2.Text = "Nơi đi:";
             // 
             // labelControl11
             // 
@@ -418,6 +295,7 @@
             this.btnCancel.Size = new System.Drawing.Size(92, 32);
             this.btnCancel.TabIndex = 37;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txt_GiaTreEm
             // 
@@ -427,38 +305,41 @@
             this.txt_GiaTreEm.Size = new System.Drawing.Size(100, 20);
             this.txt_GiaTreEm.TabIndex = 39;
             // 
-            // btnSave
+            // btn_Save
             // 
-            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
-            this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(366, 176);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(92, 32);
-            this.btnSave.TabIndex = 36;
-            this.btnSave.Text = "Save";
+            this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
+            this.btn_Save.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_Save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.ImageOptions.Image")));
+            this.btn_Save.Location = new System.Drawing.Point(366, 176);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(92, 32);
+            this.btn_Save.TabIndex = 36;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // btnSuaNV
+            // btn_Sua
             // 
-            this.btnSuaNV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSuaNV.BackgroundImage")));
-            this.btnSuaNV.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnSuaNV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaNV.ImageOptions.Image")));
-            this.btnSuaNV.Location = new System.Drawing.Point(170, 176);
-            this.btnSuaNV.Name = "btnSuaNV";
-            this.btnSuaNV.Size = new System.Drawing.Size(92, 32);
-            this.btnSuaNV.TabIndex = 34;
-            this.btnSuaNV.Text = "Edit";
+            this.btn_Sua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Sua.BackgroundImage")));
+            this.btn_Sua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_Sua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.ImageOptions.Image")));
+            this.btn_Sua.Location = new System.Drawing.Point(170, 176);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(92, 32);
+            this.btn_Sua.TabIndex = 34;
+            this.btn_Sua.Text = "Edit";
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
-            // btnXoaNV
+            // btn_Xoa
             // 
-            this.btnXoaNV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.BackgroundImage")));
-            this.btnXoaNV.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnXoaNV.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.ImageOptions.Image")));
-            this.btnXoaNV.Location = new System.Drawing.Point(268, 176);
-            this.btnXoaNV.Name = "btnXoaNV";
-            this.btnXoaNV.Size = new System.Drawing.Size(92, 32);
-            this.btnXoaNV.TabIndex = 32;
-            this.btnXoaNV.Text = "Delete";
+            this.btn_Xoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.BackgroundImage")));
+            this.btn_Xoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btn_Xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.ImageOptions.Image")));
+            this.btn_Xoa.Location = new System.Drawing.Point(268, 176);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(92, 32);
+            this.btn_Xoa.TabIndex = 32;
+            this.btn_Xoa.Text = "Delete";
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btnThem
             // 
@@ -471,6 +352,7 @@
             this.btnThem.Size = new System.Drawing.Size(92, 32);
             this.btnThem.TabIndex = 29;
             this.btnThem.Text = "Insert";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnRefesh
             // 
@@ -514,103 +396,59 @@
             this.lblMaKH.TabIndex = 27;
             this.lblMaKH.Text = "Khách sạn:";
             // 
-            // labelControl1
+            // gridControl_Tour
             // 
-            this.labelControl1.Location = new System.Drawing.Point(504, 37);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(40, 13);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "Nơi đến:";
+            this.gridControl_Tour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl_Tour.Location = new System.Drawing.Point(44, 225);
+            this.gridControl_Tour.MainView = this.gridView_Tour;
+            this.gridControl_Tour.Name = "gridControl_Tour";
+            this.gridControl_Tour.Size = new System.Drawing.Size(780, 394);
+            this.gridControl_Tour.TabIndex = 12;
+            this.gridControl_Tour.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView_Tour});
             // 
-            // gridControl1
+            // gridView_Tour
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(10, 347);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(780, 100);
-            this.gridControl1.TabIndex = 12;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridView_Tour.GridControl = this.gridControl_Tour;
+            this.gridView_Tour.Name = "gridView_Tour";
+            this.gridView_Tour.OptionsBehavior.Editable = false;
+            this.gridView_Tour.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridView_Tour_RowClick);
             // 
-            // gridView1
+            // errorProvider_TenTour
             // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
+            this.errorProvider_TenTour.ContainerControl = this;
             // 
-            // cbo_NoiDi
+            // errorProvider_GiaTreEm
             // 
-            this.cbo_NoiDi.FormattingEnabled = true;
-            this.cbo_NoiDi.Location = new System.Drawing.Point(573, 39);
-            this.cbo_NoiDi.Name = "cbo_NoiDi";
-            this.cbo_NoiDi.Size = new System.Drawing.Size(100, 21);
-            this.cbo_NoiDi.TabIndex = 56;
+            this.errorProvider_GiaTreEm.ContainerControl = this;
             // 
-            // cbo_NoiDen
+            // errorProvider_GiaNguoiLon
             // 
-            this.cbo_NoiDen.FormattingEnabled = true;
-            this.cbo_NoiDen.Location = new System.Drawing.Point(573, 63);
-            this.cbo_NoiDen.Name = "cbo_NoiDen";
-            this.cbo_NoiDen.Size = new System.Drawing.Size(100, 21);
-            this.cbo_NoiDen.TabIndex = 56;
-            // 
-            // cbo_HuongDanVien
-            // 
-            this.cbo_HuongDanVien.FormattingEnabled = true;
-            this.cbo_HuongDanVien.Location = new System.Drawing.Point(358, 119);
-            this.cbo_HuongDanVien.Name = "cbo_HuongDanVien";
-            this.cbo_HuongDanVien.Size = new System.Drawing.Size(100, 21);
-            this.cbo_HuongDanVien.TabIndex = 56;
-            // 
-            // cbo_LoaiTour
-            // 
-            this.cbo_LoaiTour.FormattingEnabled = true;
-            this.cbo_LoaiTour.Location = new System.Drawing.Point(358, 92);
-            this.cbo_LoaiTour.Name = "cbo_LoaiTour";
-            this.cbo_LoaiTour.Size = new System.Drawing.Size(100, 21);
-            this.cbo_LoaiTour.TabIndex = 56;
-            // 
-            // cbo_KhachSan
-            // 
-            this.cbo_KhachSan.FormattingEnabled = true;
-            this.cbo_KhachSan.Location = new System.Drawing.Point(154, 41);
-            this.cbo_KhachSan.Name = "cbo_KhachSan";
-            this.cbo_KhachSan.Size = new System.Drawing.Size(100, 21);
-            this.cbo_KhachSan.TabIndex = 56;
+            this.errorProvider_GiaNguoiLon.ContainerControl = this;
             // 
             // frm_QLTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(869, 622);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frm_QLTour";
             this.Text = "frm_QLTour1";
-            this.Load += new System.EventHandler(this.frm_QLTour1_Load);
+            this.Load += new System.EventHandler(this.frm_QLTour_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grTK)).EndInit();
-            this.grTK.ResumeLayout(false);
-            this.grTK.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKT.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GiaNguoiLon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKH.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit_NgayKH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GiaTreEm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTour.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl_Tour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView_Tour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_TenTour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_GiaTreEm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider_GiaNguoiLon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -618,37 +456,21 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private DevExpress.XtraEditors.GroupControl grTK;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton btnOK;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit6;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit5;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit4;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.DateEdit dateEdit_NgayKT;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.TextEdit txt_GiaNguoiLon;
-        private DevExpress.XtraEditors.DateEdit dateEdit_NgayKH;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.TextEdit txt_GiaTreEm;
-        private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.SimpleButton btnSuaNV;
-        private DevExpress.XtraEditors.SimpleButton btnXoaNV;
+        private DevExpress.XtraEditors.SimpleButton btn_Save;
+        private DevExpress.XtraEditors.SimpleButton btn_Sua;
+        private DevExpress.XtraEditors.SimpleButton btn_Xoa;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.SimpleButton btnRefesh;
         private DevExpress.XtraEditors.TextEdit txt_TenTour;
@@ -656,12 +478,17 @@
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl lblMaKH;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControl_Tour;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView_Tour;
         private System.Windows.Forms.ComboBox cbo_LoaiTour;
         private System.Windows.Forms.ComboBox cbo_HuongDanVien;
-        private System.Windows.Forms.ComboBox cbo_NoiDen;
         private System.Windows.Forms.ComboBox cbo_NoiDi;
         private System.Windows.Forms.ComboBox cbo_KhachSan;
+        private System.Windows.Forms.DateTimePicker dateEdit_NgayKT;
+        private System.Windows.Forms.DateTimePicker dateEdit_NgayKH;
+        private System.Windows.Forms.ComboBox cbo_NoiDen;
+        private System.Windows.Forms.ErrorProvider errorProvider_TenTour;
+        private System.Windows.Forms.ErrorProvider errorProvider_GiaTreEm;
+        private System.Windows.Forms.ErrorProvider errorProvider_GiaNguoiLon;
     }
 }

@@ -27,7 +27,7 @@ namespace GUI
 
         private void LoadData()
         {
-            DatTourBUS tourBus = new DatTourBUS();
+            TourBUS tourBus = new TourBUS();
             TourChiTietDTO tourChiTiet = tourBus.TimTour(frm_Tour.BookedTour.MaTour);
             lbl_GiaKS.Text = tourChiTiet.GiaKhachSan.ToString();
             lbl_GiaNguoiLon.Text = tourChiTiet.Tour.GiaNguoiLon.ToString();
@@ -81,7 +81,7 @@ namespace GUI
         {
             if (KTraThongTinNhap())
             {
-                DatTourBUS datTourBUS = new DatTourBUS();
+                TourBUS datTourBUS = new TourBUS();
                 Random random = new Random();
                 string maKH = random.Next(0, 1000000).ToString();
                 string maHD = random.Next(0, 1000).ToString() + txt_Sdt.Text;
@@ -121,7 +121,7 @@ namespace GUI
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Chú ý", MessgeBoxConstants.LOIDULIEU, MessageBoxButtons.OK);
+                    MessageBox.Show("Chú ý", MessageBoxConstants.LOIDULIEU, MessageBoxButtons.OK);
                 }
             }
         }

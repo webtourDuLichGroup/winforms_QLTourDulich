@@ -27,7 +27,7 @@ namespace GUI
 
         private void LoaData()
         {
-            DatTourBUS tourBus = new DatTourBUS();
+            TourBUS tourBus = new TourBUS();
             dgv_Tour.DataSource = tourBus.LoadTourToDataGridView();
             DataTable diaDiem = tourBus.LoadDiaDiem();
             cbo_NoiDi.DisplayMember = "TenDiaDiem";
@@ -47,30 +47,30 @@ namespace GUI
 
         private void cbo_NoiDi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DatTourBUS tourBus = new DatTourBUS();
+            TourBUS tourBus = new TourBUS();
             cbo_NoiDen.DataSource = tourBus.LoadDiemDen(int.Parse(cbo_NoiDi.SelectedValue.ToString()));
-
         }
 
         private void btn_Tim_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(txt_NguoiLon.Text))
             {
-                errorProvider1.SetError(txt_NguoiLon,MessgeBoxConstants.EMPTY);
+                errorProvider1.SetError(txt_NguoiLon, MessageBoxConstants.EMPTY);
             }
             if (String.IsNullOrEmpty(txt_TreEm.Text))
             {
-                errorProvider2.SetError(txt_NguoiLon, MessgeBoxConstants.EMPTY);
+                errorProvider2.SetError(txt_NguoiLon, MessageBoxConstants.EMPTY);
             }
-            DatTourBUS tourBus = new DatTourBUS();
+            TourBUS tourBus = new TourBUS();
             dgv_Tour.DataSource = tourBus.TimTour(dateEdit_NgayDi.DateTime.Date, int.Parse(cbo_NoiDi.SelectedValue.ToString()), int.Parse(cbo_NoiDen.SelectedValue.ToString()));
+
         }
 
         private void gridView1_DoubleClick(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(txt_NguoiLon.Text)|| String.IsNullOrEmpty(txt_TreEm.Text))
+            if (String.IsNullOrEmpty(txt_NguoiLon.Text) || String.IsNullOrEmpty(txt_TreEm.Text))
             {
-                MessageBox.Show(MessgeBoxConstants.THIEUTHONGTIN);
+                MessageBox.Show(MessageBoxConstants.THIEUTHONGTIN);
             }
             else
             {
@@ -89,7 +89,5 @@ namespace GUI
             }
 
         }
-
-
     }
 }
