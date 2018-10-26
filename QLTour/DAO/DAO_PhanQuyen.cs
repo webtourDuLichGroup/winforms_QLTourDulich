@@ -1,4 +1,5 @@
-﻿using DAO.DataSetTableAdapters;
+﻿
+using DAO.DataSet1TableAdapters;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,11 +10,10 @@ namespace DAO
 {
    public class DAO_PhanQuyen
     {
-       NHOMNGUOIDUNGTableAdapter nhom = new NHOMNGUOIDUNGTableAdapter();
-       QUANLINHOMNGUOIDUNGTableAdapter phgban=new QUANLINHOMNGUOIDUNGTableAdapter();
-       PHANQUYENTableAdapter pq = new PHANQUYENTableAdapter();
-       
-       public DataTable LoadTenPhgBan()
+        NHOMNGUOIDUNGTableAdapter nhom = new NHOMNGUOIDUNGTableAdapter();
+        QUANLINHOMNGUOIDUNGTableAdapter phgban = new QUANLINHOMNGUOIDUNGTableAdapter();
+        PHANQUYENTableAdapter pq = new PHANQUYENTableAdapter();
+        public DataTable LoadTenPhgBan()
        {
            return nhom.GetDataByTenNhom();
        }
@@ -25,10 +25,10 @@ namespace DAO
        {
            return pq.GetData(pMaPhg);
        }
-       public DataTable LoadPQ()
-       {
-           return pq.LoadPQ();
-       }
+       //public DataTable LoadPQ()
+       //{
+       //    return pq.LoadPQ();
+       //}
        public int Them_PQ(int MaNhom, int MaMH, bool CoQuyen)
        {
            return pq.Them_PhanQuyen(MaNhom, MaMH, CoQuyen);
@@ -37,17 +37,14 @@ namespace DAO
        {
            return pq.XoaPQ(MaNhom, MaMH);
        }
-       //public int Xoa_PQ(int pMaNV,int pMaMH)
-       //{
-       //    return pq.XoaPQ(pMaNV, pMaMH);
-       //}
-       //public DataTable LoadPQ()
-       //{
-       //    return pq.LoadPQ();
-       //}
-      
 
-      
-       
+        public DataTable KiemTraQuyen(int manhom,int maMH)
+        {
+            return pq.KiemTraQuyenNhomNguoiDung(manhom, maMH);
+        }
+
+
+
+
     }
 }

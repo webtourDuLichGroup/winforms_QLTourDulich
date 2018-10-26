@@ -53,10 +53,7 @@
     <Reference Include="MyControl">
       <HintPath>C:\Users\tranthibay\source\repos\WindowsFormsApp1\MyControl\bin\Debug\MyControl.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="PresentationCore" />
-=======
->>>>>>> master
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -73,7 +70,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-<<<<<<< HEAD
     <Reference Include="UIAutomationClient" />
     <Reference Include="UserDL">
       <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
@@ -81,56 +77,32 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants\ErrorProviderConstants.cs" />
+    <Compile Include="Constants\HopDongConstants.cs" />
     <Compile Include="Constants\MessgeBoxConstants.cs" />
-=======
-    <Reference Include="UserDL">
-      <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Constants\MessgeBoxConstants.cs" />
-    <Compile Include="frmCTTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCTTour.Designer.cs">
-      <DependentUpon>frmCTTour.cs</DependentUpon>
-    </Compile>
->>>>>>> master
     <Compile Include="frmDanhMucDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDanhMucDichVu.Designer.cs">
       <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLiHuongDanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLiHuongDanVien.Designer.cs">
-      <DependentUpon>frmQuanLiHuongDanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuanLiKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLiKhachHang.Designer.cs">
-      <DependentUpon>frmQuanLiKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_DatTour.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_DatTour.Designer.cs">
-      <DependentUpon>frm_DatTour.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_PhanQuyen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_PhanQuyen.Designer.cs">
-      <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_Dangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DatTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DatTour.designer.cs">
+      <DependentUpon>frm_DatTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DoanhThu.cs">
       <SubType>Form</SubType>
@@ -144,27 +116,36 @@
     <Compile Include="frm_HopDong.Designer.cs">
       <DependentUpon>frm_HopDong.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Main.cs">
+    <Compile Include="frm_PhanQuyenNguoiDung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Main.designer.cs">
-      <DependentUpon>frm_Main.cs</DependentUpon>
+    <Compile Include="frm_PhanQuyenNguoiDung.Designer.cs">
+      <DependentUpon>frm_PhanQuyenNguoiDung.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_PhanQuyen1.cs">
+    <Compile Include="frm_QLHuongDanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_PhanQuyen1.Designer.cs">
-      <DependentUpon>frm_PhanQuyen1.cs</DependentUpon>
+    <Compile Include="frm_QLHuongDanVien.Designer.cs">
+      <DependentUpon>frm_QLHuongDanVien.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="frm_QuanLiNhanVien.cs">
+    <Compile Include="frm_QLKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_QuanLiNhanVien.Designer.cs">
-      <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>
+    <Compile Include="frm_QLKhachHang.Designer.cs">
+      <DependentUpon>frm_QLKhachHang.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> master
+    <Compile Include="frm_QLNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNhanVien.Designer.cs">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLTour.Designer.cs">
+      <DependentUpon>frm_QLTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Tour.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,29 +154,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-=======
-    <EmbeddedResource Include="frmCTTour.resx">
-      <DependentUpon>frmCTTour.cs</DependentUpon>
-    </EmbeddedResource>
->>>>>>> master
     <EmbeddedResource Include="frmDanhMucDichVu.resx">
       <DependentUpon>frmDanhMucDichVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLiHuongDanVien.resx">
-      <DependentUpon>frmQuanLiHuongDanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLiKhachHang.resx">
-      <DependentUpon>frmQuanLiKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="frm_DangNhap.resx">
+      <DependentUpon>frm_Dangnhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DatTour.resx">
       <DependentUpon>frm_DatTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_PhanQuyen.resx">
-      <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_DangNhap.resx">
-      <DependentUpon>frm_Dangnhap.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DoanhThu.resx">
       <DependentUpon>frm_DoanhThu.cs</DependentUpon>
@@ -203,14 +172,20 @@
     <EmbeddedResource Include="frm_HopDong.resx">
       <DependentUpon>frm_HopDong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Main.resx">
-      <DependentUpon>frm_Main.cs</DependentUpon>
+    <EmbeddedResource Include="frm_PhanQuyenNguoiDung.resx">
+      <DependentUpon>frm_PhanQuyenNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_PhanQuyen1.resx">
-      <DependentUpon>frm_PhanQuyen1.cs</DependentUpon>
+    <EmbeddedResource Include="frm_QLHuongDanVien.resx">
+      <DependentUpon>frm_QLHuongDanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_QuanLiNhanVien.resx">
-      <DependentUpon>frm_QuanLiNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="frm_QLKhachHang.resx">
+      <DependentUpon>frm_QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNhanVien.resx">
+      <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLTour.resx">
+      <DependentUpon>frm_QLTour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Tour.resx">
       <DependentUpon>frm_Tour.cs</DependentUpon>
@@ -250,12 +225,17 @@
       <Project>{72e0a559-c5a0-4296-a0cc-db8870996ed0}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{AFA3649A-60B9-42FD-9E08-CE78E89B5F7A}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{480c6b5f-43a2-4fb7-9f78-758ccd3bd632}</Project>
       <Name>DTO</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Report\report.docx" />
     <None Include="Resources\Blue.png" />
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +256,36 @@
   <ItemGroup>
     <None Include="Resources\greeen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

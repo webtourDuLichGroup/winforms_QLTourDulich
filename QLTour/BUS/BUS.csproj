@@ -48,9 +48,15 @@
     <Compile Include="BUS_QLKH.cs" />
     <Compile Include="BUS_QLNV.cs" />
     <Compile Include="DangNhapBus.cs" />
-    <Compile Include="QuyenNguoiDungBus.cs" />
+    <Compile Include="DiaDiemBUS.cs" />
+    <Compile Include="HanhTrinhBUS.cs" />
+    <Compile Include="HuongDanVienBUS.cs" />
+    <Compile Include="KhachSanBUS.cs" />
+    <Compile Include="LoaiTourBUS.cs" />
+    <Compile Include="NguoiDungBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DatTourBUS.cs" />
+    <Compile Include="QuyenNguoiDungBus.cs" />
+    <Compile Include="TourBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAO\DAO.csproj">

@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Main));
             this.ribbonMenu = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barBtn_NhanVien = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtn_QLTour = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -82,7 +82,7 @@
             this.ribbonMenu.ExpandCollapseItem.Id = 0;
             this.ribbonMenu.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonMenu.ExpandCollapseItem,
-            this.barBtn_NhanVien,
+            this.barBtn_QLTour,
             this.barButtonItem2,
             this.barButtonItem3,
             this.barButtonItem1,
@@ -112,15 +112,16 @@
             this.ribbonPage4});
             this.ribbonMenu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonMenu.Size = new System.Drawing.Size(857, 146);
+            this.ribbonMenu.Tag = "1";
             // 
-            // barBtn_NhanVien
+            // barBtn_QLTour
             // 
-            this.barBtn_NhanVien.Caption = "Quản lí Tour Du Lịch";
-            this.barBtn_NhanVien.Id = 1;
-            this.barBtn_NhanVien.ImageOptions.DisabledLargeImageIndex = 0;
-            this.barBtn_NhanVien.ImageOptions.LargeImageIndex = 7;
-            this.barBtn_NhanVien.Name = "barBtn_NhanVien";
-            this.barBtn_NhanVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtn_QLTourDuLich_ItemClick);
+            this.barBtn_QLTour.Caption = "Quản lí Tour Du Lịch";
+            this.barBtn_QLTour.Id = 1;
+            this.barBtn_QLTour.ImageOptions.DisabledLargeImageIndex = 0;
+            this.barBtn_QLTour.ImageOptions.LargeImageIndex = 7;
+            this.barBtn_QLTour.Name = "barBtn_QLTour";
+            this.barBtn_QLTour.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtn_QLTourDuLich_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -189,6 +190,7 @@
             this.barButtonItem8.Id = 10;
             this.barButtonItem8.ImageOptions.LargeImageIndex = 0;
             this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // barButtonItem9
             // 
@@ -275,13 +277,14 @@
             this.ribbonPageGroup5,
             this.ribbonPageGroup4});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Tag = "showtour";
+            this.ribbonPage1.Tag = "1";
             this.ribbonPage1.Text = "Quản lí";
+            this.ribbonPage1.Visible = false;
             // 
             // ribbonPageGroup1_XemTour
             // 
             this.ribbonPageGroup1_XemTour.AllowTextClipping = false;
-            this.ribbonPageGroup1_XemTour.ItemLinks.Add(this.barBtn_NhanVien);
+            this.ribbonPageGroup1_XemTour.ItemLinks.Add(this.barBtn_QLTour);
             this.ribbonPageGroup1_XemTour.Name = "ribbonPageGroup1_XemTour";
             this.ribbonPageGroup1_XemTour.Text = "Tour Du Lịch";
             // 
@@ -306,8 +309,9 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup7});
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Tag = "quanlytour";
+            this.ribbonPage2.Tag = "2";
             this.ribbonPage2.Text = "Đặt Tour";
+            this.ribbonPage2.Visible = false;
             // 
             // ribbonPageGroup2
             // 
@@ -333,7 +337,9 @@
             this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.barPageGrp_KhachSan});
             this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Tag = "3";
             this.ribbonPage3.Text = "Khách Sạn";
+            this.ribbonPage3.Visible = false;
             // 
             // barPageGrp_KhachSan
             // 
@@ -347,7 +353,9 @@
             this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup6});
             this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Tag = "4";
             this.ribbonPage5.Text = "Quản Trị Viên";
+            this.ribbonPage5.Visible = false;
             // 
             // ribbonPageGroup6
             // 
@@ -362,7 +370,9 @@
             this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3});
             this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Tag = "5";
             this.ribbonPage4.Text = "Thống kê";
+            this.ribbonPage4.Visible = false;
             // 
             // ribbonPageGroup3
             // 
@@ -402,6 +412,7 @@
             this.IsMdiContainer = true;
             this.Name = "frm_Main";
             this.Ribbon = this.ribbonMenu;
+            this.Tag = "4";
             this.Text = "Form Main";
             this.Load += new System.EventHandler(this.frm_Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonMenu)).EndInit();
@@ -425,7 +436,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup barPageGrp_KhachSan;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.BarButtonItem barBtn_NhanVien;
+        private DevExpress.XtraBars.BarButtonItem barBtn_QLTour;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;

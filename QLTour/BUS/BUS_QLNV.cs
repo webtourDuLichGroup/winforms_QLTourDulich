@@ -19,13 +19,13 @@ namespace BUS
       {
           return nv.LoadPhgBan();
       }
-      public int ThemNV(string pMaNV, string pTenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2, int MaPhgBan)
+      public int ThemNV(string pMaNV, string pTenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2)
       {
-          return nv.Insert(pMaNV, pTenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2, MaPhgBan);
+          return nv.Insert(pMaNV, pTenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2);
       }
-      public int Update(string TenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2, int MaPhgBan, string pMaNV)
+      public int Update(string TenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2,  string pMaNV)
       { 
-          return nv.Update(TenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2, MaPhgBan, pMaNV);
+          return nv.Update(TenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2, pMaNV);
       }
       public DataTable KT_KC(string pMaNV)
       {

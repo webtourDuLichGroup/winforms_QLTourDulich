@@ -9,6 +9,7 @@ namespace GUI
 {
     static class Program
     {
+        public static string Username;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,7 +21,7 @@ namespace GUI
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new GUI.frmQuanLiKhachHang());
+            Application.Run(new GUI.frm_DangNhap());
         }
     }
 }

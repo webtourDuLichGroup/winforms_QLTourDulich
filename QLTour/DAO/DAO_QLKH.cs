@@ -1,4 +1,4 @@
-﻿using DAO.DataSetTableAdapters;
+﻿using DAO.DataSet1TableAdapters;
 using System;
 using System.Collections.Generic;
 using System.Data;

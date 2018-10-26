@@ -27,21 +27,18 @@ namespace BUS
        {
            return pq.Them_PQ(MaNhom, MaMH, CoQuyen);
        }
-       public DataTable LoadDMPQ()
-       {
-           return pq.LoadPQ();
-       }
+       //public DataTable LoadDMPQ()
+       //{
+       //    return pq.LoadPQ();
+       //}
        public int Xoa_PQ(int MaNhom, int MaMH)
        {
            return pq.Xoa_PQ(MaNhom, MaMH);
        }
-       //public int Xoa_PQ(int manv,int mamh)
-       //{
-       //    return pq.Xoa_PQ(manv, mamh);
-       //}
-       //public DataTable LoadPQ()
-       //{
-       //    return pq.LoadPQ();
-       //}
+
+        public bool KiemTraQuyenND(int maNhom,int maMH)
+        {
+            return pq.KiemTraQuyen(maNhom,maMH).Rows.Count == 1;
+        }
     }
 }

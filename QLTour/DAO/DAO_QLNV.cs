@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DAO.DataSetTableAdapters;
+using DAO.DataSet1TableAdapters;
 using System.Data;
 namespace DAO
 {
@@ -21,13 +21,13 @@ namespace DAO
       {
           return pb.GetDataByTenNhom();
       }
-      public int Insert(string pMaNV, string pTenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2, int MaPhgBan)
+      public int Insert(string pMaNV, string pTenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2)
       {
-          return nv.Them(pMaNV, pTenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2, MaPhgBan);
+          return nv.Them(pMaNV, pTenNV, MatKhau, NgaySinh, GioiTinh, AnhDaiDien, DiaChi, SDT, TrangThai, MatKhauCap2);
       }
-      public int Update(string TenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2, int MaPhgBan, string pMaNV)
+      public int Update(string TenNV, string MatKhau, DateTime NgaySinh, string GioiTinh, string AnhDaiDien, string DiaChi, string SDT, int TrangThai, string MatKhauCap2, string pMaNV)
       {
-          return nv.Sua(TenNV,  MatKhau,  NgaySinh,  GioiTinh,  AnhDaiDien,  DiaChi,  SDT,TrangThai, MatKhauCap2,  MaPhgBan,  pMaNV);
+            return nv.Sua(TenNV,  MatKhau,  NgaySinh,  GioiTinh,  AnhDaiDien,  DiaChi,  SDT,TrangThai, MatKhauCap2,  pMaNV);
       }
       public DataTable KT_KhoaChinh(string pMaNV)
       {

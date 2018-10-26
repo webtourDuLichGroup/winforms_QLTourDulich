@@ -4,3 +4,17 @@ C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.csprojResolveAssemblyReference.cache
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.dll
 C:\Users\Hana\Documents\GitHub\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.pdb
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\bin\Debug\Linq.dll.config
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\bin\Debug\Linq.dll
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\bin\Debug\Linq.pdb
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\obj\Debug\Linq.dll
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\obj\Debug\Linq.pdb
+D:\Download\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\winforms_QLTourDulich-8b4e7798232b715fbc7972fbb2bb1aae0ad28d93\QLTour\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\bin\Debug\Linq.dll.config
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\bin\Debug\Linq.dll
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\bin\Debug\Linq.pdb
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\obj\Debug\Linq.dll
+D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\Linq\obj\Debug\Linq.pdb

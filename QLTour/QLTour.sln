@@ -11,11 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS", "BUS\BUS.csproj", "{72E0A559-C5A0-4296-A0CC-DB8870996ED0}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{6A24583D-DF29-4344-B7D6-6CB4EA6B60C7}"
 EndProject
-=======
->>>>>>> master
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,13 +35,10 @@ Global
 		{72E0A559-C5A0-4296-A0CC-DB8870996ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E0A559-C5A0-4296-A0CC-DB8870996ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E0A559-C5A0-4296-A0CC-DB8870996ED0}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{6A24583D-DF29-4344-B7D6-6CB4EA6B60C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A24583D-DF29-4344-B7D6-6CB4EA6B60C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A24583D-DF29-4344-B7D6-6CB4EA6B60C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A24583D-DF29-4344-B7D6-6CB4EA6B60C7}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> master
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

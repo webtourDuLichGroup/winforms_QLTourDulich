@@ -49,25 +49,19 @@
     <Compile Include="ChiTietHopDong.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietHopDongDAO.cs" />
     <Compile Include="CTPHIEUNHAP_TOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="DAO_DMDV.cs" />
     <Compile Include="DAO_PhanQuyen.cs" />
     <Compile Include="DAO_QLHDV.cs" />
     <Compile Include="DAO_QLKH.cs" />
     <Compile Include="DAO_QLNV.cs" />
-    <Compile Include="DataSet.cs">
-      <DependentUpon>DataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-=======
->>>>>>> master
-    <Compile Include="DataSet.Designer.cs">
+    <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet.xsd</DependentUpon>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DIADANH.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
@@ -79,18 +73,23 @@
     <Compile Include="HANHTRINH.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="HanhTrinhDAO.cs" />
     <Compile Include="HOPDONG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="HopDongDAO.cs" />
     <Compile Include="HUONGDANVIEN.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="HuongDanVienDAO.cs" />
     <Compile Include="KHACHHANG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KHACHSAN.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="KhachSanDAO.cs" />
     <Compile Include="LOAIKHACHHANG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -100,12 +99,14 @@
     <Compile Include="LOAITOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="LoaiTourDAO.cs" />
     <Compile Include="MANHINH.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
     <Compile Include="NGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="NguoiDungDAO.cs" />
     <Compile Include="NHOMNGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -139,12 +140,7 @@
     <Compile Include="QUANLINHOMNGUOIDUNG.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="QuyenNguoiDungDAO.cs" />
     <Compile Include="sysdiagram.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
@@ -157,16 +153,16 @@
     <None Include="App.Config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataSet.xsc">
-      <DependentUpon>DataSet.xsd</DependentUpon>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="DataSet.xsd">
+    <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataSet.xss">
-      <DependentUpon>DataSet.xsd</DependentUpon>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -185,6 +181,12 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{480c6b5f-43a2-4fb7-9f78-758ccd3bd632}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="QLTourDuLichModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>QLTourDuLichModel.edmx</DependentUpon>
@@ -195,12 +197,6 @@
       <DependentUpon>QLTourDuLichModel.edmx</DependentUpon>
       <LastGenOutput>QLTourDuLichModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DTO\DTO.csproj">
-      <Project>{480c6b5f-43a2-4fb7-9f78-758ccd3bd632}</Project>
-      <Name>DTO</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

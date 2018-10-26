@@ -164,10 +164,8 @@
     <Property Name="SDT" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
     <Property Name="TrangThai" Type="Int32" />
     <Property Name="MatKhauCap2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="MaPhgBan" Type="Int32" />
-    <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_ND_NND" FromRole="NGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
     <NavigationProperty Name="PHIEUNHAPTOURs" Relationship="Self.FK_PNT_MANV" FromRole="NGUOIDUNG" ToRole="PHIEUNHAPTOUR" />
-    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="Self.FK_QLNND_ND" FromRole="NGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
+    <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="Self.FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG" FromRole="NGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="NHOMNGUOIDUNG">
     <Key>
@@ -176,18 +174,17 @@
     <Property Name="MaNhom" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenNhom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="NGUOIDUNGs" Relationship="Self.FK_ND_NND" FromRole="NHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
     <NavigationProperty Name="PHANQUYENs" Relationship="Self.FK_PQ_MN" FromRole="NHOMNGUOIDUNG" ToRole="PHANQUYEN" />
     <NavigationProperty Name="QUANLINHOMNGUOIDUNGs" Relationship="Self.FK_QLNND_NND" FromRole="NHOMNGUOIDUNG" ToRole="QUANLINHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="PHANQUYEN">
     <Key>
-      <PropertyRef Name="MaPQ" />
+      <PropertyRef Name="MaNhom" />
+      <PropertyRef Name="MaMH" />
     </Key>
-    <Property Name="MaPQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaNhom" Type="Int32" />
-    <Property Name="MaMH" Type="Int32" />
-    <Property Name="CoQuyen" Type="Int32" />
+    <Property Name="MaNhom" Type="Int32" Nullable="false" />
+    <Property Name="MaMH" Type="Int32" Nullable="false" />
+    <Property Name="CoQuyen" Type="Boolean" />
     <NavigationProperty Name="MANHINH" Relationship="Self.FK_PQ_MH" FromRole="PHANQUYEN" ToRole="MANHINH" />
     <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_PQ_MN" FromRole="PHANQUYEN" ToRole="NHOMNGUOIDUNG" />
   </EntityType>
@@ -210,7 +207,7 @@
     <Property Name="MaNhom" Type="Int32" />
     <Property Name="MaNV" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK_QLNND_ND" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
+    <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
     <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_QLNND_NND" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
   </EntityType>
   <EntityType Name="sysdiagram">
@@ -428,7 +425,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PQ_MH">
-    <End Role="MANHINH" Type="Self.MANHINH" Multiplicity="0..1" />
+    <End Role="MANHINH" Type="Self.MANHINH" Multiplicity="1" />
     <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="MANHINH">
@@ -436,18 +433,6 @@
       </Principal>
       <Dependent Role="PHANQUYEN">
         <PropertyRef Name="MaMH" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_ND_NND">
-    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="0..1" />
-    <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="NHOMNGUOIDUNG">
-        <PropertyRef Name="MaNhom" />
-      </Principal>
-      <Dependent Role="NGUOIDUNG">
-        <PropertyRef Name="MaPhgBan" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -463,7 +448,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_QLNND_ND">
+  <Association Name="FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG">
     <End Role="NGUOIDUNG" Type="Self.NGUOIDUNG" Multiplicity="0..1" />
     <End Role="QUANLINHOMNGUOIDUNG" Type="Self.QUANLINHOMNGUOIDUNG" Multiplicity="*" />
     <ReferentialConstraint>
@@ -476,7 +461,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PQ_MN">
-    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="0..1" />
+    <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="1" />
     <End Role="PHANQUYEN" Type="Self.PHANQUYEN" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="NHOMNGUOIDUNG">
@@ -584,15 +569,11 @@
       <End Role="MANHINH" EntitySet="MANHINHs" />
       <End Role="PHANQUYEN" EntitySet="PHANQUYENs" />
     </AssociationSet>
-    <AssociationSet Name="FK_ND_NND" Association="Self.FK_ND_NND">
-      <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
-      <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
-    </AssociationSet>
     <AssociationSet Name="FK_PNT_MANV" Association="Self.FK_PNT_MANV">
       <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
       <End Role="PHIEUNHAPTOUR" EntitySet="PHIEUNHAPTOURs" />
     </AssociationSet>
-    <AssociationSet Name="FK_QLNND_ND" Association="Self.FK_QLNND_ND">
+    <AssociationSet Name="FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG" Association="Self.FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG">
       <End Role="NGUOIDUNG" EntitySet="NGUOIDUNGs" />
       <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
     </AssociationSet>
@@ -604,46 +585,5 @@
       <End Role="NHOMNGUOIDUNG" EntitySet="NHOMNGUOIDUNGs" />
       <End Role="QUANLINHOMNGUOIDUNG" EntitySet="QUANLINHOMNGUOIDUNGs" />
     </AssociationSet>
-    <FunctionImport Name="sp_alterdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_creatediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_dropdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(QlTourDuLichModel.sp_helpdiagramdefinition_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(QlTourDuLichModel.sp_helpdiagrams_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_renamediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="new_diagramname" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="sp_upgraddiagrams" />
   </EntityContainer>
-  <ComplexType Name="sp_helpdiagramdefinition_Result">
-    <Property Type="Int32" Name="version" Nullable="true" />
-    <Property Type="Binary" Name="definition" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="sp_helpdiagrams_Result">
-    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-    <Property Type="Int32" Name="ID" Nullable="false" />
-    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-    <Property Type="Int32" Name="OwnerID" Nullable="false" />
-  </ComplexType>
 </Schema>
