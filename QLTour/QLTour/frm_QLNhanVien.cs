@@ -13,6 +13,7 @@ namespace GUI
     {
         BUS_QLNV nv = new BUS_QLNV();
         int trangthaibtnSave = 0;
+        ErrorProvider error;
         public frm_QLNhanVien()
         {
             InitializeComponent();
@@ -59,8 +60,7 @@ namespace GUI
             }
             catch (Exception)
             {
-
-                throw;
+                MessageBox.Show("Lỗi hệ thống");
             }
 
         }
@@ -191,6 +191,20 @@ namespace GUI
                 MessageBox.Show("Da xoa thanh cong");
                 loadGrid();
             }
+        }
+
+        private void txtTen_Leave(object sender, EventArgs e)
+        {
+            Control ctr = new Control();
+            if(txtTen.Text==string.Empty)
+            {
+                error.SetError( ctr,"Tên không được để trống");
+            }
+            else
+            {
+                error.Clear();
+            }
+
         }
     }
 }

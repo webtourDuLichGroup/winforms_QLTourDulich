@@ -115,12 +115,15 @@ namespace GUI
                     {
                         if (!isError)
                         {
-                            string maHT = new Random().Next(1, 10000).ToString();
+                            string maHT;
                             HanhTrinhBUS hanhTrinhBus = new HanhTrinhBUS();
-                            if (hanhTrinhBus.KiemTraHanhTrinhCoSan(int.Parse(cbo_NoiDi.SelectedValue.ToString()),
-                                int.Parse(cbo_NoiDen.SelectedValue.ToString())))//Kiem tra thong tin Hanh Trinh da ton tai
+                             HanhTrinhDTO hanhTrinhDTO = hanhTrinhBus.TimHanhTrinh(int.Parse(cbo_NoiDi.SelectedValue.ToString()),
+                             int.Parse(cbo_NoiDen.SelectedValue.ToString()));
+                            //string maHT = new Random().Next(1, 10000).ToString();
+                            if (hanhTrinhDTO==null)//Kiem tra thong tin Hanh Trinh da ton tai
                             {
                                 DialogResult result = MessageBox.Show("Hành trình này chưa có sẵn", "Bạn có muốn tạo mới", MessageBoxButtons.YesNo);
+                                maHT = new Random().Next(1, 10000).ToString();
                                 if (result == DialogResult.OK)//Them hanh trinh moi
                                 {
                                     hanhTrinhBus.ThemHanhTrinhMoi(new HanhTrinhDTO()
@@ -129,9 +132,12 @@ namespace GUI
                                         MaNoiDen = int.Parse(cbo_NoiDen.SelectedValue.ToString()),
                                         MaNoiDi = int.Parse(cbo_NoiDi.SelectedValue.ToString())
                                     });
-
                                 }
 
+                            }
+                            else
+                            {
+                                maHT = hanhTrinhDTO.MaHanhTrinh;
                             }
                             ThemTourDTO tourDTO = new ThemTourDTO()
                             {
@@ -140,6 +146,7 @@ namespace GUI
                                 MaKS = cbo_KhachSan.SelectedValue.ToString(),
                                 MaLoaiTour = cbo_LoaiTour.SelectedValue.ToString(),
                                 MaHanhTrinh = maHT,
+                                
                                 TourDTO = new TourDTO()
                                 {
                                     DiemDen = cbo_NoiDen.SelectedValue.ToString(),
@@ -151,7 +158,7 @@ namespace GUI
                                     MaTour = new Random().Next(0, 10000).ToString(),
                                     TenTour = txt_TenTour.Text,
                                     LoaiTour = cbo_LoaiTour.SelectedValue.ToString(),
-
+                                    
                                 }
                             };
                             if (tourBus.TimTour(tourDTO.TourDTO.MaTour) != null)
@@ -164,6 +171,8 @@ namespace GUI
                                 {
                                     tourBus.ThemTour(tourDTO);
                                     MessageBox.Show(MessageBoxConstants.THEMTHANHCONG, "Thêm tour du lịch thành công");
+                                    gridControl_Tour.DataSource = tourBus.LoadTourToDataGridView();
+
                                 }
                                 catch (Exception)
                                 {
@@ -188,6 +197,8 @@ namespace GUI
                         try
                         {
                             tourBus.XoaTour(maTour);
+                            MessageBox.Show(MessageBoxConstants.XOATHANHCONG, "Tour nay đã bị xóa đi");
+                            gridControl_Tour.DataSource = tourBus.LoadTourToDataGridView();
                         }
                         catch (Exception)
                         {
@@ -224,7 +235,8 @@ namespace GUI
                         }
                         else
                         {
-                            maHT = new Random().Next(1, 10000).ToString();
+                            //maHT = new Random().Next(1, 10000).ToString();
+                            maHT = hanhTrinhDTO.MaHanhTrinh;
                         }
                         string maTour = gridView_Tour.GetFocusedRowCellValue("MaTour").ToString();
                         ThemTourDTO tourDTO = new ThemTourDTO()
@@ -248,7 +260,8 @@ namespace GUI
                         try
                         {
                             tourBus.ChinhSuaTour(tourDTO);
-                            MessageBox.Show(MessageBoxConstants.THEMTHANHCONG, "Chỉnh sửa thông tin tour thành công");
+                            MessageBox.Show(MessageBoxConstants.CHINHSUATHANHCONG, "Chỉnh sửa thông tin tour thành công");
+                            gridControl_Tour.DataSource = tourBus.LoadTourToDataGridView();
                         }
                         catch (Exception)
                         {
@@ -296,6 +309,12 @@ namespace GUI
         private void cbo_NoiDi_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbo_NoiDen.DataSource = new DiaDiemBUS().LoadDiemDen(int.Parse(cbo_NoiDi.SelectedValue.ToString()));
+        }
+
+        private void btnRefesh_Click(object sender, EventArgs e)
+        {
+            TourBUS tourBus = new TourBUS();
+            gridControl_Tour.DataSource = tourBus.LoadTourToDataGridView();
         }
     }
 }

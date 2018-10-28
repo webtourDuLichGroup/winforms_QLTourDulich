@@ -99,6 +99,7 @@
     <Property Name="DCKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="MaLoaiKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="TenDoanhNghiep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="HOPDONGs" Relationship="Self.FK_HD_MaKH" FromRole="KHACHHANG" ToRole="HOPDONG" />
     <NavigationProperty Name="LOAIKHACHHANG" Relationship="Self.PK_KH_LOAI" FromRole="KHACHHANG" ToRole="LOAIKHACHHANG" />
   </EntityType>
@@ -209,16 +210,6 @@
     <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="NGUOIDUNG" Relationship="Self.FK_QUANLINHOMNGUOIDUNG_NGUOIDUNG" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NGUOIDUNG" />
     <NavigationProperty Name="NHOMNGUOIDUNG" Relationship="Self.FK_QLNND_NND" FromRole="QUANLINHOMNGUOIDUNG" ToRole="NHOMNGUOIDUNG" />
-  </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="TOUR">
     <Key>
@@ -503,7 +494,6 @@
     <EntitySet Name="PHANQUYENs" EntityType="Self.PHANQUYEN" />
     <EntitySet Name="PHIEUNHAPTOURs" EntityType="Self.PHIEUNHAPTOUR" />
     <EntitySet Name="QUANLINHOMNGUOIDUNGs" EntityType="Self.QUANLINHOMNGUOIDUNG" />
-    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="TOURs" EntityType="Self.TOUR" />
     <AssociationSet Name="FK_ChiTietHopDong_HOPDONG" Association="Self.FK_ChiTietHopDong_HOPDONG">
       <End Role="HOPDONG" EntitySet="HOPDONGs" />

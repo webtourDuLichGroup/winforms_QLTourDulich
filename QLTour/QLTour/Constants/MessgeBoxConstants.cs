@@ -22,5 +22,7 @@ namespace GUI.Constants
         public const string LOITHAOTAC = "Lỗi trong quá trình thao tác";
 
         public const string CHINHSUATHANHCONG = "Chỉnh sửa thành công";
+
+        public const string XOATHANHCONG = "Xóa thành công";
     }
 }

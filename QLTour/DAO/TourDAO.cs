@@ -111,8 +111,9 @@ namespace DAO
                 AnhDaiDien = tourDTO.AnhDiaDiem,
                 GiaNguoiLon = tourDTO.TourDTO.GiaNguoiLon,
                 GiaTreEm = tourDTO.TourDTO.GiaTreEm,
-                //MaHanhTrinh
-                MaHDV = tourDTO.MaHDV,
+                MaHanhTrinh=tourDTO.MaHanhTrinh,
+                TenTour=tourDTO.TourDTO.TenTour,
+                MaHDV=tourDTO.MaHDV,
                 MaKS = tourDTO.MaKS,
                 MaLoaiTour = tourDTO.MaLoaiTour,
                 NgayKetThuc = tourDTO.TourDTO.NgayKT,

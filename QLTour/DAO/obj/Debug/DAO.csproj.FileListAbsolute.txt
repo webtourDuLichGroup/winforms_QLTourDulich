@@ -62,3 +62,14 @@ D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\D
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DAO\obj\Debug\DAO.dll
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DAO\obj\Debug\DAO.pdb
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll.config
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DAO.pdb
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\DTO.pdb
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\bin\Debug\EntityFramework.xml
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb

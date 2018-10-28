@@ -12,7 +12,7 @@ namespace DAO
 
         public HANHTRINH TimHanhTrinh(int maNoiDi, int maNoiDen)
         {
-            return entity.HANHTRINHs.Where(t => (t.NoiDen == maNoiDen && t.NoiDi == maNoiDen)).FirstOrDefault();
+            return entity.HANHTRINHs.Where(t => (t.NoiDen == maNoiDen && t.NoiDi == maNoiDi)).FirstOrDefault();
         }
 
         public void ThemhanhTrinhMoi(HanhTrinhDTO pHanhTrinh)

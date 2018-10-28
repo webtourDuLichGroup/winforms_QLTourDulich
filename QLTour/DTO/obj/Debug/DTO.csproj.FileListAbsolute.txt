@@ -26,3 +26,10 @@ D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\D
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DTO\obj\Debug\DTO.dll
 D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\DTO\obj\Debug\DTO.pdb
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\bin\Debug\DTO.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\bin\Debug\DTO.pdb
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.csproj.ResolveComReference.cache
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.dll
+D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DTO\obj\Debug\DTO.pdb

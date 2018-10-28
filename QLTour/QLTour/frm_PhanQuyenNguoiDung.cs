@@ -35,20 +35,37 @@ namespace GUI
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            
+
             List<string> quyenLst = new List<string>();
-            for (int i = 0; i < dgv_windows.RowCount-1; i++)
+            for (int i = 0; i < dgv_windows.RowCount - 1; i++)
             {
+                int maNhom = int.Parse(cboPhgBan.SelectedValue.ToString());
+                int maMH = int.Parse(dgv_windows.Rows[i].Cells["MaMH"].Value.ToString());
+
                 if (dgv_windows.Rows[i].Cells[1].Value.ToString().Equals("True"))
                 {
-                    int maNhom= int.Parse(cboPhgBan.SelectedValue.ToString()); 
-                    int maMH=int.Parse( dgv_windows.Rows[i].Cells["MaMH"].Value.ToString());
+                    bool quyenChinhSua = dgv_windows.Rows[i].Cells[1].Value.ToString().Equals("True");
                     if (!pq.KiemTraQuyenND(maNhom, maMH))
                     {
                         try
                         {
                             pq.Them_PQ(maNhom, maMH, true);
-                            MessageBox.Show(MessageBoxConstants.CHINHSUATHANHCONG);
+                            //MessageBox.Show(MessageBoxConstants.CHINHSUATHANHCONG);
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show(MessageBoxConstants.LOITHAOTAC, MessageBoxConstants.LOIDULIEU);
+                        }
+                    }
+                }
+                else
+                {
+                    if (pq.KiemTraQuyenND(maNhom, maMH))
+                    {
+                        try
+                        {
+                            pq.Xoa_PQ(maNhom, maMH);
+                           // MessageBox.Show(MessageBoxConstants.CHINHSUATHANHCONG);
                         }
                         catch (Exception)
                         {
@@ -57,7 +74,7 @@ namespace GUI
                         }
                     }
                 }
-                
+                MessageBox.Show("Cập nhật quyền thành công!");
             }
         }
 

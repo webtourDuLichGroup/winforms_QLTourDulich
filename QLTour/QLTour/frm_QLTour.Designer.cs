@@ -364,6 +364,7 @@
             this.btnRefesh.Size = new System.Drawing.Size(92, 32);
             this.btnRefesh.TabIndex = 28;
             this.btnRefesh.Text = "Refesh";
+            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // txt_TenTour
             // 
