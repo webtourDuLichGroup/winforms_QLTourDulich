@@ -71,6 +71,10 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="UIAutomationClient" />
+    <Reference Include="User, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\User.dll</HintPath>
+    </Reference>
     <Reference Include="UserDL">
       <HintPath>C:\Users\tranthibay\Desktop\windowsDrafft\UserDL\UserDL\bin\Debug\UserDL.dll</HintPath>
     </Reference>
@@ -134,9 +138,7 @@
     <Compile Include="frm_QLKhachHang.Designer.cs">
       <DependentUpon>frm_QLKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_QLNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frm_QLNhanVien.cs" />
     <Compile Include="frm_QLNhanVien.Designer.cs">
       <DependentUpon>frm_QLNhanVien.cs</DependentUpon>
     </Compile>

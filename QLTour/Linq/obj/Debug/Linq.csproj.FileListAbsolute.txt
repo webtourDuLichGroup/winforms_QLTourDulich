@@ -21,7 +21,6 @@ D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\L
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.dll.config
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.dll
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\bin\Debug\Linq.pdb
-D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.csprojAssemblyReference.cache
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.csproj.CoreCompileInputs.cache
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.dll
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\Linq\obj\Debug\Linq.pdb
