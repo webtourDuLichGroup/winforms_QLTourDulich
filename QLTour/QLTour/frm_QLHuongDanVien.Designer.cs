@@ -112,7 +112,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 353F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1060, 612);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1060, 749);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -348,7 +348,6 @@
             this.txtTenHDV.Name = "txtTenHDV";
             this.txtTenHDV.Size = new System.Drawing.Size(188, 20);
             this.txtTenHDV.TabIndex = 4;
-            this.txtTenHDV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenHDV_KeyPress);
             // 
             // labelControl19
             // 
@@ -592,7 +591,7 @@
             this.dgrHDV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgrHDV.Location = new System.Drawing.Point(39, 405);
             this.dgrHDV.Name = "dgrHDV";
-            this.dgrHDV.Size = new System.Drawing.Size(981, 204);
+            this.dgrHDV.Size = new System.Drawing.Size(981, 341);
             this.dgrHDV.TabIndex = 2;
             this.dgrHDV.SelectionChanged += new System.EventHandler(this.dgrHDV_SelectionChanged);
             // 
@@ -612,7 +611,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 612);
+            this.ClientSize = new System.Drawing.Size(1060, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frm_QLHuongDanVien";
             this.Text = "frm_QLHuongDanVien";

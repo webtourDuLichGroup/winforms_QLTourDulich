@@ -200,21 +200,5 @@ namespace GUI
                 throw;
             }
         }
-
-        private void txtTenHDV_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            ErrorProvider error = new ErrorProvider();
-            Control ctr = (Control)sender;
-            if ((Char.IsDigit(e.KeyChar)) && (!Char.IsControl(e.KeyChar)))
-            {
-
-                e.Handled = true;
-                error.SetError(ctr, "Chỉ được chữ và không có ký tự đặc biệt");
-            }
-            else
-            {
-                error.Clear();
-            }
-        }
     }
 }

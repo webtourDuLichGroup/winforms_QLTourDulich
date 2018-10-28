@@ -73,4 +73,3 @@ D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CoreCompile
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.dll
 D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.pdb
-D:\win_MoiNhat\winforms_QLTourDulich\QLTour\DAO\obj\Debug\DAO.csprojAssemblyReference.cache

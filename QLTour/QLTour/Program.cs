@@ -21,7 +21,7 @@ namespace GUI
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new GUI.frm_QLNhanVien());
+            Application.Run(new GUI.frm_DangNhap());
         }
     }
 }

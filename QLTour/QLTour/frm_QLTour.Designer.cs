@@ -44,13 +44,11 @@
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.txt_GiaNguoiLon = new DevExpress.XtraEditors.TextEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.txt_GiaTreEm = new DevExpress.XtraEditors.TextEdit();
             this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
@@ -65,13 +63,13 @@
             this.errorProvider_TenTour = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_GiaTreEm = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_GiaNguoiLon = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txt_GiaTreEm = new MyControl.NumbericTextBox();
+            this.txt_GiaNguoiLon = new MyControl.NumbericTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GiaNguoiLon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GiaTreEm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTour.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Tour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Tour)).BeginInit();
@@ -95,7 +93,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 222F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 622);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(869, 749);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // groupControl1
@@ -103,6 +101,8 @@
             this.groupControl1.Appearance.BackColor = System.Drawing.Color.LightCyan;
             this.groupControl1.Appearance.Options.UseBackColor = true;
             this.groupControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.groupControl1.Controls.Add(this.txt_GiaNguoiLon);
+            this.groupControl1.Controls.Add(this.txt_GiaTreEm);
             this.groupControl1.Controls.Add(this.cbo_NoiDen);
             this.groupControl1.Controls.Add(this.dateEdit_NgayKT);
             this.groupControl1.Controls.Add(this.dateEdit_NgayKH);
@@ -115,13 +115,11 @@
             this.groupControl1.Controls.Add(this.labelControl12);
             this.groupControl1.Controls.Add(this.labelControl8);
             this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.txt_GiaNguoiLon);
             this.groupControl1.Controls.Add(this.labelControl9);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.labelControl11);
             this.groupControl1.Controls.Add(this.btnCancel);
-            this.groupControl1.Controls.Add(this.txt_GiaTreEm);
             this.groupControl1.Controls.Add(this.btn_Save);
             this.groupControl1.Controls.Add(this.btn_Sua);
             this.groupControl1.Controls.Add(this.btn_Xoa);
@@ -245,14 +243,6 @@
             this.labelControl10.TabIndex = 46;
             this.labelControl10.Text = "Ngay ket thuc";
             // 
-            // txt_GiaNguoiLon
-            // 
-            this.txt_GiaNguoiLon.EditValue = "";
-            this.txt_GiaNguoiLon.Location = new System.Drawing.Point(358, 66);
-            this.txt_GiaNguoiLon.Name = "txt_GiaNguoiLon";
-            this.txt_GiaNguoiLon.Size = new System.Drawing.Size(100, 20);
-            this.txt_GiaNguoiLon.TabIndex = 45;
-            // 
             // labelControl9
             // 
             this.labelControl9.Location = new System.Drawing.Point(273, 101);
@@ -296,14 +286,6 @@
             this.btnCancel.TabIndex = 37;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // txt_GiaTreEm
-            // 
-            this.txt_GiaTreEm.EditValue = "";
-            this.txt_GiaTreEm.Location = new System.Drawing.Point(358, 40);
-            this.txt_GiaTreEm.Name = "txt_GiaTreEm";
-            this.txt_GiaTreEm.Size = new System.Drawing.Size(100, 20);
-            this.txt_GiaTreEm.TabIndex = 39;
             // 
             // btn_Save
             // 
@@ -403,7 +385,7 @@
             this.gridControl_Tour.Location = new System.Drawing.Point(44, 225);
             this.gridControl_Tour.MainView = this.gridView_Tour;
             this.gridControl_Tour.Name = "gridControl_Tour";
-            this.gridControl_Tour.Size = new System.Drawing.Size(780, 394);
+            this.gridControl_Tour.Size = new System.Drawing.Size(780, 521);
             this.gridControl_Tour.TabIndex = 12;
             this.gridControl_Tour.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView_Tour});
@@ -427,11 +409,26 @@
             // 
             this.errorProvider_GiaNguoiLon.ContainerControl = this;
             // 
+            // txt_GiaTreEm
+            // 
+            this.txt_GiaTreEm.Location = new System.Drawing.Point(358, 37);
+            this.txt_GiaTreEm.Name = "txt_GiaTreEm";
+            this.txt_GiaTreEm.Size = new System.Drawing.Size(100, 21);
+            this.txt_GiaTreEm.TabIndex = 59;
+            // 
+            // txt_GiaNguoiLon
+            // 
+            this.txt_GiaNguoiLon.Location = new System.Drawing.Point(358, 64);
+            this.txt_GiaNguoiLon.Name = "txt_GiaNguoiLon";
+            this.txt_GiaNguoiLon.Size = new System.Drawing.Size(100, 21);
+            this.txt_GiaNguoiLon.TabIndex = 60;
+            // 
             // frm_QLTour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 622);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(869, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frm_QLTour";
             this.Text = "frm_QLTour1";
@@ -442,8 +439,6 @@
             this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GiaNguoiLon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_GiaTreEm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTour.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl_Tour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView_Tour)).EndInit();
@@ -464,11 +459,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit txt_GiaNguoiLon;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
-        private DevExpress.XtraEditors.TextEdit txt_GiaTreEm;
         private DevExpress.XtraEditors.SimpleButton btn_Save;
         private DevExpress.XtraEditors.SimpleButton btn_Sua;
         private DevExpress.XtraEditors.SimpleButton btn_Xoa;
@@ -491,5 +484,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider_TenTour;
         private System.Windows.Forms.ErrorProvider errorProvider_GiaTreEm;
         private System.Windows.Forms.ErrorProvider errorProvider_GiaNguoiLon;
+        private MyControl.NumbericTextBox txt_GiaNguoiLon;
+        private MyControl.NumbericTextBox txt_GiaTreEm;
     }
 }
