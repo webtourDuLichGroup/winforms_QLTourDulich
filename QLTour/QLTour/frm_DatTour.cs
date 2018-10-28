@@ -102,8 +102,6 @@ namespace GUI
                 {
                     MaHD = maHD,
                     MaKH = maKH,
-                    SoNguoiLon = int.Parse(txt_NguoiLon.Text),
-                    SoTreEm = int.Parse(txt_TreEm.Text),
                     TongTien = frm_Tour.BookedTour.TongTien,
                     ThoiGianDat = DateTime.Now
                 };
@@ -112,8 +110,10 @@ namespace GUI
                     MaCT_HopDong = random.Next(-100, 10000).ToString(),
                     MaHopDong = maHD,
                     MaTour = frm_Tour.BookedTour.MaTour,
-                    SoLuong = hopDong.SoNguoiLon + hopDong.SoTreEm,//sai cho nay
-                    ThanhTien = frm_Tour.BookedTour.GiaNguoiLon * hopDong.SoNguoiLon + frm_Tour.BookedTour.GiaTreEm * hopDong.SoTreEm
+                    SoLuongNguoiLon = int.Parse(txt_NguoiLon.Text),
+                    SoLuongTreEm = int.Parse(txt_TreEm.Text),
+
+                    ThanhTien = frm_Tour.BookedTour.GiaNguoiLon * int.Parse(txt_NguoiLon.Text) + frm_Tour.BookedTour.GiaTreEm * int.Parse(txt_TreEm.Text)
                 };
                 try
                 {
@@ -145,8 +145,8 @@ namespace GUI
                             ["TongSoNguoi"] = (frm_Tour.BookedTour.TreEm + frm_Tour.BookedTour.NguoiLon).ToString(),
                             ["NguoiLon"] = frm_Tour.BookedTour.NguoiLon.ToString(),
                             ["TreEm"] = frm_Tour.BookedTour.TreEm.ToString(),
-
                         };
+
                         WordReportDTO wordReport = new WordReportDTO(dsThamSo);
                         string srcReport = @"D:\Download\winforms_QLTourDulich_perfect\winforms_QLTourDulich_perfect\QLTour\QLTour\Report\report.docx";
                         string outputReport = @"C:\Users\tranthibay\Desktop\HopDong.docx";

@@ -16,7 +16,8 @@ namespace DAO
             {
                 MaCT_HopDong=chiTietHopDongDTO.MaCT_HopDong,
                 MaHopDong=chiTietHopDongDTO.MaHopDong,MaTour=chiTietHopDongDTO.MaTour,
-                SoLuong=chiTietHopDongDTO.SoLuong,
+                SLTreEm=chiTietHopDongDTO.SoLuongTreEm,
+                SLNguoiLon=chiTietHopDongDTO.SoLuongNguoiLon,
                 ThanhTien=chiTietHopDongDTO.ThanhTien
             };
             entitiy.ChiTietHopDongs.Add(hopDong);

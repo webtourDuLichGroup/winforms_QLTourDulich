@@ -12,16 +12,18 @@
           <Property Name="MaCT_HopDong" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="MaHopDong" Type="varchar" MaxLength="10" />
           <Property Name="MaTour" Type="varchar" MaxLength="10" />
-          <Property Name="SoLuong" Type="int" />
+          <Property Name="SLTreEm" Type="int" />
+          <Property Name="SLNguoiLon" Type="int" />
           <Property Name="ThanhTien" Type="money" />
         </EntityType>
         <EntityType Name="CTPHIEUNHAP_TOUR">
           <Key>
             <PropertyRef Name="Ma_CTPNhap" />
           </Key>
+          <Property Name="SLTreEm" Type="int" />
           <Property Name="Ma_CTPNhap" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MaTour" Type="varchar" MaxLength="10" />
-          <Property Name="SoLuong" Type="int" />
+          <Property Name="SLNguoiLon" Type="int" />
           <Property Name="MaPNhap" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="DIADANH">
@@ -54,8 +56,6 @@
           <Property Name="MaHD" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="MaKH" Type="varchar" MaxLength="10" />
           <Property Name="ThoiGianDat" Type="datetime" />
-          <Property Name="SoNguoiLon" Type="int" />
-          <Property Name="SoTreEm" Type="int" />
           <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
           <Property Name="GhiChu" Type="nvarchar" MaxLength="50" />
           <Property Name="TongTien" Type="money" />
@@ -563,7 +563,8 @@
           <Property Name="MaCT_HopDong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MaHopDong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="MaTour" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="SLTreEm" Type="Int32" />
+          <Property Name="SLNguoiLon" Type="Int32" />
           <Property Name="ThanhTien" Type="Decimal" Precision="19" Scale="4" />
           <NavigationProperty Name="HOPDONG" Relationship="Self.FK_ChiTietHopDong_HOPDONG" FromRole="ChiTietHopDong" ToRole="HOPDONG" />
           <NavigationProperty Name="TOUR" Relationship="Self.FK_ChiTietHopDong_TOUR" FromRole="ChiTietHopDong" ToRole="TOUR" />
@@ -572,9 +573,10 @@
           <Key>
             <PropertyRef Name="Ma_CTPNhap" />
           </Key>
+          <Property Name="SLTreEm" Type="Int32" />
           <Property Name="Ma_CTPNhap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MaTour" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="SLNguoiLon" Type="Int32" />
           <Property Name="MaPNhap" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="PHIEUNHAPTOUR" Relationship="Self.FK_CTPHIEUNHAP_MaPN" FromRole="CTPHIEUNHAP_TOUR" ToRole="PHIEUNHAPTOUR" />
           <NavigationProperty Name="TOUR" Relationship="Self.FK_CTPHIEUNHAP_MaTour" FromRole="CTPHIEUNHAP_TOUR" ToRole="TOUR" />
@@ -617,8 +619,6 @@
           <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="ThoiGianDat" Type="DateTime" Precision="3" />
-          <Property Name="SoNguoiLon" Type="Int32" />
-          <Property Name="SoTreEm" Type="Int32" />
           <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />
@@ -1154,7 +1154,8 @@
                 <ScalarProperty Name="MaCT_HopDong" ColumnName="MaCT_HopDong" />
                 <ScalarProperty Name="MaHopDong" ColumnName="MaHopDong" />
                 <ScalarProperty Name="MaTour" ColumnName="MaTour" />
-                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="SLTreEm" ColumnName="SLTreEm" />
+                <ScalarProperty Name="SLNguoiLon" ColumnName="SLNguoiLon" />
                 <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1162,9 +1163,10 @@
           <EntitySetMapping Name="CTPHIEUNHAP_TOUR">
             <EntityTypeMapping TypeName="QlTourDuLichModel.CTPHIEUNHAP_TOUR">
               <MappingFragment StoreEntitySet="CTPHIEUNHAP_TOUR">
+                <ScalarProperty Name="SLTreEm" ColumnName="SLTreEm" />
                 <ScalarProperty Name="Ma_CTPNhap" ColumnName="Ma_CTPNhap" />
                 <ScalarProperty Name="MaTour" ColumnName="MaTour" />
-                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="SLNguoiLon" ColumnName="SLNguoiLon" />
                 <ScalarProperty Name="MaPNhap" ColumnName="MaPNhap" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1201,8 +1203,6 @@
                 <ScalarProperty Name="MaHD" ColumnName="MaHD" />
                 <ScalarProperty Name="MaKH" ColumnName="MaKH" />
                 <ScalarProperty Name="ThoiGianDat" ColumnName="ThoiGianDat" />
-                <ScalarProperty Name="SoNguoiLon" ColumnName="SoNguoiLon" />
-                <ScalarProperty Name="SoTreEm" ColumnName="SoTreEm" />
                 <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
                 <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
                 <ScalarProperty Name="TongTien" ColumnName="TongTien" />

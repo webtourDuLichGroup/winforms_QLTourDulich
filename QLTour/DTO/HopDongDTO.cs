@@ -13,10 +13,6 @@ namespace DTO
 
         public DateTime? ThoiGianDat { get; set; }
 
-        public int? SoNguoiLon { get; set; }
-
-        public int? SoTreEm { get; set; }
-
         public string TinhTrang { get; set; }
 
         public string GhiChu { get; set; }

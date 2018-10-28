@@ -7,7 +7,8 @@
     <Property Name="MaCT_HopDong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MaHopDong" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="MaTour" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="SLTreEm" Type="Int32" />
+    <Property Name="SLNguoiLon" Type="Int32" />
     <Property Name="ThanhTien" Type="Decimal" Precision="19" Scale="4" />
     <NavigationProperty Name="HOPDONG" Relationship="Self.FK_ChiTietHopDong_HOPDONG" FromRole="ChiTietHopDong" ToRole="HOPDONG" />
     <NavigationProperty Name="TOUR" Relationship="Self.FK_ChiTietHopDong_TOUR" FromRole="ChiTietHopDong" ToRole="TOUR" />
@@ -16,9 +17,10 @@
     <Key>
       <PropertyRef Name="Ma_CTPNhap" />
     </Key>
+    <Property Name="SLTreEm" Type="Int32" />
     <Property Name="Ma_CTPNhap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="MaTour" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="SLNguoiLon" Type="Int32" />
     <Property Name="MaPNhap" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="PHIEUNHAPTOUR" Relationship="Self.FK_CTPHIEUNHAP_MaPN" FromRole="CTPHIEUNHAP_TOUR" ToRole="PHIEUNHAPTOUR" />
     <NavigationProperty Name="TOUR" Relationship="Self.FK_CTPHIEUNHAP_MaTour" FromRole="CTPHIEUNHAP_TOUR" ToRole="TOUR" />
@@ -61,8 +63,6 @@
     <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="ThoiGianDat" Type="DateTime" Precision="3" />
-    <Property Name="SoNguoiLon" Type="Int32" />
-    <Property Name="SoTreEm" Type="Int32" />
     <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />

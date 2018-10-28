@@ -16,8 +16,6 @@ namespace DAO
                 GhiChu=hopDongDTO.GhiChu,
                 MaHD=hopDongDTO.MaHD,
                 MaKH=hopDongDTO.MaKH,
-                SoNguoiLon=hopDongDTO.SoNguoiLon,
-                SoTreEm=hopDongDTO.SoTreEm,
                 ThoiGianDat=hopDongDTO.ThoiGianDat,
                 TinhTrang=hopDongDTO.TinhTrang,
                 TongTien=hopDongDTO.TongTien,
