@@ -89,5 +89,11 @@ namespace GUI
             }
 
         }
+
+        private void btn_Reset_Click(object sender, EventArgs e)
+        {
+            TourBUS tourBus = new TourBUS();
+            dgv_Tour.DataSource = tourBus.LoadTourToDataGridView();
+        }
     }
 }

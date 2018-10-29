@@ -141,6 +141,7 @@
             this.btn_Reset.Size = new System.Drawing.Size(115, 34);
             this.btn_Reset.TabIndex = 23;
             this.btn_Reset.Text = "Cancel";
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // labelControl4
             // 
@@ -155,7 +156,7 @@
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Top;
             this.textEdit1.EditValue = "DANH MUC TOUR";
             this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(3, 17);
+            this.textEdit1.Location = new System.Drawing.Point(3, 16);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.LightPink;
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,7 +182,7 @@
             // 
             this.txt_NguoiLon.Location = new System.Drawing.Point(596, 65);
             this.txt_NguoiLon.Name = "txt_NguoiLon";
-            this.txt_NguoiLon.Size = new System.Drawing.Size(120, 21);
+            this.txt_NguoiLon.Size = new System.Drawing.Size(120, 20);
             this.txt_NguoiLon.TabIndex = 25;
             // 
             // cbo_NoiDi
@@ -209,7 +210,7 @@
             // 
             this.txt_TreEm.Location = new System.Drawing.Point(596, 108);
             this.txt_TreEm.Name = "txt_TreEm";
-            this.txt_TreEm.Size = new System.Drawing.Size(120, 21);
+            this.txt_TreEm.Size = new System.Drawing.Size(120, 20);
             this.txt_TreEm.TabIndex = 25;
             // 
             // groupBox1

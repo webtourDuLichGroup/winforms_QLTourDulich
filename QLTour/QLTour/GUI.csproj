@@ -80,6 +80,11 @@
     <Compile Include="Constants\ErrorProviderConstants.cs" />
     <Compile Include="Constants\HopDongConstants.cs" />
     <Compile Include="Constants\MessgeBoxConstants.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmDanhMucDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +102,12 @@
     </Compile>
     <Compile Include="frm_DatTour.designer.cs">
       <DependentUpon>frm_DatTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_HDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_HDong.Designer.cs">
+      <DependentUpon>frm_HDong.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Main.cs">
       <SubType>Form</SubType>
@@ -163,6 +174,9 @@
     <EmbeddedResource Include="frm_DatTour.resx">
       <DependentUpon>frm_DatTour.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_HDong.resx">
+      <DependentUpon>frm_HDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Main.resx">
       <DependentUpon>frm_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +217,17 @@
     </Compile>
     <None Include="App.Config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>

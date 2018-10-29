@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_QLTour));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txt_GiaNguoiLon = new MyControl.NumbericTextBox();
+            this.txt_GiaTreEm = new MyControl.NumbericTextBox();
             this.cbo_NoiDen = new System.Windows.Forms.ComboBox();
             this.dateEdit_NgayKT = new System.Windows.Forms.DateTimePicker();
             this.dateEdit_NgayKH = new System.Windows.Forms.DateTimePicker();
@@ -53,7 +55,6 @@
             this.btn_Sua = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Xoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.txt_TenTour = new DevExpress.XtraEditors.TextEdit();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -63,8 +64,7 @@
             this.errorProvider_TenTour = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_GiaTreEm = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider_GiaNguoiLon = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txt_GiaTreEm = new MyControl.NumbericTextBox();
-            this.txt_GiaNguoiLon = new MyControl.NumbericTextBox();
+            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -135,6 +135,20 @@
             this.groupControl1.Size = new System.Drawing.Size(780, 216);
             this.groupControl1.TabIndex = 11;
             this.groupControl1.Text = "groupControl1";
+            // 
+            // txt_GiaNguoiLon
+            // 
+            this.txt_GiaNguoiLon.Location = new System.Drawing.Point(358, 64);
+            this.txt_GiaNguoiLon.Name = "txt_GiaNguoiLon";
+            this.txt_GiaNguoiLon.Size = new System.Drawing.Size(100, 21);
+            this.txt_GiaNguoiLon.TabIndex = 60;
+            // 
+            // txt_GiaTreEm
+            // 
+            this.txt_GiaTreEm.Location = new System.Drawing.Point(358, 37);
+            this.txt_GiaTreEm.Name = "txt_GiaTreEm";
+            this.txt_GiaTreEm.Size = new System.Drawing.Size(100, 21);
+            this.txt_GiaTreEm.TabIndex = 59;
             // 
             // cbo_NoiDen
             // 
@@ -277,7 +291,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.BackgroundImage = global::GUI.Properties.Resources.yellow;
             this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.Location = new System.Drawing.Point(464, 176);
@@ -289,7 +303,7 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
+            this.btn_Save.BackgroundImage = global::GUI.Properties.Resources.images__1_;
             this.btn_Save.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btn_Save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Save.ImageOptions.Image")));
             this.btn_Save.Location = new System.Drawing.Point(366, 176);
@@ -313,7 +327,7 @@
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.BackgroundImage")));
+            this.btn_Xoa.BackgroundImage = global::GUI.Properties.Resources.Blue;
             this.btn_Xoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btn_Xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.ImageOptions.Image")));
             this.btn_Xoa.Location = new System.Drawing.Point(268, 176);
@@ -335,18 +349,6 @@
             this.btnThem.TabIndex = 29;
             this.btnThem.Text = "Insert";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnRefesh
-            // 
-            this.btnRefesh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefesh.BackgroundImage")));
-            this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
-            this.btnRefesh.Location = new System.Drawing.Point(573, 176);
-            this.btnRefesh.Name = "btnRefesh";
-            this.btnRefesh.Size = new System.Drawing.Size(92, 32);
-            this.btnRefesh.TabIndex = 28;
-            this.btnRefesh.Text = "Refesh";
-            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // txt_TenTour
             // 
@@ -409,19 +411,17 @@
             // 
             this.errorProvider_GiaNguoiLon.ContainerControl = this;
             // 
-            // txt_GiaTreEm
+            // btnRefesh
             // 
-            this.txt_GiaTreEm.Location = new System.Drawing.Point(358, 37);
-            this.txt_GiaTreEm.Name = "txt_GiaTreEm";
-            this.txt_GiaTreEm.Size = new System.Drawing.Size(100, 21);
-            this.txt_GiaTreEm.TabIndex = 59;
-            // 
-            // txt_GiaNguoiLon
-            // 
-            this.txt_GiaNguoiLon.Location = new System.Drawing.Point(358, 64);
-            this.txt_GiaNguoiLon.Name = "txt_GiaNguoiLon";
-            this.txt_GiaNguoiLon.Size = new System.Drawing.Size(100, 21);
-            this.txt_GiaNguoiLon.TabIndex = 60;
+            this.btnRefesh.BackgroundImage = global::GUI.Properties.Resources.images;
+            this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
+            this.btnRefesh.Location = new System.Drawing.Point(573, 176);
+            this.btnRefesh.Name = "btnRefesh";
+            this.btnRefesh.Size = new System.Drawing.Size(92, 32);
+            this.btnRefesh.TabIndex = 28;
+            this.btnRefesh.Text = "Refesh";
+            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // frm_QLTour
             // 
@@ -466,7 +466,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_Sua;
         private DevExpress.XtraEditors.SimpleButton btn_Xoa;
         private DevExpress.XtraEditors.SimpleButton btnThem;
-        private DevExpress.XtraEditors.SimpleButton btnRefesh;
         private DevExpress.XtraEditors.TextEdit txt_TenTour;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl14;
@@ -486,5 +485,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider_GiaNguoiLon;
         private MyControl.NumbericTextBox txt_GiaNguoiLon;
         private MyControl.NumbericTextBox txt_GiaTreEm;
+        private DevExpress.XtraEditors.SimpleButton btnRefesh;
     }
 }

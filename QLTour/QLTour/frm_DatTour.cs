@@ -42,7 +42,10 @@ namespace GUI
             lbl_TenKS.Text = tourChiTiet.Tour.TenKhachSan;
             txt_NguoiLon.Text = frm_Tour.BookedTour.NguoiLon.ToString();
             txt_TreEm.Text = frm_Tour.BookedTour.TreEm.ToString();
+            frm_Tour.BookedTour.TongTien = tourChiTiet.Tour.GiaNguoiLon * frm_Tour.BookedTour.NguoiLon * tourChiTiet.Tour.GiaTreEm * frm_Tour.BookedTour.TreEm;
+            //txt_TongTien.Text = ().ToString();
             txt_TongTien.Text = frm_Tour.BookedTour.TongTien.ToString();
+
             var sex = new BindingList<KeyValuePair<string, int>>();
             sex.Add(new KeyValuePair<string, int>("Nam", 1));
             sex.Add(new KeyValuePair<string, int>("Nữ", 0));
@@ -127,6 +130,8 @@ namespace GUI
                         DateTime nowValue = DateTime.Now;
                         Dictionary<string, string> dsThamSo = new Dictionary<string, string>
                         {
+
+                            ["MaHD"] = maHD,
                             ["HoTen"] = khachHang.TenKH,
                             ["DiaChi"] = khachHang.DiaChi,
                             ["NgaySinh"] = khachHang.NgaySinh.ToShortDateString(),

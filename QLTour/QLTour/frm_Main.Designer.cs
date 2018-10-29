@@ -214,6 +214,7 @@
             this.barButtonItem11.Id = 13;
             this.barButtonItem11.ImageOptions.LargeImageIndex = 8;
             this.barButtonItem11.Name = "barButtonItem11";
+            this.barButtonItem11.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem11_ItemClick);
             // 
             // btnPhgBan
             // 

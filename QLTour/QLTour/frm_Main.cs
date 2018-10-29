@@ -98,5 +98,13 @@ namespace GUI
             form.MdiParent = this;
             form.Show();
         }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            frm_HDong form = new frm_HDong();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

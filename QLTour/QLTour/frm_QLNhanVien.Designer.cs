@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_QLNhanVien));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.txtSDT = new MyControl.NumbericTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtDC = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -50,9 +51,14 @@
             this.radNam = new System.Windows.Forms.RadioButton();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDangNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,21 +68,15 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatKhauCap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
-            this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
-            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
-            this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
-            this.txtSDT = new MyControl.NumbericTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +131,13 @@
             this.groupControl1.Size = new System.Drawing.Size(854, 194);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "groupControl1";
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(639, 60);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(200, 21);
+            this.txtSDT.TabIndex = 22;
             // 
             // label12
             // 
@@ -301,6 +308,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             // 
+            // picAnhDaiDien
+            // 
+            this.picAnhDaiDien.Location = new System.Drawing.Point(22, 24);
+            this.picAnhDaiDien.Name = "picAnhDaiDien";
+            this.picAnhDaiDien.Size = new System.Drawing.Size(147, 136);
+            this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAnhDaiDien.TabIndex = 0;
+            this.picAnhDaiDien.TabStop = false;
+            this.picAnhDaiDien.Click += new System.EventHandler(this.picAnhDaiDien_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnDelete);
@@ -316,6 +333,66 @@
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackgroundImage = global::GUI.Properties.Resources.Blue;
+            this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(265, 20);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(92, 32);
+            this.btnDelete.TabIndex = 46;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackgroundImage = global::GUI.Properties.Resources.yellow;
+            this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
+            this.btnCancel.Location = new System.Drawing.Point(509, 20);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(92, 32);
+            this.btnCancel.TabIndex = 49;
+            this.btnCancel.Text = "Cancel";
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.BackgroundImage = global::GUI.Properties.Resources.greeen;
+            this.btnInsert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnInsert.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnInsert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.ImageOptions.Image")));
+            this.btnInsert.Location = new System.Drawing.Point(18, 20);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(92, 32);
+            this.btnInsert.TabIndex = 45;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackgroundImage = global::GUI.Properties.Resources.images__1_;
+            this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
+            this.btnSave.Location = new System.Drawing.Point(389, 20);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(92, 32);
+            this.btnSave.TabIndex = 48;
+            this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
+            this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageOptions.Image")));
+            this.btnEdit.Location = new System.Drawing.Point(138, 20);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(92, 32);
+            this.btnEdit.TabIndex = 47;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // dataGridView1
             // 
@@ -336,18 +413,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(854, 164);
             this.dataGridView1.TabIndex = 53;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(854, 30);
-            this.label3.TabIndex = 54;
-            this.label3.Text = "Quản lý nhân viên";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MaNV
             // 
@@ -406,29 +471,25 @@
             this.MatKhauCap2.Name = "MatKhauCap2";
             this.MatKhauCap2.Visible = false;
             // 
-            // picAnhDaiDien
+            // label3
             // 
-            this.picAnhDaiDien.Location = new System.Drawing.Point(22, 24);
-            this.picAnhDaiDien.Name = "picAnhDaiDien";
-            this.picAnhDaiDien.Size = new System.Drawing.Size(147, 136);
-            this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAnhDaiDien.TabIndex = 0;
-            this.picAnhDaiDien.TabStop = false;
-            this.picAnhDaiDien.Click += new System.EventHandler(this.picAnhDaiDien_Click);
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(854, 30);
+            this.label3.TabIndex = 54;
+            this.label3.Text = "Quản lý nhân viên";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnDelete
+            // errorProvider1
             // 
-            this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(265, 20);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(92, 32);
-            this.btnDelete.TabIndex = 46;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.errorProvider1.ContainerControl = this;
             // 
             // btnRefesh
             // 
+            this.btnRefesh.BackgroundImage = global::GUI.Properties.Resources.images;
             this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
             this.btnRefesh.Location = new System.Drawing.Point(636, 20);
@@ -436,63 +497,8 @@
             this.btnRefesh.Size = new System.Drawing.Size(92, 32);
             this.btnRefesh.TabIndex = 44;
             this.btnRefesh.Text = "Refesh";
+            this.btnRefesh.Visible = false;
             this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
-            this.btnCancel.Location = new System.Drawing.Point(509, 20);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(92, 32);
-            this.btnCancel.TabIndex = 49;
-            this.btnCancel.Text = "Cancel";
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnInsert.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnInsert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.ImageOptions.Image")));
-            this.btnInsert.Location = new System.Drawing.Point(18, 20);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(92, 32);
-            this.btnInsert.TabIndex = 45;
-            this.btnInsert.Text = "Insert";
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
-            // 
-            // btnSave
-            // 
-            this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
-            this.btnSave.Location = new System.Drawing.Point(389, 20);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(92, 32);
-            this.btnSave.TabIndex = 48;
-            this.btnSave.Text = "Save";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
-            this.btnEdit.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageOptions.Image")));
-            this.btnEdit.Location = new System.Drawing.Point(138, 20);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(92, 32);
-            this.btnEdit.TabIndex = 47;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Location = new System.Drawing.Point(639, 60);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(200, 21);
-            this.txtSDT.TabIndex = 22;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // frm_QLNhanVien
             // 
@@ -508,9 +514,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
@@ -541,7 +547,6 @@
         private System.Windows.Forms.PictureBox picAnhDaiDien;
         private System.Windows.Forms.GroupBox groupBox1;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
-        private DevExpress.XtraEditors.SimpleButton btnRefesh;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
         private DevExpress.XtraEditors.SimpleButton btnInsert;
         private DevExpress.XtraEditors.SimpleButton btnSave;
@@ -559,5 +564,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MatKhauCap2;
         private MyControl.NumbericTextBox txtSDT;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private DevExpress.XtraEditors.SimpleButton btnRefesh;
     }
 }
