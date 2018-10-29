@@ -46,7 +46,6 @@
             this.dateTime_NamSinh = new System.Windows.Forms.DateTimePicker();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
@@ -78,6 +77,7 @@
             this.error_Hoten = new System.Windows.Forms.ErrorProvider(this.components);
             this.error_Sdt = new System.Windows.Forms.ErrorProvider(this.components);
             this.erro_DiaChi = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -86,17 +86,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Email.Properties)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error_Hoten)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_Sdt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.erro_DiaChi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.Control;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FloralWhite;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.625F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.375F));
@@ -311,16 +311,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(591, 166);
             this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureEdit1.Location = new System.Drawing.Point(3, 3);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(93, 96);
-            this.pictureEdit1.TabIndex = 0;
             // 
             // tableLayoutPanel5
             // 
@@ -625,20 +615,24 @@
             // 
             // btn_DatTour
             // 
+            this.btn_DatTour.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btn_DatTour.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_DatTour.Location = new System.Drawing.Point(449, 38);
+            this.btn_DatTour.Location = new System.Drawing.Point(449, 30);
             this.btn_DatTour.Name = "btn_DatTour";
-            this.btn_DatTour.Size = new System.Drawing.Size(94, 23);
+            this.btn_DatTour.Size = new System.Drawing.Size(94, 31);
             this.btn_DatTour.TabIndex = 0;
             this.btn_DatTour.Text = "Đặt tour";
             this.btn_DatTour.Click += new System.EventHandler(this.btn_DatTour_Click);
             // 
             // btn_Back
             // 
+            this.btn_Back.BackgroundImage = global::GUI.Properties.Resources.Blue;
+            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Back.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btn_Back.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_Back.Location = new System.Drawing.Point(349, 38);
+            this.btn_Back.Location = new System.Drawing.Point(349, 30);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(94, 23);
+            this.btn_Back.Size = new System.Drawing.Size(94, 31);
             this.btn_Back.TabIndex = 1;
             this.btn_Back.Text = "Quay lại";
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -654,6 +648,17 @@
             // erro_DiaChi
             // 
             this.erro_DiaChi.ContainerControl = this;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureEdit1.Location = new System.Drawing.Point(3, 3);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Size = new System.Drawing.Size(93, 96);
+            this.pictureEdit1.TabIndex = 0;
+            this.pictureEdit1.Visible = false;
             // 
             // frm_DatTour
             // 
@@ -675,13 +680,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_Email.Properties)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.error_Hoten)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error_Sdt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.erro_DiaChi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -702,7 +707,6 @@
         private DevExpress.XtraEditors.TextEdit txt_Email;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
@@ -737,5 +741,6 @@
         private System.Windows.Forms.ErrorProvider error_Sdt;
         private System.Windows.Forms.DateTimePicker dateTime_NamSinh;
         private System.Windows.Forms.ErrorProvider erro_DiaChi;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }

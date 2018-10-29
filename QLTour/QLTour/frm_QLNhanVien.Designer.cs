@@ -54,6 +54,7 @@
             this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.btnInsert = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
@@ -70,7 +71,6 @@
             this.MatKhauCap2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btnRefesh = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -173,6 +173,7 @@
             this.txtMK2.Name = "txtMK2";
             this.txtMK2.Size = new System.Drawing.Size(200, 21);
             this.txtMK2.TabIndex = 16;
+            this.txtMK2.Visible = false;
             // 
             // label9
             // 
@@ -183,6 +184,7 @@
             this.label9.Size = new System.Drawing.Size(100, 16);
             this.label9.TabIndex = 15;
             this.label9.Text = "Mật khẩu cấp 2:";
+            this.label9.Visible = false;
             // 
             // label8
             // 
@@ -193,6 +195,7 @@
             this.label8.Size = new System.Drawing.Size(100, 16);
             this.label8.TabIndex = 14;
             this.label8.Text = "Mật khẩu cấp 1:";
+            this.label8.Visible = false;
             // 
             // radNu
             // 
@@ -240,6 +243,7 @@
             this.txtMK1.Name = "txtMK1";
             this.txtMK1.Size = new System.Drawing.Size(200, 21);
             this.txtMK1.TabIndex = 9;
+            this.txtMK1.Visible = false;
             // 
             // label4
             // 
@@ -345,6 +349,19 @@
             this.btnDelete.TabIndex = 46;
             this.btnDelete.Text = "Delete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnRefesh
+            // 
+            this.btnRefesh.BackgroundImage = global::GUI.Properties.Resources.images;
+            this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
+            this.btnRefesh.Location = new System.Drawing.Point(636, 20);
+            this.btnRefesh.Name = "btnRefesh";
+            this.btnRefesh.Size = new System.Drawing.Size(92, 32);
+            this.btnRefesh.TabIndex = 44;
+            this.btnRefesh.Text = "Refesh";
+            this.btnRefesh.Visible = false;
+            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // btnCancel
             // 
@@ -486,19 +503,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // btnRefesh
-            // 
-            this.btnRefesh.BackgroundImage = global::GUI.Properties.Resources.images;
-            this.btnRefesh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnRefesh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefesh.ImageOptions.Image")));
-            this.btnRefesh.Location = new System.Drawing.Point(636, 20);
-            this.btnRefesh.Name = "btnRefesh";
-            this.btnRefesh.Size = new System.Drawing.Size(92, 32);
-            this.btnRefesh.TabIndex = 44;
-            this.btnRefesh.Text = "Refesh";
-            this.btnRefesh.Visible = false;
-            this.btnRefesh.Click += new System.EventHandler(this.btnRefesh_Click);
             // 
             // frm_QLNhanVien
             // 

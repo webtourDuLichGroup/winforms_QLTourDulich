@@ -27,7 +27,12 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(new ChiTietHDTableAdapter().TK(textBox1.Text).Rows.Count==1)
+            
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            if (new ChiTietHDTableAdapter().TK(textBox1.Text).Rows.Count == 1)
             {
                 dataGridView1.DataSource = new ChiTietHDTableAdapter().TK(textBox1.Text);
             }

@@ -195,15 +195,16 @@ namespace GUI
 
         private void txtTen_Leave(object sender, EventArgs e)
         {
-            Control ctr = new Control();
-            if(txtTen.Text==string.Empty)
-            {
-                error.SetError( ctr,"Tên không được để trống");
-            }
-            else
-            {
-                error.Clear();
-            }
+
+            //Control ctr = new Control();
+            //if(txtTen.Text==string.Empty)
+            //{
+            //    error.SetError( ctr,"Tên không được để trống");
+            //}
+            //else
+            //{
+            //    error.Clear();
+            //}
 
         }
     }

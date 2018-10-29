@@ -74,8 +74,9 @@ namespace GUI
                         }
                     }
                 }
-                MessageBox.Show("Cập nhật quyền thành công!");
+                
             }
+            MessageBox.Show("Cập nhật quyền thành công!");
         }
 
         private void cboPhgBan_SelectedIndexChanged(object sender, EventArgs e)

@@ -106,5 +106,13 @@ namespace GUI
             form.MdiParent = this;
             form.Show();
         }
+
+        private void barButtonItem16_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frm_DangNhap dn = new frm_DangNhap();
+            dn.Show();
+            
+            
+        }
     }
 }
