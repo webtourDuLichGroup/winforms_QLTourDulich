@@ -141,6 +141,15 @@
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
     <Compile Include="QuyenNguoiDungDAO.cs" />
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="TOUR.cs">
       <DependentUpon>QLTourDuLichModel.tt</DependentUpon>
     </Compile>
